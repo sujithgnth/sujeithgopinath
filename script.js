@@ -48,3 +48,34 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
 
   revealItems.forEach((item) => observer.observe(item));
 }
+
+const resumeTabs = [...document.querySelectorAll(".resume-tab")];
+const resumeFrame = document.querySelector("#resume-frame");
+const resumeOpenLink = document.querySelector("#resume-open-link");
+const resumeLanguageStatus = document.querySelector("#resume-language-status");
+
+function selectResume(tab) {
+  resumeTabs.forEach((item) => {
+    const isSelected = item === tab;
+    item.classList.toggle("is-active", isSelected);
+    item.setAttribute("aria-selected", String(isSelected));
+    item.tabIndex = isSelected ? 0 : -1;
+  });
+
+  resumeFrame.src = tab.dataset.resumeSrc;
+  resumeFrame.title = tab.dataset.resumeTitle;
+  resumeOpenLink.href = tab.dataset.resumeSrc.split("#")[0];
+  resumeLanguageStatus.textContent = tab.dataset.resumeLanguage;
+}
+
+resumeTabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => selectResume(tab));
+  tab.addEventListener("keydown", (event) => {
+    if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+    event.preventDefault();
+    const direction = event.key === "ArrowRight" ? 1 : -1;
+    const nextIndex = (index + direction + resumeTabs.length) % resumeTabs.length;
+    resumeTabs[nextIndex].focus();
+    selectResume(resumeTabs[nextIndex]);
+  });
+});
