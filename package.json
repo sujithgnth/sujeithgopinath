@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sujithnath/sujithnath.git"
+    "url": "git+https://github.com/sujithgnth/sujithnath.git"
   },
   "keywords": [
     "\"css\"",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/sujithnath/sujithnath/issues"
   },
-  "homepage": "https://github.com/sujithnath/sujithnath#readme",
+  "homepage": "https://sujithgnth.github.io/sujithnath/",
   "devDependencies": {
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0",
