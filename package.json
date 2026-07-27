@@ -1,5 +1,5 @@
 {
-  "name": "sujithnath",
+  "name": "sujeithgopinath",
   "version": "1.0.0",
   "description": "sujith gopinath portfolio",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sujithgnth/sujithnath.git"
+    "url": "git+https://github.com/sujithgnth/sujeithgopinath.git"
   },
   "keywords": [
     "\"css\"",
@@ -19,9 +19,9 @@
   "author": "sujith gopinath",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sujithnath/sujithnath/issues"
+    "url": "https://github.com/sujithgnth/sujeithgopinath/issues"
   },
-  "homepage": "https://sujithgnth.github.io/sujithnath/",
+  "homepage": "https://sujithgnth.github.io/sujeithgopinath/",
   "devDependencies": {
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0",

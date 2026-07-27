@@ -2,7 +2,7 @@
 
 One-page portfolio for Sujeith Gopinath, Senior Frontend Engineer.
 
-**[View the live portfolio](https://sujithgnth.github.io/sujithnath/)**
+**[View the live portfolio](https://sujithgnth.github.io/sujeithgopinath/)**
 
 ## Focus
 
