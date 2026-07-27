@@ -26,30 +26,35 @@
     <title>Sujeith Gopinath — Senior Frontend Engineer</title>
     <link rel="preload" href="./src/portfolio/assets/sujith-clr.jpg" as="image" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./translations.js" defer></script>
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
+    <a class="skip-link" href="#main-content" data-i18n="accessibility.skipToContent">Skip to content</a>
 
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="wordmark" href="#top" aria-label="Sujeith Gopinath, home">
+        <a class="wordmark" href="#top" aria-label="Sujeith Gopinath, home" data-i18n-aria="accessibility.home">
           <span class="wordmark-dot" aria-hidden="true"></span>
           SG
         </a>
 
-        <nav class="desktop-nav" aria-label="Main navigation">
-          <a href="#work">Work</a>
-          <a href="#experience">Experience</a>
-          <a href="#approach">Approach</a>
-          <a href="#resume">Résumé</a>
+        <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria="accessibility.mainNavigation">
+          <a href="#work" data-i18n="nav.work">Work</a>
+          <a href="#experience" data-i18n="nav.experience">Experience</a>
+          <a href="#approach" data-i18n="nav.approach">Approach</a>
+          <a href="#resume" data-i18n="nav.resume">Résumé</a>
         </nav>
 
         <div class="header-actions">
+          <div class="language-switch" role="group" aria-label="Language" data-i18n-aria="accessibility.language">
+            <button class="language-button is-active" type="button" data-language="en" aria-pressed="true">EN</button>
+            <button class="language-button" type="button" data-language="de" aria-pressed="false">DE</button>
+          </div>
           <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
             <span class="theme-toggle-icon" aria-hidden="true">◐</span>
           </button>
-          <a class="header-contact" href="mailto:sujithgnth@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+          <a class="header-contact" href="mailto:sujithgnth@gmail.com"><span data-i18n="nav.contact">Let’s talk</span> <span aria-hidden="true">↗</span></a>
         </div>
       </div>
     </header>
@@ -57,41 +62,42 @@
     <main id="main-content">
       <section class="hero shell" id="top">
         <div class="hero-copy">
-          <p class="eyebrow reveal">Senior Frontend Engineer · Dresden, Germany</p>
-          <h1 class="reveal">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">Senior Frontend Engineer · Dresden, Germany</p>
+          <h1 class="reveal" data-i18n-html="hero.title">
             I turn complex workflows into
             <span>fast, dependable products.</span>
           </h1>
-          <p class="hero-intro reveal">
+          <p class="hero-intro reveal" data-i18n="hero.intro">
             For more than a decade, I’ve built and scaled production web applications
             across AI, robotics, logistics and food delivery—with React, Angular,
             TypeScript and a strong bias toward clear product thinking.
           </p>
           <div class="hero-actions reveal">
-            <a class="button button-primary" href="#work">Explore selected work <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="mailto:sujithgnth@gmail.com">Email me <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#work"><span data-i18n="hero.explore">Explore selected work</span> <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="mailto:sujithgnth@gmail.com"><span data-i18n="hero.email">Email me</span> <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="availability reveal" aria-label="Availability">
+          <div class="availability reveal" aria-label="Availability" data-i18n-aria="accessibility.availability">
             <span class="availability-pulse" aria-hidden="true"></span>
-            <span>Available immediately</span>
+            <span data-i18n="hero.available">Available immediately</span>
             <span class="availability-divider" aria-hidden="true"></span>
-            <span>Permanent German work authorisation</span>
+            <span data-i18n="hero.workAuthorisation">Permanent German work authorisation</span>
           </div>
         </div>
 
-        <aside class="hero-profile reveal" aria-label="Profile summary">
+        <aside class="hero-profile reveal" aria-label="Profile summary" data-i18n-aria="accessibility.profileSummary">
           <div class="portrait-wrap">
             <img
               src="./src/portfolio/assets/sujith-clr.jpg"
               alt="Portrait of Sujeith Gopinath"
+              data-i18n-alt="accessibility.portrait"
               width="200"
               height="200"
             />
-            <span class="portrait-label">Based in Dresden</span>
+            <span class="portrait-label" data-i18n="hero.location">Based in Dresden</span>
           </div>
           <div class="profile-note">
-            <p>Currently building</p>
-            <strong>AI-powered document review workflows</strong>
+            <p data-i18n="hero.currentlyBuilding">Currently building</p>
+            <strong data-i18n="hero.currentProject">AI-powered document review workflows</strong>
           </div>
           <div class="profile-links">
             <a href="https://www.linkedin.com/in/sujithnath/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
@@ -100,23 +106,23 @@
         </aside>
       </section>
 
-      <section class="proof-strip" aria-label="Career highlights">
+      <section class="proof-strip" aria-label="Career highlights" data-i18n-aria="accessibility.careerHighlights">
         <div class="shell proof-grid">
           <article>
             <strong>10+</strong>
-            <span>years shipping production software</span>
+            <span data-i18n="metrics.years">years shipping production software</span>
           </article>
           <article>
-            <strong>66% lower</strong>
-            <span>measured load time — from 5.0s to 1.7s</span>
+            <strong data-i18n="metrics.loadValue">66% lower</strong>
+            <span data-i18n="metrics.loadLabel">measured load time — from 5.0s to 1.7s</span>
           </article>
           <article>
-            <strong>8× user growth</strong>
-            <span>supported scale from 3k to 25k daily users</span>
+            <strong data-i18n="metrics.growthValue">8× user growth</strong>
+            <span data-i18n="metrics.growthLabel">supported scale from 3k to 25k daily users</span>
           </article>
           <article>
-            <strong>End to end</strong>
-            <span>from architecture to release</span>
+            <strong data-i18n="metrics.deliveryValue">End to end</strong>
+            <span data-i18n="metrics.deliveryLabel">from architecture to release</span>
           </article>
         </div>
       </section>
@@ -124,10 +130,10 @@
       <section class="section shell" id="work">
         <div class="section-heading reveal">
           <div>
-            <p class="eyebrow">Selected work</p>
-            <h2>Products built for real operational complexity.</h2>
+            <p class="eyebrow" data-i18n="work.eyebrow">Selected work</p>
+            <h2 data-i18n="work.title">Products built for real operational complexity.</h2>
           </div>
-          <p>
+          <p data-i18n="work.intro">
             A selection of problems I have owned—from AI-assisted review systems to
             interfaces controlling physical robots.
           </p>
@@ -138,22 +144,22 @@
             <div class="case-copy">
               <div class="case-meta">
                 <span>01</span>
-                <span>Elevait · 2023–Present</span>
+                <span data-i18n="work.elevait.period">Elevait · 2023–Present</span>
               </div>
-              <p class="case-kicker">AI document operations</p>
-              <h3>Making human review feel clear, fast and trustworthy.</h3>
-              <p>
+              <p class="case-kicker" data-i18n="work.elevait.kicker">AI document operations</p>
+              <h3 data-i18n="work.elevait.title">Making human review feel clear, fast and trustworthy.</h3>
+              <p data-i18n="work.elevait.description">
                 I build frontend-heavy workflows for document verification, annotation
                 and human review—connecting complex state, backend APIs and large visual
                 assets into one coherent product experience.
               </p>
               <ul class="case-points">
-                <li>Owned Angular workflows across UI, API integration and state management</li>
-                <li>Improved review loading by serving compressed document previews</li>
-                <li>Shaped architecture through reviews and reusable implementation patterns</li>
-                <li>Protected critical journeys with Playwright regression coverage</li>
+                <li data-i18n="work.elevait.point1">Owned Angular workflows across UI, API integration and state management</li>
+                <li data-i18n="work.elevait.point2">Improved review loading by serving compressed document previews</li>
+                <li data-i18n="work.elevait.point3">Shaped architecture through reviews and reusable implementation patterns</li>
+                <li data-i18n="work.elevait.point4">Protected critical journeys with Playwright regression coverage</li>
               </ul>
-              <div class="tag-list" aria-label="Technologies">
+              <div class="tag-list" aria-label="Technologies" data-i18n-aria="accessibility.technologies">
                 <span>Angular</span>
                 <span>TypeScript</span>
                 <span>NestJS</span>
@@ -161,10 +167,10 @@
                 <span>Playwright</span>
               </div>
             </div>
-            <div class="case-visual ai-visual" aria-label="Abstract document workflow illustration">
+            <div class="case-visual ai-visual" aria-label="Abstract document workflow illustration" data-i18n-aria="accessibility.documentWorkflow">
               <div class="workflow-toolbar">
                 <span></span><span></span><span></span>
-                <b>Review workspace</b>
+                <b data-i18n="work.elevait.visual.workspace">Review workspace</b>
               </div>
               <div class="workflow-body">
                 <div class="document-sheet">
@@ -176,16 +182,16 @@
                   <div class="annotation annotation-two"><span>02</span></div>
                 </div>
                 <div class="review-panel">
-                  <div class="review-label">AI SUGGESTION</div>
+                  <div class="review-label" data-i18n="work.elevait.visual.suggestion">AI SUGGESTION</div>
                   <div class="review-card">
                     <span class="review-check">✓</span>
-                    <div><b>Field verified</b><small>Confidence 98%</small></div>
+                    <div><b data-i18n="work.elevait.visual.verified">Field verified</b><small data-i18n="work.elevait.visual.confidence">Confidence 98%</small></div>
                   </div>
                   <div class="review-card active">
                     <span class="review-number">02</span>
-                    <div><b>Needs review</b><small>Check source region</small></div>
+                    <div><b data-i18n="work.elevait.visual.needsReview">Needs review</b><small data-i18n="work.elevait.visual.checkSource">Check source region</small></div>
                   </div>
-                  <div class="review-actions"><span>Reject</span><b>Approve</b></div>
+                  <div class="review-actions"><span data-i18n="work.elevait.visual.reject">Reject</span><b data-i18n="work.elevait.visual.approve">Approve</b></div>
                 </div>
               </div>
             </div>
@@ -197,20 +203,20 @@
                 <span>02</span>
                 <span>Coboworx · 2022–2023</span>
               </div>
-              <p class="case-kicker">Robotics workflow design</p>
-              <h3>Turning robot motion into a visual product people can operate.</h3>
-              <p>
+              <p class="case-kicker" data-i18n="work.coboworx.kicker">Robotics workflow design</p>
+              <h3 data-i18n="work.coboworx.title">Turning robot motion into a visual product people can operate.</h3>
+              <p data-i18n="work.coboworx.description">
                 I owned the frontend of a robot-control application, translating
                 hardware workflows into an approachable Blockly-based experience while
                 strengthening the component architecture underneath it.
               </p>
               <div class="impact-callout">
-                <div><strong>5.0s</strong><span>before</span></div>
+                <div><strong>5.0s</strong><span data-i18n="work.coboworx.before">before</span></div>
                 <span class="impact-arrow" aria-hidden="true">→</span>
-                <div><strong>1.7s</strong><span>after</span></div>
-                <p>Measured application load time</p>
+                <div><strong>1.7s</strong><span data-i18n="work.coboworx.after">after</span></div>
+                <p data-i18n="work.coboworx.measurement">Measured application load time</p>
               </div>
-              <div class="tag-list" aria-label="Technologies">
+              <div class="tag-list" aria-label="Technologies" data-i18n-aria="accessibility.technologies">
                 <span>React</span>
                 <span>TypeScript</span>
                 <span>Redux Toolkit</span>
@@ -218,7 +224,7 @@
                 <span>Cypress</span>
               </div>
             </div>
-            <div class="case-visual robot-visual" aria-label="Abstract robot workflow illustration">
+            <div class="case-visual robot-visual" aria-label="Abstract robot workflow illustration" data-i18n-aria="accessibility.robotWorkflow">
               <div class="robot-stage">
                 <div class="robot-base"></div>
                 <div class="robot-arm arm-one"></div>
@@ -229,18 +235,18 @@
                 <div class="robot-target"></div>
               </div>
               <div class="blockly-panel">
-                <span class="block block-purple">Start sequence</span>
-                <span class="block block-blue">Move to position</span>
-                <span class="block block-blue indent">Rotate joint · 45°</span>
-                <span class="block block-green">Run motion</span>
+                <span class="block block-purple" data-i18n="work.coboworx.visual.start">Start sequence</span>
+                <span class="block block-blue" data-i18n="work.coboworx.visual.move">Move to position</span>
+                <span class="block block-blue indent" data-i18n="work.coboworx.visual.rotate">Rotate joint · 45°</span>
+                <span class="block block-green" data-i18n="work.coboworx.visual.run">Run motion</span>
               </div>
             </div>
           </article>
         </div>
 
         <div class="archive-heading reveal">
-          <p class="eyebrow">Earlier product work</p>
-          <h3>Interfaces used to run businesses at scale.</h3>
+          <p class="eyebrow" data-i18n="archive.eyebrow">Earlier product work</p>
+          <h3 data-i18n="archive.title">Interfaces used to run businesses at scale.</h3>
         </div>
 
         <div class="archive-grid">
@@ -249,6 +255,7 @@
               <img
                 src="./src/portfolio/assets/references/loadshare/inscan.png"
                 alt="LoadShare logistics operations interface"
+                data-i18n-alt="accessibility.loadshareImage"
                 loading="lazy"
                 width="2876"
                 height="1550"
@@ -259,8 +266,8 @@
                 <span>LoadShare Network</span>
                 <span>2018–2022</span>
               </div>
-              <h3>Modernising logistics operations</h3>
-              <p>
+              <h3 data-i18n="archive.loadshare.title">Modernising logistics operations</h3>
+              <p data-i18n="archive.loadshare.description">
                 Led frontend delivery for audit, cash-on-delivery and item-tracking
                 workflows. Modernised a legacy product into a structured React and
                 TypeScript single-page application.
@@ -276,6 +283,7 @@
               <img
                 src="./src/portfolio/assets/references/swiggy/order-screen-2.png"
                 alt="Swiggy restaurant order management interface"
+                data-i18n-alt="accessibility.swiggyImage"
                 loading="lazy"
                 width="2880"
                 height="1800"
@@ -286,8 +294,8 @@
                 <span>Swiggy</span>
                 <span>2016–2018</span>
               </div>
-              <h3>Scaling restaurant operations</h3>
-              <p>
+              <h3 data-i18n="archive.swiggy.title">Scaling restaurant operations</h3>
+              <p data-i18n="archive.swiggy.description">
                 Built core order, menu and notification workflows as the vendor
                 application grew from approximately 3,000 to 25,000 daily users.
               </p>
@@ -303,10 +311,10 @@
         <div class="shell">
           <div class="section-heading reveal">
             <div>
-              <p class="eyebrow">Experience</p>
-              <h2>A career built inside product teams.</h2>
+              <p class="eyebrow" data-i18n="experience.eyebrow">Experience</p>
+              <h2 data-i18n="experience.title">A career built inside product teams.</h2>
             </div>
-            <p>
+            <p data-i18n="experience.intro">
               I have spent my career in startups and scale-ups, working close to users,
               product decisions and the systems behind the interface.
             </p>
@@ -314,29 +322,29 @@
 
           <div class="timeline">
             <article class="timeline-row reveal">
-              <span class="timeline-date">2023—Now</span>
-              <div><h3>Elevait</h3><p>Full-Stack JavaScript Developer</p></div>
-              <p>AI document processing · Angular · TypeScript · NestJS</p>
+              <span class="timeline-date" data-i18n="experience.now">2023—Now</span>
+              <div><h3>Elevait</h3><p data-i18n="experience.fullstackRole">Full-Stack JavaScript Developer</p></div>
+              <p data-i18n="experience.elevaitDomain">AI document processing · Angular · TypeScript · NestJS</p>
             </article>
             <article class="timeline-row reveal">
               <span class="timeline-date">2022—2023</span>
-              <div><h3>Coboworx</h3><p>Senior Frontend Engineer</p></div>
-              <p>Robotics · React · TypeScript · Storybook</p>
+              <div><h3>Coboworx</h3><p data-i18n="experience.seniorFrontendRole">Senior Frontend Engineer</p></div>
+              <p data-i18n="experience.coboworxDomain">Robotics · React · TypeScript · Storybook</p>
             </article>
             <article class="timeline-row reveal">
               <span class="timeline-date">2018—2022</span>
-              <div><h3>LoadShare Network</h3><p>Senior Frontend Engineer</p></div>
-              <p>Logistics · React · TypeScript · Node.js</p>
+              <div><h3>LoadShare Network</h3><p data-i18n="experience.seniorFrontendRole">Senior Frontend Engineer</p></div>
+              <p data-i18n="experience.loadshareDomain">Logistics · React · TypeScript · Node.js</p>
             </article>
             <article class="timeline-row reveal">
               <span class="timeline-date">2016—2018</span>
-              <div><h3>Swiggy</h3><p>Frontend Engineer</p></div>
-              <p>Food delivery · React · GraphQL · PWA</p>
+              <div><h3>Swiggy</h3><p data-i18n="experience.frontendRole">Frontend Engineer</p></div>
+              <p data-i18n="experience.swiggyDomain">Food delivery · React · GraphQL · PWA</p>
             </article>
             <article class="timeline-row reveal">
               <span class="timeline-date">2015—2016</span>
-              <div><h3>Pipemonk</h3><p>Junior UI Developer</p></div>
-              <p>Cloud integration · AngularJS · JavaScript</p>
+              <div><h3>Pipemonk</h3><p data-i18n="experience.juniorRole">Junior UI Developer</p></div>
+              <p data-i18n="experience.pipemonkDomain">Cloud integration · AngularJS · JavaScript</p>
             </article>
           </div>
         </div>
@@ -345,10 +353,10 @@
       <section class="section shell" id="approach">
         <div class="section-heading reveal">
           <div>
-            <p class="eyebrow">How I contribute</p>
-            <h2>Senior ownership, grounded in the details.</h2>
+            <p class="eyebrow" data-i18n="approach.eyebrow">How I contribute</p>
+            <h2 data-i18n="approach.title">Senior ownership, grounded in the details.</h2>
           </div>
-          <p>
+          <p data-i18n="approach.intro">
             I care about the quality users feel and the technical foundations teams
             depend on.
           </p>
@@ -357,32 +365,32 @@
         <div class="approach-grid">
           <article class="approach-card reveal">
             <span>01</span>
-            <h3>Product-minded delivery</h3>
-            <p>
+            <h3 data-i18n="approach.product.title">Product-minded delivery</h3>
+            <p data-i18n="approach.product.description">
               I translate real user workflows into clear interfaces and carry features
               from early decisions through polished release.
             </p>
           </article>
           <article class="approach-card reveal">
             <span>02</span>
-            <h3>Frontend architecture</h3>
-            <p>
+            <h3 data-i18n="approach.architecture.title">Frontend architecture</h3>
+            <p data-i18n="approach.architecture.description">
               I establish boundaries, reusable patterns and component systems that make
               the next feature easier to build.
             </p>
           </article>
           <article class="approach-card reveal">
             <span>03</span>
-            <h3>Performance &amp; quality</h3>
-            <p>
+            <h3 data-i18n="approach.quality.title">Performance &amp; quality</h3>
+            <p data-i18n="approach.quality.description">
               I measure bottlenecks, protect important paths with automated tests and
               treat real-world behaviour as part of the feature.
             </p>
           </article>
           <article class="approach-card reveal">
             <span>04</span>
-            <h3>Cross-stack collaboration</h3>
-            <p>
+            <h3 data-i18n="approach.collaboration.title">Cross-stack collaboration</h3>
+            <p data-i18n="approach.collaboration.description">
               I work comfortably across APIs, state, data and delivery tooling so the
               whole product—not only the UI—works well.
             </p>
@@ -390,7 +398,7 @@
         </div>
 
         <div class="stack-panel reveal">
-          <p class="eyebrow">Core toolkit</p>
+          <p class="eyebrow" data-i18n="approach.toolkit">Core toolkit</p>
           <div class="stack-list">
             <span>React</span>
             <span>Angular</span>
@@ -415,16 +423,12 @@
         <div class="shell">
           <div class="section-heading reveal">
             <div>
-              <p class="eyebrow">Résumé / Lebenslauf</p>
-              <h2>Choose the version you need.</h2>
+              <p class="eyebrow" data-i18n="resume.eyebrow">Résumé</p>
+              <h2 data-i18n="resume.title">Choose the version you need.</h2>
             </div>
-            <p>
+            <p data-i18n="resume.intro">
               View my English or German résumé without leaving this page, or save a PDF
               copy for later.
-              <span class="resume-translation">
-                Lebenslauf auf Englisch oder Deutsch direkt hier ansehen oder als PDF
-                speichern.
-              </span>
             </p>
           </div>
 
@@ -432,32 +436,31 @@
             <article class="resume-card reveal">
               <div class="resume-card-top">
                 <span class="resume-language-mark">EN</span>
-                <span class="resume-page-count">2 pages · PDF</span>
+                <span class="resume-page-count" data-i18n="resume.english.pageCount">2 pages · PDF</span>
               </div>
               <div>
-                <p class="resume-card-kicker">English version</p>
-                <h3>English résumé</h3>
-                <p>Senior Frontend Engineer · React, Angular and TypeScript</p>
+                <p class="resume-card-kicker" data-i18n="resume.english.version">English version</p>
+                <h3 data-i18n="resume.english.title">English résumé</h3>
+                <p data-i18n="resume.role">Senior Frontend Engineer · React, Angular and TypeScript</p>
               </div>
               <div class="resume-card-actions">
                 <button
                   class="resume-view-button"
                   type="button"
                   data-resume-target="resume-dialog-pages-en"
-                  data-resume-title="English résumé"
-                  data-resume-meta="English · 2 pages"
+                  data-resume-title-key="resume.english.title"
+                  data-resume-meta-key="resume.english.meta"
                   data-resume-href="./assets/resume/sujeith-gopinath-resume-en.pdf"
-                  data-download-label="Download PDF"
                   data-download-filename="Sujeith-Gopinath-Resume-EN.pdf"
                 >
-                  View résumé <span aria-hidden="true">↗</span>
+                  <span data-i18n="resume.view">View résumé</span> <span aria-hidden="true">↗</span>
                 </button>
                 <a
                   class="resume-download-button"
                   href="./assets/resume/sujeith-gopinath-resume-en.pdf"
                   download="Sujeith-Gopinath-Resume-EN.pdf"
                 >
-                  Download PDF <span aria-hidden="true">↓</span>
+                  <span data-i18n="resume.download">Download PDF</span> <span aria-hidden="true">↓</span>
                 </a>
               </div>
             </article>
@@ -465,32 +468,31 @@
             <article class="resume-card reveal">
               <div class="resume-card-top">
                 <span class="resume-language-mark">DE</span>
-                <span class="resume-page-count">3 Seiten · PDF</span>
+                <span class="resume-page-count" data-i18n="resume.german.pageCount">3 pages · PDF</span>
               </div>
               <div>
-                <p class="resume-card-kicker">Deutsche Version</p>
-                <h3>Deutscher Lebenslauf</h3>
-                <p>Senior Frontend-Entwickler · React, Angular und TypeScript</p>
+                <p class="resume-card-kicker" data-i18n="resume.german.version">German version</p>
+                <h3 data-i18n="resume.german.title">German résumé</h3>
+                <p data-i18n="resume.role">Senior Frontend Engineer · React, Angular and TypeScript</p>
               </div>
               <div class="resume-card-actions">
                 <button
                   class="resume-view-button"
                   type="button"
                   data-resume-target="resume-dialog-pages-de"
-                  data-resume-title="Deutscher Lebenslauf"
-                  data-resume-meta="Deutsch · 3 Seiten"
+                  data-resume-title-key="resume.german.title"
+                  data-resume-meta-key="resume.german.meta"
                   data-resume-href="./assets/resume/sujeith-gopinath-resume-de.pdf"
-                  data-download-label="PDF herunterladen"
                   data-download-filename="Sujeith-Gopinath-Lebenslauf-DE.pdf"
                 >
-                  Lebenslauf ansehen <span aria-hidden="true">↗</span>
+                  <span data-i18n="resume.view">View résumé</span> <span aria-hidden="true">↗</span>
                 </button>
                 <a
                   class="resume-download-button"
                   href="./assets/resume/sujeith-gopinath-resume-de.pdf"
                   download="Sujeith-Gopinath-Lebenslauf-DE.pdf"
                 >
-                  PDF herunterladen <span aria-hidden="true">↓</span>
+                  <span data-i18n="resume.download">Download PDF</span> <span aria-hidden="true">↓</span>
                 </a>
               </div>
             </article>
@@ -502,11 +504,11 @@
         <div class="resume-dialog-shell">
           <header class="resume-dialog-header">
             <div>
-              <p id="resume-dialog-meta">English · 2 pages</p>
-              <h2 id="resume-dialog-title">English résumé</h2>
+              <p id="resume-dialog-meta" data-i18n="resume.english.meta">English · 2 pages</p>
+              <h2 id="resume-dialog-title" data-i18n="resume.english.title">English résumé</h2>
             </div>
             <button class="resume-dialog-close" id="resume-dialog-close" type="button">
-              Close / Schließen <span aria-hidden="true">×</span>
+              <span data-i18n="resume.close">Close</span> <span aria-hidden="true">×</span>
             </button>
           </header>
 
@@ -515,6 +517,7 @@
               <img
                 src="./assets/resume/previews/resume-en-page-1.jpg"
                 alt="English résumé, page 1 of 2"
+                data-i18n-alt="resume.english.page1Alt"
                 width="1192"
                 height="1684"
                 loading="lazy"
@@ -523,6 +526,7 @@
               <img
                 src="./assets/resume/previews/resume-en-page-2.jpg"
                 alt="English résumé, page 2 of 2"
+                data-i18n-alt="resume.english.page2Alt"
                 width="1192"
                 height="1684"
                 loading="lazy"
@@ -534,6 +538,7 @@
               <img
                 src="./assets/resume/previews/resume-de-page-1.jpg"
                 alt="German résumé, page 1 of 3"
+                data-i18n-alt="resume.german.page1Alt"
                 width="1192"
                 height="1684"
                 loading="lazy"
@@ -542,6 +547,7 @@
               <img
                 src="./assets/resume/previews/resume-de-page-2.jpg"
                 alt="German résumé, page 2 of 3"
+                data-i18n-alt="resume.german.page2Alt"
                 width="1192"
                 height="1684"
                 loading="lazy"
@@ -550,6 +556,7 @@
               <img
                 src="./assets/resume/previews/resume-de-page-3.jpg"
                 alt="German résumé, page 3 of 3"
+                data-i18n-alt="resume.german.page3Alt"
                 width="1192"
                 height="1684"
                 loading="lazy"
@@ -564,7 +571,7 @@
               href="./assets/resume/sujeith-gopinath-resume-en.pdf"
               download="Sujeith-Gopinath-Resume.pdf"
             >
-              Download PDF <span aria-hidden="true">↓</span>
+              <span data-i18n="resume.download">Download PDF</span> <span aria-hidden="true">↓</span>
             </a>
           </footer>
         </div>
@@ -572,8 +579,8 @@
 
       <section class="contact-section">
         <div class="shell contact-inner reveal">
-          <p class="eyebrow">Let’s build something useful</p>
-          <h2>Looking for a senior engineer who cares about the product as much as the code?</h2>
+          <p class="eyebrow" data-i18n="contact.eyebrow">Let’s build something useful</p>
+          <h2 data-i18n="contact.title">Looking for a senior engineer who cares about the product as much as the code?</h2>
           <div class="contact-actions">
             <a class="button button-light" href="mailto:sujithgnth@gmail.com">sujithgnth@gmail.com <span aria-hidden="true">↗</span></a>
             <div class="contact-links">
@@ -588,7 +595,7 @@
     <footer class="site-footer">
       <div class="shell">
         <p>© <span id="current-year">2026</span> Sujeith Gopinath</p>
-        <p>Senior Frontend Engineer · Dresden, Germany</p>
+        <p data-i18n="footer.role">Senior Frontend Engineer · Dresden, Germany</p>
       </div>
     </footer>
   </body>
