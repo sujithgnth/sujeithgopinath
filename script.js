@@ -49,35 +49,36 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
   revealItems.forEach((item) => observer.observe(item));
 }
 
-const resumeTabs = [...document.querySelectorAll(".resume-tab")];
-const resumePanels = [...document.querySelectorAll(".resume-pages")];
-const resumeOpenLink = document.querySelector("#resume-open-link");
-const resumeLanguageStatus = document.querySelector("#resume-language-status");
+const resumeDialog = document.querySelector("#resume-dialog");
+const resumeViewButtons = document.querySelectorAll(".resume-view-button");
+const resumeDialogPages = document.querySelectorAll(".resume-dialog-pages");
+const resumeDialogTitle = document.querySelector("#resume-dialog-title");
+const resumeDialogMeta = document.querySelector("#resume-dialog-meta");
+const resumeDialogClose = document.querySelector("#resume-dialog-close");
+const resumeDialogDownload = document.querySelector("#resume-dialog-download");
 
-function selectResume(tab) {
-  resumeTabs.forEach((item) => {
-    const isSelected = item === tab;
-    item.classList.toggle("is-active", isSelected);
-    item.setAttribute("aria-selected", String(isSelected));
-    item.tabIndex = isSelected ? 0 : -1;
+resumeViewButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    resumeDialogPages.forEach((pages) => {
+      pages.hidden = pages.id !== button.dataset.resumeTarget;
+    });
+
+    resumeDialogTitle.textContent = button.dataset.resumeTitle;
+    resumeDialogMeta.textContent = button.dataset.resumeMeta;
+    resumeDialogDownload.href = button.dataset.resumeHref;
+    resumeDialogDownload.download = button.dataset.downloadFilename;
+    resumeDialogDownload.textContent = `${button.dataset.downloadLabel} ↓`;
+
+    if (typeof resumeDialog.showModal === "function") {
+      resumeDialog.showModal();
+    } else {
+      resumeDialog.setAttribute("open", "");
+    }
   });
+});
 
-  resumePanels.forEach((panel) => {
-    panel.hidden = panel.id !== tab.dataset.resumeTarget;
-  });
+resumeDialogClose.addEventListener("click", () => resumeDialog.close());
 
-  resumeOpenLink.href = tab.dataset.resumeHref;
-  resumeLanguageStatus.textContent = tab.dataset.resumeLanguage;
-}
-
-resumeTabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => selectResume(tab));
-  tab.addEventListener("keydown", (event) => {
-    if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
-    event.preventDefault();
-    const direction = event.key === "ArrowRight" ? 1 : -1;
-    const nextIndex = (index + direction + resumeTabs.length) % resumeTabs.length;
-    resumeTabs[nextIndex].focus();
-    selectResume(resumeTabs[nextIndex]);
-  });
+resumeDialog.addEventListener("click", (event) => {
+  if (event.target === resumeDialog) resumeDialog.close();
 });

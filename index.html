@@ -415,71 +415,104 @@
         <div class="shell">
           <div class="section-heading reveal">
             <div>
-              <p class="eyebrow">Résumé</p>
-              <h2>The complete career story.</h2>
+              <p class="eyebrow">Résumé / Lebenslauf</p>
+              <h2>Choose the version you need.</h2>
             </div>
             <p>
-              Read my résumé directly here. Choose English or German—no download
-              required.
+              View my English or German résumé without leaving this page, or save a PDF
+              copy for later.
+              <span class="resume-translation">
+                Lebenslauf auf Englisch oder Deutsch direkt hier ansehen oder als PDF
+                speichern.
+              </span>
             </p>
           </div>
 
-          <div class="resume-toolbar reveal">
-            <div class="resume-tabs" role="tablist" aria-label="Résumé language">
-              <button
-                class="resume-tab is-active"
-                id="resume-tab-en"
-                type="button"
-                role="tab"
-                aria-controls="resume-pages-en"
-                aria-selected="true"
-                tabindex="0"
-                data-resume-target="resume-pages-en"
-                data-resume-href="./assets/resume/sujeith-gopinath-resume-en.pdf"
-                data-resume-language="English résumé, 2 pages"
-              >
-                <span>English</span>
-                <small>2 pages</small>
-              </button>
-              <button
-                class="resume-tab"
-                id="resume-tab-de"
-                type="button"
-                role="tab"
-                aria-controls="resume-pages-de"
-                aria-selected="false"
-                tabindex="-1"
-                data-resume-target="resume-pages-de"
-                data-resume-href="./assets/resume/sujeith-gopinath-resume-de.pdf"
-                data-resume-language="German résumé, 3 pages"
-              >
-                <span>Deutsch</span>
-                <small>3 Seiten</small>
-              </button>
-            </div>
+          <div class="resume-card-grid">
+            <article class="resume-card reveal">
+              <div class="resume-card-top">
+                <span class="resume-language-mark">EN</span>
+                <span class="resume-page-count">2 pages · PDF</span>
+              </div>
+              <div>
+                <p class="resume-card-kicker">English version</p>
+                <h3>English résumé</h3>
+                <p>Senior Frontend Engineer · React, Angular and TypeScript</p>
+              </div>
+              <div class="resume-card-actions">
+                <button
+                  class="resume-view-button"
+                  type="button"
+                  data-resume-target="resume-dialog-pages-en"
+                  data-resume-title="English résumé"
+                  data-resume-meta="English · 2 pages"
+                  data-resume-href="./assets/resume/sujeith-gopinath-resume-en.pdf"
+                  data-download-label="Download PDF"
+                  data-download-filename="Sujeith-Gopinath-Resume-EN.pdf"
+                >
+                  View résumé <span aria-hidden="true">↗</span>
+                </button>
+                <a
+                  class="resume-download-button"
+                  href="./assets/resume/sujeith-gopinath-resume-en.pdf"
+                  download="Sujeith-Gopinath-Resume-EN.pdf"
+                >
+                  Download PDF <span aria-hidden="true">↓</span>
+                </a>
+              </div>
+            </article>
 
-            <div class="resume-actions">
-              <span id="resume-language-status" aria-live="polite">English résumé, 2 pages</span>
-              <a
-                id="resume-open-link"
-                href="./assets/resume/sujeith-gopinath-resume-en.pdf"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Open full screen <span aria-hidden="true">↗</span>
-              </a>
-            </div>
+            <article class="resume-card reveal">
+              <div class="resume-card-top">
+                <span class="resume-language-mark">DE</span>
+                <span class="resume-page-count">3 Seiten · PDF</span>
+              </div>
+              <div>
+                <p class="resume-card-kicker">Deutsche Version</p>
+                <h3>Deutscher Lebenslauf</h3>
+                <p>Senior Frontend-Entwickler · React, Angular und TypeScript</p>
+              </div>
+              <div class="resume-card-actions">
+                <button
+                  class="resume-view-button"
+                  type="button"
+                  data-resume-target="resume-dialog-pages-de"
+                  data-resume-title="Deutscher Lebenslauf"
+                  data-resume-meta="Deutsch · 3 Seiten"
+                  data-resume-href="./assets/resume/sujeith-gopinath-resume-de.pdf"
+                  data-download-label="PDF herunterladen"
+                  data-download-filename="Sujeith-Gopinath-Lebenslauf-DE.pdf"
+                >
+                  Lebenslauf ansehen <span aria-hidden="true">↗</span>
+                </button>
+                <a
+                  class="resume-download-button"
+                  href="./assets/resume/sujeith-gopinath-resume-de.pdf"
+                  download="Sujeith-Gopinath-Lebenslauf-DE.pdf"
+                >
+                  PDF herunterladen <span aria-hidden="true">↓</span>
+                </a>
+              </div>
+            </article>
           </div>
+        </div>
+      </section>
 
-          <div class="resume-viewer reveal">
-            <div
-              class="resume-pages"
-              id="resume-pages-en"
-              role="tabpanel"
-              aria-labelledby="resume-tab-en"
-            >
+      <dialog class="resume-dialog" id="resume-dialog" aria-labelledby="resume-dialog-title">
+        <div class="resume-dialog-shell">
+          <header class="resume-dialog-header">
+            <div>
+              <p id="resume-dialog-meta">English · 2 pages</p>
+              <h2 id="resume-dialog-title">English résumé</h2>
+            </div>
+            <button class="resume-dialog-close" id="resume-dialog-close" type="button">
+              Close / Schließen <span aria-hidden="true">×</span>
+            </button>
+          </header>
+
+          <div class="resume-dialog-body">
+            <div class="resume-dialog-pages" id="resume-dialog-pages-en">
               <img
-                class="resume-page"
                 src="./assets/resume/previews/resume-en-page-1.jpg"
                 alt="English résumé, page 1 of 2"
                 width="1192"
@@ -488,7 +521,6 @@
                 decoding="async"
               />
               <img
-                class="resume-page"
                 src="./assets/resume/previews/resume-en-page-2.jpg"
                 alt="English résumé, page 2 of 2"
                 width="1192"
@@ -498,15 +530,8 @@
               />
             </div>
 
-            <div
-              class="resume-pages"
-              id="resume-pages-de"
-              role="tabpanel"
-              aria-labelledby="resume-tab-de"
-              hidden
-            >
+            <div class="resume-dialog-pages" id="resume-dialog-pages-de" hidden>
               <img
-                class="resume-page"
                 src="./assets/resume/previews/resume-de-page-1.jpg"
                 alt="German résumé, page 1 of 3"
                 width="1192"
@@ -515,7 +540,6 @@
                 decoding="async"
               />
               <img
-                class="resume-page"
                 src="./assets/resume/previews/resume-de-page-2.jpg"
                 alt="German résumé, page 2 of 3"
                 width="1192"
@@ -524,7 +548,6 @@
                 decoding="async"
               />
               <img
-                class="resume-page"
                 src="./assets/resume/previews/resume-de-page-3.jpg"
                 alt="German résumé, page 3 of 3"
                 width="1192"
@@ -534,8 +557,18 @@
               />
             </div>
           </div>
+
+          <footer class="resume-dialog-footer">
+            <a
+              id="resume-dialog-download"
+              href="./assets/resume/sujeith-gopinath-resume-en.pdf"
+              download="Sujeith-Gopinath-Resume.pdf"
+            >
+              Download PDF <span aria-hidden="true">↓</span>
+            </a>
+          </footer>
         </div>
-      </section>
+      </dialog>
 
       <section class="contact-section">
         <div class="shell contact-inner reveal">
