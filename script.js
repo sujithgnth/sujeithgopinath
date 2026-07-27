@@ -6,9 +6,8 @@ const translations = window.portfolioTranslations;
 const storedTheme = localStorage.getItem("portfolio-theme");
 const storedLanguage = localStorage.getItem("portfolio-language");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const browserLanguage = navigator.language.toLowerCase().startsWith("de") ? "de" : "en";
 let currentLanguage =
-  storedLanguage === "de" || storedLanguage === "en" ? storedLanguage : browserLanguage;
+  storedLanguage === "de" || storedLanguage === "en" ? storedLanguage : "de";
 let activeResumeButton = null;
 
 function translate(key) {
