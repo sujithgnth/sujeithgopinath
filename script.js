@@ -50,7 +50,7 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
 }
 
 const resumeTabs = [...document.querySelectorAll(".resume-tab")];
-const resumeFrame = document.querySelector("#resume-frame");
+const resumePanels = [...document.querySelectorAll(".resume-pages")];
 const resumeOpenLink = document.querySelector("#resume-open-link");
 const resumeLanguageStatus = document.querySelector("#resume-language-status");
 
@@ -62,9 +62,11 @@ function selectResume(tab) {
     item.tabIndex = isSelected ? 0 : -1;
   });
 
-  resumeFrame.src = tab.dataset.resumeSrc;
-  resumeFrame.title = tab.dataset.resumeTitle;
-  resumeOpenLink.href = tab.dataset.resumeSrc.split("#")[0];
+  resumePanels.forEach((panel) => {
+    panel.hidden = panel.id !== tab.dataset.resumeTarget;
+  });
+
+  resumeOpenLink.href = tab.dataset.resumeHref;
   resumeLanguageStatus.textContent = tab.dataset.resumeLanguage;
 }
 

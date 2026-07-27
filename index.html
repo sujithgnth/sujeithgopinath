@@ -431,11 +431,11 @@
                 id="resume-tab-en"
                 type="button"
                 role="tab"
-                aria-controls="resume-frame"
+                aria-controls="resume-pages-en"
                 aria-selected="true"
                 tabindex="0"
-                data-resume-src="./assets/resume/sujeith-gopinath-resume-en.pdf#view=FitH&amp;toolbar=1&amp;navpanes=0"
-                data-resume-title="Sujeith Gopinath’s résumé in English"
+                data-resume-target="resume-pages-en"
+                data-resume-href="./assets/resume/sujeith-gopinath-resume-en.pdf"
                 data-resume-language="English résumé, 2 pages"
               >
                 <span>English</span>
@@ -446,11 +446,11 @@
                 id="resume-tab-de"
                 type="button"
                 role="tab"
-                aria-controls="resume-frame"
+                aria-controls="resume-pages-de"
                 aria-selected="false"
                 tabindex="-1"
-                data-resume-src="./assets/resume/sujeith-gopinath-resume-de.pdf#view=FitH&amp;toolbar=1&amp;navpanes=0"
-                data-resume-title="Sujeith Gopinath’s résumé in German"
+                data-resume-target="resume-pages-de"
+                data-resume-href="./assets/resume/sujeith-gopinath-resume-de.pdf"
                 data-resume-language="German résumé, 3 pages"
               >
                 <span>Deutsch</span>
@@ -472,23 +472,68 @@
           </div>
 
           <div class="resume-viewer reveal">
-            <iframe
-              id="resume-frame"
-              name="resume-frame"
-              src="./assets/resume/sujeith-gopinath-resume-en.pdf#view=FitH&amp;toolbar=1&amp;navpanes=0"
-              title="Sujeith Gopinath’s résumé in English"
-              loading="lazy"
+            <div
+              class="resume-pages"
+              id="resume-pages-en"
+              role="tabpanel"
+              aria-labelledby="resume-tab-en"
             >
-              <p>
-                Your browser cannot display this PDF.
-                <a href="./assets/resume/sujeith-gopinath-resume-en.pdf">Open the English résumé</a>.
-              </p>
-            </iframe>
+              <img
+                class="resume-page"
+                src="./assets/resume/previews/resume-en-page-1.jpg"
+                alt="English résumé, page 1 of 2"
+                width="1192"
+                height="1684"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="resume-page"
+                src="./assets/resume/previews/resume-en-page-2.jpg"
+                alt="English résumé, page 2 of 2"
+                width="1192"
+                height="1684"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+
+            <div
+              class="resume-pages"
+              id="resume-pages-de"
+              role="tabpanel"
+              aria-labelledby="resume-tab-de"
+              hidden
+            >
+              <img
+                class="resume-page"
+                src="./assets/resume/previews/resume-de-page-1.jpg"
+                alt="German résumé, page 1 of 3"
+                width="1192"
+                height="1684"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="resume-page"
+                src="./assets/resume/previews/resume-de-page-2.jpg"
+                alt="German résumé, page 2 of 3"
+                width="1192"
+                height="1684"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                class="resume-page"
+                src="./assets/resume/previews/resume-de-page-3.jpg"
+                alt="German résumé, page 3 of 3"
+                width="1192"
+                height="1684"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
           </div>
-          <p class="resume-mobile-note">
-            If your mobile browser shows only the first page, use “Open full screen” to
-            read the complete résumé.
-          </p>
         </div>
       </section>
 

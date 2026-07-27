@@ -1266,26 +1266,31 @@ h3 {
 
 .resume-viewer {
   overflow: hidden;
+  padding: clamp(12px, 3vw, 36px);
   border: 1px solid var(--line);
   border-radius: var(--radius-medium);
-  background: #e7e7e7;
+  background: #d9d9d6;
   box-shadow: var(--shadow);
 }
 
-.resume-viewer iframe {
-  display: block;
-  width: 100%;
-  height: min(82vh, 980px);
-  min-height: 720px;
-  border: 0;
-  background: white;
+.resume-pages {
+  display: grid;
+  max-width: 920px;
+  gap: 28px;
+  margin-inline: auto;
 }
 
-.resume-mobile-note {
+.resume-pages[hidden] {
   display: none;
-  margin: 14px 4px 0;
-  color: var(--muted);
-  font-size: 11px;
+}
+
+.resume-page {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(23, 24, 21, 0.16);
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 14px 36px rgba(22, 23, 20, 0.14);
 }
 
 .contact-section {
@@ -1669,13 +1674,12 @@ h3 {
     justify-content: flex-end;
   }
 
-  .resume-viewer iframe {
-    height: 72vh;
-    min-height: 540px;
+  .resume-viewer {
+    padding: 8px;
   }
 
-  .resume-mobile-note {
-    display: block;
+  .resume-pages {
+    gap: 10px;
   }
 
   .contact-section h2 {
