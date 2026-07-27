@@ -1,10 +1,10 @@
 window.portfolioTranslations = {
   en: {
-    "meta.title": "Sujeith Gopinath — Senior Frontend Engineer",
+    "meta.title": "Sujeith Gopinath — Senior Frontend Engineer | Full-Stack JavaScript",
     "meta.description":
-      "Sujeith Gopinath is a Senior Frontend Engineer building fast, dependable products with React, Angular and TypeScript.",
+      "Sujeith Gopinath is a Senior Frontend Engineer and frontend-first Full-Stack JavaScript Developer building dependable products with Angular, React, TypeScript, Node.js and NestJS.",
     "meta.socialDescription":
-      "10+ years turning complex workflows into fast, dependable products.",
+      "10+ years building production products across frontend architecture, full-stack workflows, performance and testing.",
     "accessibility.skipToContent": "Skip to content",
     "accessibility.home": "Sujeith Gopinath, home",
     "accessibility.mainNavigation": "Main navigation",
@@ -25,15 +25,16 @@ window.portfolioTranslations = {
     "nav.approach": "Approach",
     "nav.resume": "Résumé",
     "nav.contact": "Let’s talk",
-    "hero.eyebrow": "Senior Frontend Engineer · Dresden, Germany",
+    "hero.eyebrow": "Senior Frontend Engineer · Frontend-first Full-Stack",
     "hero.title":
       "I turn complex workflows into <span>fast, dependable products.</span>",
     "hero.intro":
-      "For more than a decade, I’ve built and scaled production web applications across AI, robotics, logistics and food delivery—with React, Angular, TypeScript and a strong bias toward clear product thinking.",
+      "For more than a decade, I’ve built and scaled production web applications across AI, robotics, logistics and food delivery. I specialise in frontend architecture with Angular, React and TypeScript, and now deliver full-stack workflows with Node.js and NestJS.",
     "hero.explore": "Explore selected work",
     "hero.email": "Email me",
     "hero.available": "Available immediately",
-    "hero.workAuthorisation": "Permanent German work authorisation",
+    "hero.workAuthorisation":
+      "Permanent German work authorisation · no sponsorship required",
     "hero.location": "Based in Dresden",
     "hero.currentlyBuilding": "Currently building",
     "hero.currentProject": "AI-powered document review workflows",
@@ -43,7 +44,7 @@ window.portfolioTranslations = {
     "metrics.growthValue": "8× user growth",
     "metrics.growthLabel": "supported scale from 3k to 25k daily users",
     "metrics.deliveryValue": "End to end",
-    "metrics.deliveryLabel": "from architecture to release",
+    "metrics.deliveryLabel": "from UI and APIs to testing and release",
     "work.eyebrow": "Selected work",
     "work.title": "Products built for real operational complexity.",
     "work.intro":
@@ -53,15 +54,19 @@ window.portfolioTranslations = {
     "work.elevait.title":
       "Making human review feel clear, fast and trustworthy.",
     "work.elevait.description":
-      "I build frontend-heavy workflows for document verification, annotation and human review—connecting complex state, backend APIs and large visual assets into one coherent product experience.",
+      "I build frontend-heavy full-stack workflows for AI document processing, verification, annotation and human review—connecting complex state, backend services and large visual assets into one coherent product experience.",
     "work.elevait.point1":
-      "Owned Angular workflows across UI, API integration and state management",
+      "Built Angular and NgRx verification and annotation workflows across UI, API integration and review state",
     "work.elevait.point2":
-      "Improved review loading by serving compressed document previews",
+      "Delivered task-management workflows end to end across Angular and NestJS",
     "work.elevait.point3":
-      "Shaped architecture through reviews and reusable implementation patterns",
+      "Reduced image payloads by serving compressed document previews from S3-compatible storage",
     "work.elevait.point4":
-      "Protected critical journeys with Playwright regression coverage",
+      "Improved document listing and search through NestJS query handling, MongoDB indexing, filtering and pagination",
+    "work.elevait.point5":
+      "Set technical direction through architecture decisions, code reviews and reusable implementation patterns",
+    "work.elevait.point6":
+      "Protected critical review journeys with Playwright regression coverage",
     "work.elevait.visual.workspace": "Review workspace",
     "work.elevait.visual.suggestion": "AI SUGGESTION",
     "work.elevait.visual.verified": "Field verified",
@@ -78,6 +83,12 @@ window.portfolioTranslations = {
     "work.coboworx.before": "before",
     "work.coboworx.after": "after",
     "work.coboworx.measurement": "Measured application load time",
+    "work.coboworx.point1":
+      "Built reusable React components in Storybook and shared them through micro-frontend patterns",
+    "work.coboworx.point2":
+      "Developed role- and configuration-driven wrapper services for shared UI components",
+    "work.coboworx.point3":
+      "Coordinated delivery quality and implementation standards with an external frontend team",
     "work.coboworx.visual.start": "Start sequence",
     "work.coboworx.visual.move": "Move to position",
     "work.coboworx.visual.rotate": "Rotate joint · 45°",
@@ -86,14 +97,18 @@ window.portfolioTranslations = {
     "archive.title": "Interfaces used to run businesses at scale.",
     "archive.loadshare.title": "Modernising logistics operations",
     "archive.loadshare.description":
-      "Led frontend delivery for audit, cash-on-delivery and item-tracking workflows. Modernised a legacy product into a structured React and TypeScript single-page application.",
+      "As the primary frontend engineer, I delivered audit, cash-on-delivery and item-tracking workflows, modernised a legacy product into a React and TypeScript SPA, and introduced clearer state and API boundaries.",
     "archive.swiggy.title": "Scaling restaurant operations",
     "archive.swiggy.description":
-      "Built core order, menu and notification workflows as the vendor application grew from approximately 3,000 to 25,000 daily users.",
+      "As the primary frontend engineer, I built order, catalogue, discount, signup and notification workflows while daily usage grew from approximately 3,000 to 25,000 users.",
+    "archive.swiggy.point1":
+      "Developed Node.js and Express middleware APIs using GraphQL and Redis to integrate internal microservices",
+    "archive.swiggy.point2":
+      "Delivered Service Worker/PWA and Push API capabilities, worker-based polling, self-diagnostics and selected Android WebView features",
     "experience.eyebrow": "Experience",
     "experience.title": "A career built inside product teams.",
     "experience.intro":
-      "I have spent my career in startups and scale-ups, working close to users, product decisions and the systems behind the interface.",
+      "I have spent more than ten years in startups and scale-ups, growing from hands-on UI development to senior frontend ownership and frontend-first full-stack delivery.",
     "experience.now": "2023—Now",
     "experience.fullstackRole": "Full-Stack JavaScript Developer",
     "experience.seniorFrontendRole": "Senior Frontend Engineer",
@@ -105,24 +120,42 @@ window.portfolioTranslations = {
     "experience.loadshareDomain": "Logistics · React · TypeScript · Node.js",
     "experience.swiggyDomain": "Food delivery · React · GraphQL · PWA",
     "experience.pipemonkDomain":
-      "Cloud integration · AngularJS · JavaScript",
+      "Cloud integration · AngularJS · Bootstrap · Firebase",
+    "experience.educationLabel": "Education",
+    "experience.education":
+      "Bachelor of Engineering in Electronics and Communication",
+    "experience.languagesLabel": "Languages",
+    "experience.languages":
+      "English C1 · German A2 (B1 in progress) · Malayalam native",
+    "experience.languageNote":
+      "Professional English, actively improving German",
     "approach.eyebrow": "How I contribute",
     "approach.title": "Senior ownership, grounded in the details.",
     "approach.intro":
-      "I care about the quality users feel and the technical foundations teams depend on.",
+      "I combine deep frontend experience with the full-stack context needed to own a product path from user workflow to production.",
     "approach.product.title": "Product-minded delivery",
     "approach.product.description":
       "I translate real user workflows into clear interfaces and carry features from early decisions through polished release.",
     "approach.architecture.title": "Frontend architecture",
     "approach.architecture.description":
-      "I establish boundaries, reusable patterns and component systems that make the next feature easier to build.",
+      "I use clear state and API boundaries, Nx monorepos, reusable component systems and micro-frontend patterns to make change safer.",
     "approach.quality.title": "Performance & quality",
     "approach.quality.description":
-      "I measure bottlenecks, protect important paths with automated tests and treat real-world behaviour as part of the feature.",
-    "approach.collaboration.title": "Cross-stack collaboration",
+      "I measure bottlenecks, optimise real production paths and protect critical workflows with unit, integration and E2E tests.",
+    "approach.collaboration.title": "Technical direction, across the stack",
     "approach.collaboration.description":
-      "I work comfortably across APIs, state, data and delivery tooling so the whole product—not only the UI—works well.",
+      "I contribute architecture decisions, code reviews and delivery standards while coordinating closely with backend engineers and external teams.",
     "approach.toolkit": "Core toolkit",
+    "skills.frontend": "Frontend",
+    "skills.backendData": "Backend & data",
+    "skills.architectureDelivery": "Architecture & delivery",
+    "skills.testing": "Testing",
+    "skills.s3Storage": "S3-compatible storage",
+    "skills.nxMonorepos": "Nx monorepos",
+    "skills.microFrontends": "Micro frontends",
+    "skills.apiAbstraction": "API abstraction",
+    "skills.componentSystems": "Reusable component systems",
+    "skills.integrationE2E": "Integration & E2E testing",
     "resume.eyebrow": "Résumé",
     "resume.title": "Choose the version you need.",
     "resume.intro":
@@ -148,14 +181,15 @@ window.portfolioTranslations = {
     "contact.eyebrow": "Let’s build something useful",
     "contact.title":
       "Looking for a senior engineer who cares about the product as much as the code?",
-    "footer.role": "Senior Frontend Engineer · Dresden, Germany",
+    "footer.role":
+      "Senior Frontend Engineer · Full-Stack JavaScript · Dresden, Germany",
   },
   de: {
-    "meta.title": "Sujeith Gopinath — Senior Frontend-Entwickler",
+    "meta.title": "Sujeith Gopinath — Senior Frontend-Entwickler | Full-Stack JavaScript",
     "meta.description":
-      "Sujeith Gopinath ist Senior Frontend-Entwickler und entwickelt schnelle, zuverlässige Produkte mit React, Angular und TypeScript.",
+      "Sujeith Gopinath ist Senior Frontend-Entwickler mit Frontend-fokussierter Full-Stack-Erfahrung und entwickelt zuverlässige Produkte mit Angular, React, TypeScript, Node.js und NestJS.",
     "meta.socialDescription":
-      "Mehr als 10 Jahre Erfahrung darin, komplexe Abläufe in schnelle, zuverlässige Produkte zu verwandeln.",
+      "Mehr als 10 Jahre Erfahrung mit produktiver Software, Frontend-Architektur, Full-Stack-Workflows, Performance und Testing.",
     "accessibility.skipToContent": "Zum Inhalt springen",
     "accessibility.home": "Sujeith Gopinath, Startseite",
     "accessibility.mainNavigation": "Hauptnavigation",
@@ -180,16 +214,17 @@ window.portfolioTranslations = {
     "nav.approach": "Arbeitsweise",
     "nav.resume": "Lebenslauf",
     "nav.contact": "Kontakt",
-    "hero.eyebrow": "Senior Frontend-Entwickler · Dresden, Deutschland",
+    "hero.eyebrow":
+      "Senior Frontend-Entwickler · Frontend-fokussiertes Full-Stack-Profil",
     "hero.title":
       "Ich verwandle komplexe Abläufe in <span>schnelle, zuverlässige Produkte.</span>",
     "hero.intro":
-      "Seit mehr als zehn Jahren entwickle und skaliere ich produktive Webanwendungen in den Bereichen KI, Robotik, Logistik und Essenslieferung – mit React, Angular, TypeScript und einem klaren Blick für das Produkt.",
+      "Seit mehr als zehn Jahren entwickle und skaliere ich produktive Webanwendungen in den Bereichen KI, Robotik, Logistik und Essenslieferung. Mein Schwerpunkt liegt auf Frontend-Architektur mit Angular, React und TypeScript; heute realisiere ich zudem Full-Stack-Workflows mit Node.js und NestJS.",
     "hero.explore": "Ausgewählte Projekte",
     "hero.email": "E-Mail schreiben",
     "hero.available": "Ab sofort verfügbar",
     "hero.workAuthorisation":
-      "Unbefristete Arbeitserlaubnis für Deutschland",
+      "Unbefristete Arbeitserlaubnis · kein Visumssponsoring erforderlich",
     "hero.location": "In Dresden zuhause",
     "hero.currentlyBuilding": "Aktuell entwickle ich",
     "hero.currentProject": "KI-gestützte Workflows für die Dokumentenprüfung",
@@ -200,7 +235,7 @@ window.portfolioTranslations = {
     "metrics.growthLabel":
       "Skalierung von 3.000 auf 25.000 tägliche Nutzer begleitet",
     "metrics.deliveryValue": "End-to-End",
-    "metrics.deliveryLabel": "von der Architektur bis zum Release",
+    "metrics.deliveryLabel": "von UI und APIs bis Testing und Release",
     "work.eyebrow": "Ausgewählte Projekte",
     "work.title": "Produkte für echte operative Komplexität.",
     "work.intro":
@@ -210,15 +245,19 @@ window.portfolioTranslations = {
     "work.elevait.title":
       "Menschliche Prüfung klar, schnell und verlässlich gestalten.",
     "work.elevait.description":
-      "Ich entwickle Frontend-lastige Workflows für Dokumentenprüfung, Annotation und manuelle Überprüfung. Dabei verbinde ich komplexe Zustände, Backend-APIs und große visuelle Datenmengen zu einem konsistenten Produkterlebnis.",
+      "Ich entwickle Frontend-lastige Full-Stack-Workflows für KI-Dokumentenverarbeitung, Verifizierung, Annotation und manuelle Überprüfung. Dabei verbinde ich komplexe Zustände, Backend-Dienste und große visuelle Datenmengen zu einem konsistenten Produkterlebnis.",
     "work.elevait.point1":
-      "Angular-Workflows für UI, API-Integration und State-Management verantwortet",
+      "Angular- und NgRx-Workflows für Verifizierung und Annotation über UI, API-Integration und Prüfstatus hinweg entwickelt",
     "work.elevait.point2":
-      "Ladezeiten der Prüfung durch komprimierte Dokumentenvorschauen verbessert",
+      "Aufgabenverwaltungs-Workflows End-to-End mit Angular und NestJS umgesetzt",
     "work.elevait.point3":
-      "Architektur durch Code-Reviews und wiederverwendbare Implementierungsmuster mitgestaltet",
+      "Bilddatenmengen durch komprimierte Dokumentenvorschauen aus S3-kompatiblem Speicher reduziert",
     "work.elevait.point4":
-      "Kritische Abläufe mit Playwright-Regressionstests abgesichert",
+      "Dokumentenlisten und -suche durch NestJS-Abfragen, MongoDB-Indizes, Filterung und Paginierung verbessert",
+    "work.elevait.point5":
+      "Technische Richtung durch Architekturentscheidungen, Code-Reviews und wiederverwendbare Implementierungsmuster mitbestimmt",
+    "work.elevait.point6":
+      "Kritische Prüfabläufe mit Playwright-Regressionstests abgesichert",
     "work.elevait.visual.workspace": "Prüfbereich",
     "work.elevait.visual.suggestion": "KI-VORSCHLAG",
     "work.elevait.visual.verified": "Feld bestätigt",
@@ -235,6 +274,12 @@ window.portfolioTranslations = {
     "work.coboworx.before": "vorher",
     "work.coboworx.after": "nachher",
     "work.coboworx.measurement": "Gemessene Ladezeit der Anwendung",
+    "work.coboworx.point1":
+      "Wiederverwendbare React-Komponenten in Storybook entwickelt und über Micro-Frontend-Muster geteilt",
+    "work.coboworx.point2":
+      "Rollen- und konfigurationsgesteuerte Wrapper-Services für gemeinsame UI-Komponenten entwickelt",
+    "work.coboworx.point3":
+      "Lieferqualität und Implementierungsstandards mit einem externen Frontend-Team koordiniert",
     "work.coboworx.visual.start": "Sequenz starten",
     "work.coboworx.visual.move": "Zur Position bewegen",
     "work.coboworx.visual.rotate": "Gelenk drehen · 45°",
@@ -243,14 +288,18 @@ window.portfolioTranslations = {
     "archive.title": "Oberflächen, mit denen Unternehmen im großen Maßstab arbeiten.",
     "archive.loadshare.title": "Logistikprozesse modernisieren",
     "archive.loadshare.description":
-      "Frontend-Umsetzung für Prüf-, Nachnahme- und Sendungsverfolgungsprozesse geleitet. Ein Legacy-Produkt zu einer strukturierten Single-Page-Anwendung mit React und TypeScript modernisiert.",
+      "Als verantwortlicher Frontend-Entwickler realisierte ich Prüf-, Nachnahme- und Sendungsverfolgungsprozesse, modernisierte ein Legacy-Produkt zu einer React- und TypeScript-SPA und führte klarere State- und API-Grenzen ein.",
     "archive.swiggy.title": "Restaurantprozesse skalieren",
     "archive.swiggy.description":
-      "Zentrale Bestell-, Menü- und Benachrichtigungsprozesse entwickelt, während die Partneranwendung von rund 3.000 auf 25.000 tägliche Nutzer wuchs.",
+      "Als verantwortlicher Frontend-Entwickler realisierte ich Bestell-, Katalog-, Rabatt-, Registrierungs- und Benachrichtigungsprozesse, während die tägliche Nutzung von rund 3.000 auf 25.000 Nutzer stieg.",
+    "archive.swiggy.point1":
+      "Node.js- und Express-Middleware-APIs mit GraphQL und Redis zur Integration interner Microservices entwickelt",
+    "archive.swiggy.point2":
+      "Service Worker/PWA und Push API, Worker-basiertes Polling, Selbstdiagnosen und ausgewählte Android-WebView-Funktionen umgesetzt",
     "experience.eyebrow": "Erfahrung",
     "experience.title": "Eine Laufbahn in Produktteams.",
     "experience.intro":
-      "Meine gesamte Laufbahn verbrachte ich in Start-ups und Scale-ups – nah an Nutzern, Produktentscheidungen und den Systemen hinter der Oberfläche.",
+      "Seit mehr als zehn Jahren arbeite ich in Start-ups und Scale-ups – von der UI-Entwicklung über Senior-Frontend-Verantwortung bis zur Frontend-fokussierten Full-Stack-Umsetzung.",
     "experience.now": "2023—Heute",
     "experience.fullstackRole": "Full-Stack-JavaScript-Entwickler",
     "experience.seniorFrontendRole": "Senior Frontend-Entwickler",
@@ -262,24 +311,43 @@ window.portfolioTranslations = {
     "experience.loadshareDomain": "Logistik · React · TypeScript · Node.js",
     "experience.swiggyDomain": "Essenslieferung · React · GraphQL · PWA",
     "experience.pipemonkDomain":
-      "Cloud-Integration · AngularJS · JavaScript",
+      "Cloud-Integration · AngularJS · Bootstrap · Firebase",
+    "experience.educationLabel": "Studium",
+    "experience.education":
+      "Bachelor of Engineering in Electronics and Communication",
+    "experience.languagesLabel": "Sprachen",
+    "experience.languages":
+      "Englisch C1 · Deutsch A2 (B1 in Arbeit) · Malayalam Muttersprache",
+    "experience.languageNote":
+      "Professionelles Englisch, Deutschkenntnisse im aktiven Aufbau",
     "approach.eyebrow": "Mein Beitrag",
     "approach.title": "Senior-Verantwortung mit Blick fürs Detail.",
     "approach.intro":
-      "Mir sind sowohl die Qualität, die Nutzer erleben, als auch die technischen Grundlagen wichtig, auf die Teams bauen.",
+      "Ich verbinde tiefe Frontend-Erfahrung mit dem Full-Stack-Kontext, der nötig ist, um den Weg vom Nutzerablauf bis zur Produktion zu verantworten.",
     "approach.product.title": "Produktorientierte Umsetzung",
     "approach.product.description":
       "Ich übersetze reale Nutzerabläufe in klare Oberflächen und begleite Funktionen von der ersten Entscheidung bis zum ausgereiften Release.",
     "approach.architecture.title": "Frontend-Architektur",
     "approach.architecture.description":
-      "Ich schaffe klare Grenzen, wiederverwendbare Muster und Komponentensysteme, die die Entwicklung der nächsten Funktion erleichtern.",
+      "Mit klaren State- und API-Grenzen, Nx-Monorepos, wiederverwendbaren Komponentensystemen und Micro-Frontend-Mustern mache ich Änderungen sicherer.",
     "approach.quality.title": "Performance & Qualität",
     "approach.quality.description":
-      "Ich messe Engpässe, sichere wichtige Abläufe mit automatisierten Tests ab und behandle das Verhalten unter realen Bedingungen als Teil der Funktion.",
-    "approach.collaboration.title": "Zusammenarbeit über den Stack hinweg",
+      "Ich messe Engpässe, optimiere reale Produktionsabläufe und sichere kritische Workflows mit Unit-, Integrations- und E2E-Tests ab.",
+    "approach.collaboration.title":
+      "Technische Richtung über den Stack hinweg",
     "approach.collaboration.description":
-      "Ich arbeite sicher mit APIs, State, Daten und Delivery-Tooling, damit das gesamte Produkt – nicht nur die UI – zuverlässig funktioniert.",
+      "Ich gestalte Architekturentscheidungen, Code-Reviews und Lieferstandards mit und koordiniere mich eng mit Backend-Entwicklern und externen Teams.",
     "approach.toolkit": "Zentrale Technologien",
+    "skills.frontend": "Frontend",
+    "skills.backendData": "Backend & Daten",
+    "skills.architectureDelivery": "Architektur & Delivery",
+    "skills.testing": "Testing",
+    "skills.s3Storage": "S3-kompatibler Speicher",
+    "skills.nxMonorepos": "Nx-Monorepos",
+    "skills.microFrontends": "Micro Frontends",
+    "skills.apiAbstraction": "API-Abstraktion",
+    "skills.componentSystems": "Wiederverwendbare Komponentensysteme",
+    "skills.integrationE2E": "Integrations- & E2E-Tests",
     "resume.eyebrow": "Lebenslauf",
     "resume.title": "Wählen Sie die passende Version.",
     "resume.intro":
@@ -305,6 +373,7 @@ window.portfolioTranslations = {
     "contact.eyebrow": "Lassen Sie uns etwas Nützliches entwickeln",
     "contact.title":
       "Sie suchen einen Senior Engineer, dem das Produkt genauso wichtig ist wie der Code?",
-    "footer.role": "Senior Frontend-Entwickler · Dresden, Deutschland",
+    "footer.role":
+      "Senior Frontend-Entwickler · Full-Stack JavaScript · Dresden, Deutschland",
   },
 };
