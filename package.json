@@ -1,16 +1,14 @@
 {
-  "name": "sujithnath",
+  "name": "sujeithgopinath",
   "version": "1.0.0",
   "description": "sujith gopinath portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:prod": "npx webpack --config ./webpack/webpack.prod.js",
-    "prod:push": "git add . && git commit -m 'potfolio changes' && git push"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sujithnath/sujithnath.git"
+    "url": "git+https://github.com/sujithgnth/sujeithgopinath.git"
   },
   "keywords": [
     "\"css\"",
@@ -21,9 +19,9 @@
   "author": "sujith gopinath",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sujithnath/sujithnath/issues"
+    "url": "https://github.com/sujithgnth/sujeithgopinath/issues"
   },
-  "homepage": "https://github.com/sujithnath/sujithnath#readme",
+  "homepage": "https://sujithgnth.github.io/sujeithgopinath/",
   "devDependencies": {
     "html-webpack-plugin": "^4.3.0",
     "webpack": "^4.43.0",

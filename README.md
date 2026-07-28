@@ -1,3 +1,12 @@
-## SUJEITH GOPINATH PORTFOLIO
+# Sujeith Gopinath — Portfolio
 
-**[View Live Preview](https://sujithnath.github.io/sujithnath/)**
+One-page portfolio for Sujeith Gopinath, Senior Frontend Engineer.
+
+**[View the live portfolio](https://sujithgnth.github.io/sujeithgopinath/)**
+
+## Focus
+
+- React, Angular and TypeScript
+- Frontend architecture and reusable component systems
+- Product performance and automated testing
+- AI, robotics and operational web applications
