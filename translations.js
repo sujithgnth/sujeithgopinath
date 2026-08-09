@@ -1,10 +1,11 @@
 window.portfolioTranslations = {
   en: {
-    "meta.title": "Sujeith Gopinath — Senior Frontend Engineer | Full-Stack JavaScript",
+    "meta.title":
+      "Sujeith Gopinath — Senior Frontend / Full-stack TypeScript Engineer",
     "meta.description":
-      "Sujeith Gopinath is a Senior Frontend Engineer and frontend-first Full-Stack JavaScript Developer building dependable products with Angular, React, TypeScript, Node.js and NestJS.",
+      "Sujeith Gopinath is a Senior Frontend and Full-stack TypeScript Engineer building dependable products with Angular, React, Node.js and NestJS while growing toward hands-on Software Architecture.",
     "meta.socialDescription":
-      "10+ years building production products across frontend architecture, full-stack workflows, performance and testing.",
+      "10+ years building production products across frontend architecture, full-stack TypeScript workflows, performance and testing.",
     "accessibility.skipToContent": "Skip to content",
     "accessibility.home": "Sujeith Gopinath, home",
     "accessibility.mainNavigation": "Main navigation",
@@ -16,39 +17,46 @@ window.portfolioTranslations = {
     "accessibility.portrait": "Portrait of Sujeith Gopinath",
     "accessibility.careerHighlights": "Career highlights",
     "accessibility.technologies": "Technologies",
-    "accessibility.documentWorkflow": "Abstract document workflow illustration",
-    "accessibility.robotWorkflow": "Abstract robot workflow illustration",
+    "accessibility.documentWorkflow":
+      "Animated document annotation and review workflow",
+    "accessibility.robotWorkflow": "Animated robot motion workflow",
     "accessibility.loadshareImage": "LoadShare logistics operations interface",
     "accessibility.swiggyImage": "Swiggy restaurant order management interface",
+    "accessibility.loadshareWorkflow": "Animated LoadShare shipment workflow",
+    "accessibility.swiggyWorkflow":
+      "Animated Swiggy restaurant order and delivery workflow",
+    "accessibility.pauseMotion": "Pause animation",
+    "accessibility.playMotion": "Play animation",
     "nav.work": "Work",
     "nav.experience": "Experience",
     "nav.approach": "Approach",
     "nav.resume": "Résumé",
     "nav.contact": "Let’s talk",
-    "hero.eyebrow": "Senior Frontend Engineer · Frontend-first Full-Stack",
+    "hero.eyebrow": "Senior Frontend / Full-stack TypeScript Engineer",
     "hero.title":
       "I turn complex workflows into <span>fast, dependable products.</span>",
     "hero.intro":
-      "For more than a decade, I’ve built and scaled production web applications across AI, robotics, logistics and food delivery. I specialise in frontend architecture with Angular, React and TypeScript, and now deliver full-stack workflows with Node.js and NestJS.",
+      "For more than a decade, I’ve built production products across AI, robotics, logistics and food delivery. I combine deep frontend architecture with TypeScript APIs, data and testing—and I’m growing that end-to-end ownership toward hands-on Software Architecture.",
     "hero.explore": "Explore selected work",
     "hero.email": "Email me",
     "hero.available": "Available immediately",
     "hero.workAuthorisation":
       "Permanent German work authorisation · no sponsorship required",
     "hero.location": "Based in Dresden",
-    "hero.currentlyBuilding": "Currently building",
-    "hero.currentProject": "AI-powered document review workflows",
+    "hero.currentlyBuilding": "Career direction",
+    "hero.currentProject":
+      "Hands-on Software Architecture, grounded in delivery",
     "metrics.years": "years shipping production software",
     "metrics.loadValue": "66% lower",
     "metrics.loadLabel": "measured load time — from 5.0s to 1.7s",
     "metrics.growthValue": "8× user growth",
     "metrics.growthLabel": "supported scale from 3k to 25k daily users",
-    "metrics.deliveryValue": "End to end",
-    "metrics.deliveryLabel": "from UI and APIs to testing and release",
+    "metrics.deliveryValue": "Across the stack",
+    "metrics.deliveryLabel": "UI, APIs, data, testing and release",
     "work.eyebrow": "Selected work",
     "work.title": "Products built for real operational complexity.",
     "work.intro":
-      "A selection of problems I have owned—from AI-assisted review systems to interfaces controlling physical robots.",
+      "A selection of workflows I have owned—from AI-assisted review systems and physical robots to order and shipment operations.",
     "work.elevait.period": "Elevait · 2023–Present",
     "work.elevait.kicker": "AI document operations",
     "work.elevait.title":
@@ -93,6 +101,7 @@ window.portfolioTranslations = {
     "work.coboworx.visual.move": "Move to position",
     "work.coboworx.visual.rotate": "Rotate joint · 45°",
     "work.coboworx.visual.run": "Run motion",
+    "work.coboworx.visual.status": "Sequence running",
     "archive.eyebrow": "Earlier product work",
     "archive.title": "Interfaces used to run businesses at scale.",
     "archive.loadshare.title": "Modernising logistics operations",
@@ -105,6 +114,28 @@ window.portfolioTranslations = {
       "Developed Node.js and Express middleware APIs using GraphQL and Redis to integrate internal microservices",
     "archive.swiggy.point2":
       "Delivered Service Worker/PWA and Push API capabilities, worker-based polling, self-diagnostics and selected Android WebView features",
+    "archive.visual.live": "Live workflow",
+    "archive.loadshare.visual.workspace": "Shipment control",
+    "archive.loadshare.visual.active": "Active shipment",
+    "archive.loadshare.visual.route": "Pickup → hub → destination",
+    "archive.loadshare.visual.pickup": "Pickup",
+    "archive.loadshare.visual.hub": "Hub scan",
+    "archive.loadshare.visual.destination": "Destination",
+    "archive.loadshare.visual.audited": "Audit complete",
+    "archive.loadshare.visual.inTransit": "In transit",
+    "archive.loadshare.visual.cod": "COD tracked",
+    "archive.swiggy.visual.workspace": "Restaurant orders",
+    "archive.swiggy.visual.received": "Received",
+    "archive.swiggy.visual.preparing": "Preparing",
+    "archive.swiggy.visual.ready": "Ready",
+    "archive.swiggy.visual.order": "Order",
+    "archive.swiggy.visual.new": "New",
+    "archive.swiggy.visual.kitchen": "Kitchen",
+    "archive.swiggy.visual.active": "Active",
+    "archive.swiggy.visual.dispatch": "Dispatch",
+    "archive.swiggy.visual.restaurant": "Restaurant",
+    "archive.swiggy.visual.rider": "Delivery",
+    "archive.swiggy.visual.customer": "Customer",
     "experience.eyebrow": "Experience",
     "experience.title": "A career built inside product teams.",
     "experience.intro":
@@ -145,6 +176,19 @@ window.portfolioTranslations = {
     "approach.collaboration.title": "Technical direction, across the stack",
     "approach.collaboration.description":
       "I contribute architecture decisions, code reviews and delivery standards while coordinating closely with backend engineers and external teams.",
+    "approach.path.eyebrow": "Architecture trajectory",
+    "approach.path.title":
+      "Senior delivery today. Hands-on Software Architecture next.",
+    "approach.path.description":
+      "I am extending proven frontend and full-stack ownership into broader system design: clearer boundaries, explicit trade-offs, reliability, security and operational thinking.",
+    "approach.path.now": "Now",
+    "approach.path.nowTitle": "Full-stack TypeScript ownership",
+    "approach.path.nowDescription":
+      "User workflows, frontend architecture, APIs, data and automated tests.",
+    "approach.path.direction": "Direction",
+    "approach.path.directionTitle": "Hands-on Software Architecture",
+    "approach.path.directionDescription":
+      "System boundaries, failure modes, observability and maintainable evolution.",
     "approach.toolkit": "Core toolkit",
     "skills.frontend": "Frontend",
     "skills.backendData": "Backend & data",
@@ -173,8 +217,7 @@ window.portfolioTranslations = {
     "resume.german.page1Alt": "German résumé, page 1 of 3",
     "resume.german.page2Alt": "German résumé, page 2 of 3",
     "resume.german.page3Alt": "German résumé, page 3 of 3",
-    "resume.role":
-      "Senior Frontend Engineer · React, Angular and TypeScript",
+    "resume.role": "Senior Frontend / Full-stack TypeScript Engineer",
     "resume.view": "View résumé",
     "resume.download": "Download PDF",
     "resume.close": "Close",
@@ -182,14 +225,15 @@ window.portfolioTranslations = {
     "contact.title":
       "Looking for a senior engineer who cares about the product as much as the code?",
     "footer.role":
-      "Senior Frontend Engineer · Full-Stack JavaScript · Dresden, Germany",
+      "Senior Frontend / Full-stack TypeScript Engineer · Dresden, Germany",
   },
   de: {
-    "meta.title": "Sujeith Gopinath — Senior Frontend-Entwickler | Full-Stack JavaScript",
+    "meta.title":
+      "Sujeith Gopinath — Senior Frontend- / Full-Stack-TypeScript-Entwickler",
     "meta.description":
-      "Sujeith Gopinath ist Senior Frontend-Entwickler mit Frontend-fokussierter Full-Stack-Erfahrung und entwickelt zuverlässige Produkte mit Angular, React, TypeScript, Node.js und NestJS.",
+      "Sujeith Gopinath ist Senior Frontend- und Full-Stack-TypeScript-Entwickler. Er entwickelt zuverlässige Produkte mit Angular, React, Node.js und NestJS und wächst in Richtung praxisnaher Softwarearchitektur.",
     "meta.socialDescription":
-      "Mehr als 10 Jahre Erfahrung mit produktiver Software, Frontend-Architektur, Full-Stack-Workflows, Performance und Testing.",
+      "Mehr als 10 Jahre Erfahrung mit produktiver Software, Frontend-Architektur, Full-Stack-TypeScript-Workflows, Performance und Testing.",
     "accessibility.skipToContent": "Zum Inhalt springen",
     "accessibility.home": "Sujeith Gopinath, Startseite",
     "accessibility.mainNavigation": "Hauptnavigation",
@@ -202,44 +246,51 @@ window.portfolioTranslations = {
     "accessibility.careerHighlights": "Karriere-Highlights",
     "accessibility.technologies": "Technologien",
     "accessibility.documentWorkflow":
-      "Abstrakte Darstellung eines Workflows zur Dokumentenprüfung",
+      "Animierter Workflow für Dokumentenannotation und -prüfung",
     "accessibility.robotWorkflow":
-      "Abstrakte Darstellung eines Workflows zur Robotersteuerung",
+      "Animierter Workflow zur Robotersteuerung",
     "accessibility.loadshareImage":
       "Benutzeroberfläche für Logistikprozesse bei LoadShare",
     "accessibility.swiggyImage":
       "Benutzeroberfläche für die Bestellverwaltung bei Swiggy",
+    "accessibility.loadshareWorkflow":
+      "Animierter LoadShare-Workflow für Sendungen",
+    "accessibility.swiggyWorkflow":
+      "Animierter Swiggy-Workflow für Bestellung und Lieferung",
+    "accessibility.pauseMotion": "Animation pausieren",
+    "accessibility.playMotion": "Animation abspielen",
     "nav.work": "Projekte",
     "nav.experience": "Erfahrung",
     "nav.approach": "Arbeitsweise",
     "nav.resume": "Lebenslauf",
     "nav.contact": "Kontakt",
     "hero.eyebrow":
-      "Senior Frontend-Entwickler · Frontend-fokussiertes Full-Stack-Profil",
+      "Senior Frontend- / Full-Stack-TypeScript-Entwickler",
     "hero.title":
       "Ich verwandle komplexe Abläufe in <span>schnelle, zuverlässige Produkte.</span>",
     "hero.intro":
-      "Seit mehr als zehn Jahren entwickle und skaliere ich produktive Webanwendungen in den Bereichen KI, Robotik, Logistik und Essenslieferung. Mein Schwerpunkt liegt auf Frontend-Architektur mit Angular, React und TypeScript; heute realisiere ich zudem Full-Stack-Workflows mit Node.js und NestJS.",
+      "Seit mehr als zehn Jahren entwickle ich produktive Anwendungen in den Bereichen KI, Robotik, Logistik und Essenslieferung. Ich verbinde tiefgehende Frontend-Architektur mit TypeScript-APIs, Daten und Testing und entwickle diese End-to-End-Verantwortung in Richtung praxisnaher Softwarearchitektur weiter.",
     "hero.explore": "Ausgewählte Projekte",
     "hero.email": "E-Mail schreiben",
     "hero.available": "Ab sofort verfügbar",
     "hero.workAuthorisation":
       "Unbefristete Arbeitserlaubnis · kein Visumssponsoring erforderlich",
     "hero.location": "In Dresden zuhause",
-    "hero.currentlyBuilding": "Aktuell entwickle ich",
-    "hero.currentProject": "KI-gestützte Workflows für die Dokumentenprüfung",
+    "hero.currentlyBuilding": "Berufliche Richtung",
+    "hero.currentProject":
+      "Praxisnahe Softwarearchitektur, fest verankert in der Umsetzung",
     "metrics.years": "Jahre Erfahrung mit produktiver Software",
     "metrics.loadValue": "66 % weniger",
     "metrics.loadLabel": "gemessene Ladezeit – von 5,0 s auf 1,7 s",
     "metrics.growthValue": "8× Nutzerwachstum",
     "metrics.growthLabel":
       "Skalierung von 3.000 auf 25.000 tägliche Nutzer begleitet",
-    "metrics.deliveryValue": "End-to-End",
-    "metrics.deliveryLabel": "von UI und APIs bis Testing und Release",
+    "metrics.deliveryValue": "Über den gesamten Stack",
+    "metrics.deliveryLabel": "UI, APIs, Daten, Testing und Release",
     "work.eyebrow": "Ausgewählte Projekte",
     "work.title": "Produkte für echte operative Komplexität.",
     "work.intro":
-      "Eine Auswahl von Herausforderungen, die ich verantwortet habe – von KI-gestützten Prüfsystemen bis zu Oberflächen zur Steuerung physischer Roboter.",
+      "Eine Auswahl von Workflows, die ich verantwortet habe – von KI-gestützten Prüfsystemen und physischen Robotern bis zu Bestell- und Sendungsprozessen.",
     "work.elevait.period": "Elevait · 2023–Heute",
     "work.elevait.kicker": "KI-gestützte Dokumentenprozesse",
     "work.elevait.title":
@@ -284,6 +335,7 @@ window.portfolioTranslations = {
     "work.coboworx.visual.move": "Zur Position bewegen",
     "work.coboworx.visual.rotate": "Gelenk drehen · 45°",
     "work.coboworx.visual.run": "Bewegung ausführen",
+    "work.coboworx.visual.status": "Sequenz läuft",
     "archive.eyebrow": "Frühere Produktarbeit",
     "archive.title": "Oberflächen, mit denen Unternehmen im großen Maßstab arbeiten.",
     "archive.loadshare.title": "Logistikprozesse modernisieren",
@@ -296,6 +348,28 @@ window.portfolioTranslations = {
       "Node.js- und Express-Middleware-APIs mit GraphQL und Redis zur Integration interner Microservices entwickelt",
     "archive.swiggy.point2":
       "Service Worker/PWA und Push API, Worker-basiertes Polling, Selbstdiagnosen und ausgewählte Android-WebView-Funktionen umgesetzt",
+    "archive.visual.live": "Live-Workflow",
+    "archive.loadshare.visual.workspace": "Sendungssteuerung",
+    "archive.loadshare.visual.active": "Aktive Sendung",
+    "archive.loadshare.visual.route": "Abholung → Hub → Ziel",
+    "archive.loadshare.visual.pickup": "Abholung",
+    "archive.loadshare.visual.hub": "Hub-Scan",
+    "archive.loadshare.visual.destination": "Ziel",
+    "archive.loadshare.visual.audited": "Prüfung abgeschlossen",
+    "archive.loadshare.visual.inTransit": "Unterwegs",
+    "archive.loadshare.visual.cod": "Nachnahme erfasst",
+    "archive.swiggy.visual.workspace": "Restaurantbestellungen",
+    "archive.swiggy.visual.received": "Eingegangen",
+    "archive.swiggy.visual.preparing": "In Zubereitung",
+    "archive.swiggy.visual.ready": "Bereit",
+    "archive.swiggy.visual.order": "Bestellung",
+    "archive.swiggy.visual.new": "Neu",
+    "archive.swiggy.visual.kitchen": "Küche",
+    "archive.swiggy.visual.active": "Aktiv",
+    "archive.swiggy.visual.dispatch": "Übergabe",
+    "archive.swiggy.visual.restaurant": "Restaurant",
+    "archive.swiggy.visual.rider": "Lieferung",
+    "archive.swiggy.visual.customer": "Kunde",
     "experience.eyebrow": "Erfahrung",
     "experience.title": "Eine Laufbahn in Produktteams.",
     "experience.intro":
@@ -337,6 +411,19 @@ window.portfolioTranslations = {
       "Technische Richtung über den Stack hinweg",
     "approach.collaboration.description":
       "Ich gestalte Architekturentscheidungen, Code-Reviews und Lieferstandards mit und koordiniere mich eng mit Backend-Entwicklern und externen Teams.",
+    "approach.path.eyebrow": "Architekturentwicklung",
+    "approach.path.title":
+      "Heute Senior-Verantwortung. Als Nächstes praxisnahe Softwarearchitektur.",
+    "approach.path.description":
+      "Ich erweitere bewährte Frontend- und Full-Stack-Verantwortung um breiteres Systemdesign: klare Grenzen, bewusste Trade-offs, Zuverlässigkeit, Sicherheit und Betriebsfähigkeit.",
+    "approach.path.now": "Heute",
+    "approach.path.nowTitle": "Full-Stack-TypeScript-Verantwortung",
+    "approach.path.nowDescription":
+      "Nutzerabläufe, Frontend-Architektur, APIs, Daten und automatisierte Tests.",
+    "approach.path.direction": "Richtung",
+    "approach.path.directionTitle": "Praxisnahe Softwarearchitektur",
+    "approach.path.directionDescription":
+      "Systemgrenzen, Fehlerszenarien, Observability und wartbare Weiterentwicklung.",
     "approach.toolkit": "Zentrale Technologien",
     "skills.frontend": "Frontend",
     "skills.backendData": "Backend & Daten",
@@ -366,7 +453,7 @@ window.portfolioTranslations = {
     "resume.german.page2Alt": "Deutscher Lebenslauf, Seite 2 von 3",
     "resume.german.page3Alt": "Deutscher Lebenslauf, Seite 3 von 3",
     "resume.role":
-      "Senior Frontend-Entwickler · React, Angular und TypeScript",
+      "Senior Frontend- / Full-Stack-TypeScript-Entwickler",
     "resume.view": "Lebenslauf ansehen",
     "resume.download": "PDF herunterladen",
     "resume.close": "Schließen",
@@ -374,6 +461,6 @@ window.portfolioTranslations = {
     "contact.title":
       "Sie suchen einen Senior Engineer, dem das Produkt genauso wichtig ist wie der Code?",
     "footer.role":
-      "Senior Frontend-Entwickler · Full-Stack JavaScript · Dresden, Deutschland",
+      "Senior Frontend- / Full-Stack-TypeScript-Entwickler · Dresden, Deutschland",
   },
 };

@@ -2,16 +2,32 @@ const root = document.documentElement;
 const themeToggle = document.querySelector(".theme-toggle");
 const themeColor = document.querySelector('meta[name="theme-color"]');
 const languageButtons = document.querySelectorAll(".language-button");
+const motionScenes = document.querySelectorAll("[data-motion-scene]");
+const motionToggles = document.querySelectorAll("[data-motion-toggle]");
 const translations = window.portfolioTranslations;
 const storedTheme = localStorage.getItem("portfolio-theme");
 const storedLanguage = localStorage.getItem("portfolio-language");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 let currentLanguage =
   storedLanguage === "de" || storedLanguage === "en" ? storedLanguage : "de";
 let activeResumeButton = null;
 
 function translate(key) {
   return translations[currentLanguage]?.[key] ?? translations.en[key] ?? key;
+}
+
+function syncMotionToggle(button) {
+  const scene = button.closest("[data-motion-scene]");
+  const isPaused = scene?.dataset.motionState === "paused";
+  const label = translate(
+    isPaused ? "accessibility.playMotion" : "accessibility.pauseMotion",
+  );
+
+  button.setAttribute("aria-label", label);
+  button.setAttribute("aria-pressed", String(isPaused));
+  button.querySelector("[data-motion-toggle-label]").textContent = label;
+  button.querySelector(".motion-toggle-icon").textContent = isPaused ? "▶" : "Ⅱ";
 }
 
 function applyTheme(theme) {
@@ -78,6 +94,7 @@ function applyLanguage(language) {
     .setAttribute("content", translate("meta.socialDescription"));
 
   applyTheme(root.dataset.theme);
+  motionToggles.forEach(syncMotionToggle);
   localStorage.setItem("portfolio-language", currentLanguage);
 
   if (activeResumeButton) syncResumeDialog(activeResumeButton);
@@ -98,7 +115,6 @@ window.addEventListener("scroll", updateHeader, { passive: true });
 document.querySelector("#current-year").textContent = new Date().getFullYear();
 
 const revealItems = document.querySelectorAll(".reveal");
-const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 if (reducedMotion || !("IntersectionObserver" in window)) {
   revealItems.forEach((item) => item.classList.add("is-visible"));
@@ -115,6 +131,37 @@ if (reducedMotion || !("IntersectionObserver" in window)) {
   );
 
   revealItems.forEach((item) => observer.observe(item));
+}
+
+motionToggles.forEach((button) => {
+  if (reducedMotion) {
+    button.hidden = true;
+    return;
+  }
+
+  button.addEventListener("click", () => {
+    const scene = button.closest("[data-motion-scene]");
+    scene.dataset.motionState =
+      scene.dataset.motionState === "paused" ? "running" : "paused";
+    syncMotionToggle(button);
+  });
+});
+
+if (reducedMotion || !("IntersectionObserver" in window)) {
+  motionScenes.forEach((scene) => {
+    scene.dataset.inView = reducedMotion ? "false" : "true";
+  });
+} else {
+  const motionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.dataset.inView = String(entry.isIntersecting);
+      });
+    },
+    { rootMargin: "12% 0px 12% 0px", threshold: 0.12 },
+  );
+
+  motionScenes.forEach((scene) => motionObserver.observe(scene));
 }
 
 const resumeDialog = document.querySelector("#resume-dialog");

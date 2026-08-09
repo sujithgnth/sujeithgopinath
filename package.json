@@ -1,10 +1,11 @@
 {
   "name": "sujeithgopinath",
   "version": "1.0.0",
-  "description": "sujith gopinath portfolio",
+  "description": "Sujeith Gopinath portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "node --check script.js && node --check translations.js && node --check tests/portfolio.test.js",
+    "test": "node --test tests/portfolio.test.js"
   },
   "repository": {
     "type": "git",
