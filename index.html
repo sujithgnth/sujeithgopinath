@@ -37,7 +37,7 @@
     <link rel="sitemap" type="application/xml" href="https://sujithgnth.github.io/sujeithgopinath/sitemap.xml" />
     <title>Senior Frontend Engineer in Dresden | Sujeith Gopinath</title>
     <link rel="preload" href="./src/portfolio/assets/sujeith-cartoon.jpg" as="image" type="image/jpeg" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=20260810.2" />
     <script type="application/ld+json" id="profile-structured-data">
       {
         "@context": "https://schema.org",
@@ -76,8 +76,8 @@
         }
       }
     </script>
-    <script src="./translations.js" defer></script>
-    <script src="./script.js" defer></script>
+    <script src="./translations.js?v=20260810.2" defer></script>
+    <script src="./script.js?v=20260810.2" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content" data-i18n="accessibility.skipToContent">Skip to content</a>
@@ -575,8 +575,8 @@
         </div>
 
         <div class="archive-heading reveal">
-          <p class="eyebrow" data-i18n="archive.eyebrow">Earlier product work</p>
-          <h3 data-i18n="archive.title">Interfaces used to run businesses at scale.</h3>
+          <p class="eyebrow" data-i18n="archive.eyebrow">Product ownership at scale</p>
+          <h3 data-i18n="archive.title">Critical workflows scaled, modernised and operated.</h3>
         </div>
 
         <div class="archive-grid">
@@ -594,20 +594,18 @@
               <div class="shipment-workspace">
                 <div class="shipment-summary">
                   <small data-i18n="archive.loadshare.visual.active">Active shipment</small>
-                  <strong data-i18n="archive.loadshare.visual.route">Pickup → hub → destination</strong>
+                  <strong data-i18n="archive.loadshare.visual.network">Live shipment network</strong>
                 </div>
-                <div class="route-flow" aria-hidden="true">
-                  <span class="route-line"></span>
-                  <span class="route-progress"></span>
-                  <span class="route-node route-node-one"><i></i></span>
-                  <span class="route-node route-node-two"><i></i></span>
-                  <span class="route-node route-node-three"><i></i></span>
-                  <span class="shipment-package">◆</span>
-                </div>
-                <div class="route-labels">
-                  <span data-i18n="archive.loadshare.visual.pickup">Pickup</span>
-                  <span data-i18n="archive.loadshare.visual.hub">Hub scan</span>
-                  <span data-i18n="archive.loadshare.visual.destination">Destination</span>
+                <div class="shipment-network" aria-hidden="true">
+                  <svg class="network-routes" viewBox="0 0 520 170" preserveAspectRatio="none">
+                    <path class="network-route-base" pathLength="1" d="M42 116 C132 116 150 78 255 84 S390 40 478 48 M255 84 C330 102 372 126 458 132" />
+                    <path class="network-route-live" pathLength="1" d="M42 116 C132 116 150 78 255 84 S390 40 478 48 M255 84 C330 102 372 126 458 132" />
+                  </svg>
+                  <span class="network-hub network-pickup"><i>01</i><b data-i18n="archive.loadshare.visual.pickup">Pickup</b></span>
+                  <span class="network-hub network-scan"><i>02</i><b data-i18n="archive.loadshare.visual.hub">Hub scan</b></span>
+                  <span class="network-hub network-destination"><i>03</i><b data-i18n="archive.loadshare.visual.destination">Destination</b></span>
+                  <span class="network-hub network-audit"><i>✓</i><b data-i18n="archive.loadshare.visual.auditNode">Audit</b></span>
+                  <span class="network-package">◆</span>
                 </div>
                 <div class="shipment-events">
                   <span><i aria-hidden="true">✓</i><b data-i18n="archive.loadshare.visual.audited">Audit complete</b></span>
@@ -621,7 +619,7 @@
                 <span>LoadShare Network</span>
                 <span>2018–2022</span>
               </div>
-              <h3 data-i18n="archive.loadshare.title">Modernising logistics operations</h3>
+              <h3 data-i18n="archive.loadshare.title">From legacy UI to a shipment operations platform</h3>
               <p data-i18n="archive.loadshare.description">
                 As the primary frontend engineer, I delivered audit, cash-on-delivery
                 and item-tracking workflows, modernised a legacy product into a React
@@ -645,24 +643,23 @@
                 <span class="ops-live"><i aria-hidden="true"></i><span data-i18n="archive.visual.live">Live workflow</span></span>
               </div>
               <div class="order-workspace">
-                <div class="order-stages">
-                  <span data-i18n="archive.swiggy.visual.received">Received</span>
-                  <span data-i18n="archive.swiggy.visual.preparing">Preparing</span>
-                  <span data-i18n="archive.swiggy.visual.ready">Ready</span>
-                </div>
-                <div class="order-flow" aria-hidden="true">
-                  <span class="order-line"></span>
-                  <span class="order-progress"></span>
-                  <article class="order-ticket order-ticket-one"><i>1</i><b data-i18n="archive.swiggy.visual.order">Order</b><small data-i18n="archive.swiggy.visual.new">New</small></article>
-                  <article class="order-ticket order-ticket-two"><i>2</i><b data-i18n="archive.swiggy.visual.kitchen">Kitchen</b><small data-i18n="archive.swiggy.visual.active">Active</small></article>
-                  <article class="order-ticket order-ticket-three"><i>3</i><b data-i18n="archive.swiggy.visual.dispatch">Dispatch</b><small data-i18n="archive.swiggy.visual.ready">Ready</small></article>
-                </div>
-                <div class="delivery-flow">
-                  <span><i aria-hidden="true">⌂</i><b data-i18n="archive.swiggy.visual.restaurant">Restaurant</b></span>
-                  <em aria-hidden="true">···</em>
-                  <span><i aria-hidden="true">◇</i><b data-i18n="archive.swiggy.visual.rider">Delivery</b></span>
-                  <em aria-hidden="true">···</em>
-                  <span><i aria-hidden="true">⌖</i><b data-i18n="archive.swiggy.visual.customer">Customer</b></span>
+                <div class="kitchen-board" aria-hidden="true">
+                  <div class="kitchen-lane order-queue">
+                    <header><span data-i18n="archive.swiggy.visual.queue">Order queue</span><b>03</b></header>
+                    <article class="kitchen-ticket kitchen-ticket-one"><i>#184</i><b data-i18n="archive.swiggy.visual.order">Order</b><small data-i18n="archive.swiggy.visual.new">New</small></article>
+                    <article class="kitchen-ticket kitchen-ticket-two"><i>#185</i><b data-i18n="archive.swiggy.visual.order">Order</b><small data-i18n="archive.swiggy.visual.new">New</small></article>
+                  </div>
+                  <div class="kitchen-lane prep-station">
+                    <header><span data-i18n="archive.swiggy.visual.kitchen">Kitchen</span><b data-i18n="archive.swiggy.visual.active">Active</b></header>
+                    <div class="prep-timer" aria-hidden="true"><span>12</span><small>MIN</small></div>
+                    <div class="prep-lines" aria-hidden="true"><i></i><i></i><i></i></div>
+                  </div>
+                  <div class="kitchen-lane dispatch-station">
+                    <header><span data-i18n="archive.swiggy.visual.dispatch">Dispatch</span><b data-i18n="archive.swiggy.visual.ready">Ready</b></header>
+                    <div class="rider-card"><i aria-hidden="true">◇</i><span><b data-i18n="archive.swiggy.visual.riderAssigned">Rider assigned</b><small data-i18n="archive.swiggy.visual.rider">Delivery</small></span></div>
+                    <div class="dispatch-route" aria-hidden="true"><i></i><span></span><i></i></div>
+                  </div>
+                  <div class="push-toast"><i aria-hidden="true">↑</i><span><b data-i18n="archive.swiggy.visual.push">Push sent</b><small data-i18n="archive.swiggy.visual.customer">Customer</small></span></div>
                 </div>
               </div>
             </div>
@@ -671,7 +668,7 @@
                 <span>Swiggy</span>
                 <span>2016–2018</span>
               </div>
-              <h3 data-i18n="archive.swiggy.title">Scaling restaurant operations</h3>
+              <h3 data-i18n="archive.swiggy.title">Restaurant ordering built for rapid growth</h3>
               <p data-i18n="archive.swiggy.description">
                 As the primary frontend engineer, I built React, Next.js and Redux
                 restaurant order workflows while daily usage grew from approximately

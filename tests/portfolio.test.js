@@ -20,6 +20,14 @@ test("English and German expose the same translation keys", () => {
   assert.deepEqual(Object.keys(en).sort(), Object.keys(de).sort());
 });
 
+test("production assets are cache-versioned and translation fallbacks stay readable", () => {
+  assert.match(indexHtml, /styles\.css\?v=\d{8}\.\d+/);
+  assert.match(indexHtml, /translations\.js\?v=\d{8}\.\d+/);
+  assert.match(indexHtml, /script\.js\?v=\d{8}\.\d+/);
+  assert.match(scriptSource, /window\.portfolioTranslations \?\? \{ en: \{\}, de: \{\} \}/);
+  assert.match(scriptSource, /translate\(element\.dataset\.i18n, element\.textContent\)/);
+});
+
 test("every translation key referenced by the page exists", () => {
   const referencedKeys = [
     ...indexHtml.matchAll(/data-i18n(?:-html|-aria|-alt)?="([^"]+)"/g),
@@ -80,6 +88,18 @@ test("robot workflow responds to scrolling without overriding reduced motion", (
   assert.match(scriptSource, /updateRobotScrollScene/);
   assert.match(scriptSource, /if \(robotScrollVisual && !reducedMotion\)/);
   assert.match(styles, /--robot-scroll-thumb/);
+});
+
+test("archive workflows use distinct operational animations and stronger positioning", () => {
+  assert.match(indexHtml, /Product ownership at scale/);
+  assert.match(indexHtml, /Critical workflows scaled, modernised and operated/);
+  assert.match(indexHtml, /From legacy UI to a shipment operations platform/);
+  assert.match(indexHtml, /Restaurant ordering built for rapid growth/);
+  assert.match(indexHtml, /class="shipment-network"/);
+  assert.match(indexHtml, /class="kitchen-board"/);
+  assert.match(styles, /@keyframes network-route-flow/);
+  assert.match(styles, /@keyframes kitchen-timer/);
+  assert.match(styles, /@keyframes push-toast-arrive/);
 });
 
 test("project technology pills use the local icon sprite", () => {

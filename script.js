@@ -11,7 +11,7 @@ const proofStatus = document.querySelector("[data-proof-status]");
 const robotScrollSection = document.querySelector("[data-robot-scroll]");
 const robotScrollVisual = robotScrollSection?.querySelector(".robot-visual");
 const robotScrollBlocks = robotScrollVisual?.querySelectorAll(".block") ?? [];
-const translations = window.portfolioTranslations;
+const translations = window.portfolioTranslations ?? { en: {}, de: {} };
 const storedTheme = localStorage.getItem("portfolio-theme");
 const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -54,8 +54,8 @@ techTags.forEach((tag) => {
   tag.dataset.techIcon = techIconIds[tag.textContent.trim()] ?? "generic";
 });
 
-function translate(key) {
-  return translations[currentLanguage]?.[key] ?? translations.en[key] ?? key;
+function translate(key, fallback = key) {
+  return translations[currentLanguage]?.[key] ?? translations.en?.[key] ?? fallback;
 }
 
 function syncMotionToggle(button) {
@@ -204,19 +204,25 @@ function applyLanguage(language, updateUrl = false) {
   root.dataset.language = currentLanguage;
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
-    element.textContent = translate(element.dataset.i18n);
+    element.textContent = translate(element.dataset.i18n, element.textContent);
   });
 
   document.querySelectorAll("[data-i18n-html]").forEach((element) => {
-    element.innerHTML = translate(element.dataset.i18nHtml);
+    element.innerHTML = translate(element.dataset.i18nHtml, element.innerHTML);
   });
 
   document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
-    element.setAttribute("aria-label", translate(element.dataset.i18nAria));
+    element.setAttribute(
+      "aria-label",
+      translate(element.dataset.i18nAria, element.getAttribute("aria-label")),
+    );
   });
 
   document.querySelectorAll("[data-i18n-alt]").forEach((element) => {
-    element.setAttribute("alt", translate(element.dataset.i18nAlt));
+    element.setAttribute(
+      "alt",
+      translate(element.dataset.i18nAlt, element.getAttribute("alt")),
+    );
   });
 
   languageButtons.forEach((button) => {
