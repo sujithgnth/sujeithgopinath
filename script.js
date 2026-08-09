@@ -6,12 +6,44 @@ const motionScenes = document.querySelectorAll("[data-motion-scene]");
 const motionToggles = document.querySelectorAll("[data-motion-toggle]");
 const translations = window.portfolioTranslations;
 const storedTheme = localStorage.getItem("portfolio-theme");
-const storedLanguage = localStorage.getItem("portfolio-language");
+const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
 const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-let currentLanguage =
-  storedLanguage === "de" || storedLanguage === "en" ? storedLanguage : "de";
+const canonicalLink = document.querySelector('link[rel="canonical"]');
+const openGraphUrl = document.querySelector('meta[property="og:url"]');
+const openGraphLocale = document.querySelector('meta[property="og:locale"]');
+const profileStructuredData = document.querySelector("#profile-structured-data");
+const portfolioUrl = "https://sujithgnth.github.io/sujeithgopinath/";
+let currentLanguage = requestedLanguage === "en" ? "en" : "de";
 let activeResumeButton = null;
+
+const techIconIds = {
+  Angular: "angular",
+  TypeScript: "typescript",
+  NestJS: "nestjs",
+  NgRx: "redux",
+  Nx: "nx",
+  MongoDB: "mongodb",
+  "S3-compatible storage": "generic",
+  Playwright: "playwright",
+  React: "react",
+  "Redux Toolkit": "redux",
+  Redux: "redux",
+  Tailwind: "tailwind",
+  Storybook: "storybook",
+  Cypress: "cypress",
+  Webpack: "webpack",
+  "Node.js": "nodejs",
+  Express: "express",
+  GraphQL: "graphql",
+  Redis: "redis",
+  PWA: "pwa",
+};
+
+const techTags = document.querySelectorAll(".tag-list span");
+techTags.forEach((tag) => {
+  tag.dataset.techIcon = techIconIds[tag.textContent.trim()] ?? "generic";
+});
 
 function translate(key) {
   return translations[currentLanguage]?.[key] ?? translations.en[key] ?? key;
@@ -28,6 +60,65 @@ function syncMotionToggle(button) {
   button.setAttribute("aria-pressed", String(isPaused));
   button.querySelector("[data-motion-toggle-label]").textContent = label;
   button.querySelector(".motion-toggle-icon").textContent = isPaused ? "▶" : "Ⅱ";
+}
+
+function syncTechIcons() {
+  techTags.forEach((tag) => {
+    tag.querySelector(".tech-icon")?.remove();
+
+    const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    const use = document.createElementNS("http://www.w3.org/2000/svg", "use");
+    const iconId = tag.dataset.techIcon;
+
+    icon.classList.add("tech-icon", `tech-icon-${iconId}`);
+    icon.setAttribute("aria-hidden", "true");
+    icon.setAttribute("focusable", "false");
+    use.setAttribute("href", `./assets/tech-icons.svg#${iconId}`);
+    icon.append(use);
+    tag.prepend(icon);
+  });
+}
+
+function syncSeoLanguage() {
+  const languageUrl = currentLanguage === "en" ? `${portfolioUrl}?lang=en` : portfolioUrl;
+  const imageAlt = translate("meta.imageAlt");
+
+  canonicalLink.href = languageUrl;
+  openGraphUrl.setAttribute("content", languageUrl);
+  openGraphLocale.setAttribute("content", currentLanguage === "de" ? "de_DE" : "en_GB");
+  document
+    .querySelector('meta[property="og:image:alt"]')
+    .setAttribute("content", imageAlt);
+  document
+    .querySelector('meta[name="twitter:image:alt"]')
+    .setAttribute("content", imageAlt);
+
+  if (profileStructuredData) {
+    const profile = JSON.parse(profileStructuredData.textContent);
+    profile.name =
+      currentLanguage === "de"
+        ? "Portfolio von Sujeith Gopinath"
+        : "Portfolio of Sujeith Gopinath";
+    profile.inLanguage = currentLanguage === "de" ? "de-DE" : "en";
+    profile.mainEntity.description = translate("meta.description");
+    profileStructuredData.textContent = JSON.stringify(profile);
+  }
+}
+
+function syncLanguageUrl() {
+  const url = new URL(window.location.href);
+
+  if (currentLanguage === "en") {
+    url.searchParams.set("lang", "en");
+  } else {
+    url.searchParams.delete("lang");
+  }
+
+  window.history.replaceState(
+    {},
+    "",
+    `${url.pathname}${url.search}${url.hash}`,
+  );
 }
 
 function applyTheme(theme) {
@@ -49,7 +140,7 @@ themeToggle.addEventListener("click", () => {
   localStorage.setItem("portfolio-theme", nextTheme);
 });
 
-function applyLanguage(language) {
+function applyLanguage(language, updateUrl = false) {
   currentLanguage = language === "de" ? "de" : "en";
   root.lang = currentLanguage;
   root.dataset.language = currentLanguage;
@@ -93,9 +184,13 @@ function applyLanguage(language) {
     .querySelector('meta[name="twitter:description"]')
     .setAttribute("content", translate("meta.socialDescription"));
 
+  syncSeoLanguage();
+  syncTechIcons();
   applyTheme(root.dataset.theme);
   motionToggles.forEach(syncMotionToggle);
   localStorage.setItem("portfolio-language", currentLanguage);
+
+  if (updateUrl) syncLanguageUrl();
 
   if (activeResumeButton) syncResumeDialog(activeResumeButton);
 }
@@ -103,7 +198,9 @@ function applyLanguage(language) {
 applyLanguage(currentLanguage);
 
 languageButtons.forEach((button) => {
-  button.addEventListener("click", () => applyLanguage(button.dataset.language));
+  button.addEventListener("click", () =>
+    applyLanguage(button.dataset.language, true),
+  );
 });
 
 const header = document.querySelector(".site-header");

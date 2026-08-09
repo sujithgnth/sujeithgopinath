@@ -1,11 +1,13 @@
 window.portfolioTranslations = {
   en: {
     "meta.title":
-      "Sujeith Gopinath — Senior Frontend Engineer | Full-stack TypeScript",
+      "Senior Frontend Engineer in Dresden | Sujeith Gopinath",
     "meta.description":
-      "Sujeith Gopinath is a Senior Frontend Engineer with strong full-stack TypeScript capability, building and operating dependable products with React, Angular, Node.js and NestJS.",
+      "Sujeith Gopinath is a Senior Frontend Engineer in Dresden with 10+ years of experience in React, Angular, TypeScript, Node.js and frontend architecture.",
     "meta.socialDescription":
-      "10+ years building and operating customer-facing products across logistics, robotics, food delivery and AI-powered document processing.",
+      "Senior Frontend Engineer in Dresden building React, Angular, TypeScript and full-stack JavaScript products across AI, robotics, logistics and delivery.",
+    "meta.imageAlt":
+      "Portfolio of Sujeith Gopinath, Senior Frontend Engineer in Dresden",
     "accessibility.skipToContent": "Skip to content",
     "accessibility.home": "Sujeith Gopinath, home",
     "accessibility.mainNavigation": "Main navigation",
@@ -16,6 +18,8 @@ window.portfolioTranslations = {
     "accessibility.profileSummary": "Profile summary",
     "accessibility.portrait": "Portrait of Sujeith Gopinath",
     "accessibility.careerHighlights": "Career highlights",
+    "accessibility.measuredOutcomes": "Measured career outcomes",
+    "accessibility.deliveredCapabilities": "Delivered capabilities",
     "accessibility.technologies": "Technologies",
     "accessibility.documentWorkflow":
       "Animated document annotation and review workflow",
@@ -46,6 +50,11 @@ window.portfolioTranslations = {
     "hero.currentlyBuilding": "Career direction",
     "hero.currentProject":
       "Hands-on Software Architecture, grounded in delivery",
+    "proof.eyebrow": "Evidence in production",
+    "proof.title": "Outcomes measured. Systems delivered.",
+    "proof.intro":
+      "More than a decade of product work across AI document processing, robotics, logistics and food delivery—measured in outcomes and the operational systems behind them.",
+    "proof.featuresLabel": "Systems and features delivered",
     "metrics.yearsShort": "years",
     "metrics.years": "building and operating customer-facing products",
     "metrics.loadValue": "66% lower",
@@ -55,6 +64,43 @@ window.portfolioTranslations = {
     "metrics.deliveryValue": "Production ownership",
     "metrics.deliveryLabel":
       "architecture, implementation, deployment, monitoring and iteration",
+    "features.ai.kicker": "AI document operations",
+    "features.ai.title": "Multi-annotator review systems",
+    "features.ai.description":
+      "Delivered document verification and human-review workflows spanning task queues, reviewer assignment, auto-approval thresholds, annotation and OCR.",
+    "features.ai.tag1": "Task queues",
+    "features.ai.tag2": "Annotation",
+    "features.robotics.kicker": "Robot control",
+    "features.robotics.title": "Custom robot-motion workflows",
+    "features.robotics.description":
+      "Owned a React and TypeScript control frontend with Redux Toolkit state separated across workflow, application and UI concerns.",
+    "features.robotics.tag1": "Motion builder",
+    "features.robotics.tag2": "State architecture",
+    "features.logistics.kicker": "Logistics operations",
+    "features.logistics.title": "Audit, COD and item tracking",
+    "features.logistics.description":
+      "Modernised a legacy product into a React, Redux and TypeScript application with typed domain models, API abstractions and reusable data-heavy UI.",
+    "features.logistics.tag1": "Audit flows",
+    "features.logistics.tag2": "Cash on delivery",
+    "features.logistics.tag3": "Item tracking",
+    "features.orders.kicker": "Restaurant operations",
+    "features.orders.title": "Order orchestration and notifications",
+    "features.orders.description":
+      "Built vendor order workflows plus Node.js integration, GraphQL data access, Redis caching, worker polling, self-diagnostics and push notifications.",
+    "features.orders.tag1": "Order management",
+    "features.orders.tag2": "Worker polling",
+    "features.orders.tag3": "Push notifications",
+    "features.platforms.kicker": "Frontend platforms",
+    "features.platforms.title": "Reusable architecture across teams",
+    "features.platforms.description":
+      "Built Nx feature libraries, Storybook components, shared UI patterns, configurable wrappers and microfrontend-aligned boundaries.",
+    "features.platforms.tag1": "Nx libraries",
+    "features.platforms.tag3": "Microfrontends",
+    "features.quality.kicker": "Delivery confidence",
+    "features.quality.title": "Critical workflows protected end to end",
+    "features.quality.description":
+      "Established Playwright and Cypress coverage, with ownership extending through implementation, deployment, monitoring and iteration.",
+    "features.quality.tag3": "Monitoring",
     "work.eyebrow": "Selected work",
     "work.title": "Products built for real operational complexity.",
     "work.intro":
@@ -233,11 +279,13 @@ window.portfolioTranslations = {
   },
   de: {
     "meta.title":
-      "Sujeith Gopinath — Senior Frontend-Entwickler | Full-Stack TypeScript",
+      "Senior Frontend Engineer in Dresden | Sujeith Gopinath",
     "meta.description":
-      "Sujeith Gopinath ist Senior Frontend-Entwickler mit starker Full-Stack-TypeScript-Kompetenz und entwickelt sowie betreibt zuverlässige Produkte mit React, Angular, Node.js und NestJS.",
+      "Sujeith Gopinath ist Senior Frontend Engineer in Dresden mit über 10 Jahren Erfahrung in React, Angular, TypeScript, Node.js und Frontend-Architektur.",
     "meta.socialDescription":
-      "Mehr als 10 Jahre Erfahrung mit kundenorientierten Produkten in Logistik, Robotik, Essenslieferung und KI-gestützter Dokumentenverarbeitung.",
+      "Senior Frontend Engineer in Dresden: React, Angular, TypeScript und Full-Stack JavaScript für KI-, Robotik-, Logistik- und Delivery-Produkte.",
+    "meta.imageAlt":
+      "Portfolio von Sujeith Gopinath, Senior Frontend Engineer in Dresden",
     "accessibility.skipToContent": "Zum Inhalt springen",
     "accessibility.home": "Sujeith Gopinath, Startseite",
     "accessibility.mainNavigation": "Hauptnavigation",
@@ -248,6 +296,8 @@ window.portfolioTranslations = {
     "accessibility.profileSummary": "Profilübersicht",
     "accessibility.portrait": "Porträt von Sujeith Gopinath",
     "accessibility.careerHighlights": "Karriere-Highlights",
+    "accessibility.measuredOutcomes": "Messbare Karriereergebnisse",
+    "accessibility.deliveredCapabilities": "Umgesetzte Funktionen",
     "accessibility.technologies": "Technologien",
     "accessibility.documentWorkflow":
       "Animierter Workflow für Dokumentenannotation und -prüfung",
@@ -283,6 +333,11 @@ window.portfolioTranslations = {
     "hero.currentlyBuilding": "Berufliche Richtung",
     "hero.currentProject":
       "Praxisnahe Softwarearchitektur, fest verankert in der Umsetzung",
+    "proof.eyebrow": "Nachweise aus der Produktion",
+    "proof.title": "Messbare Ergebnisse. Gelieferte Systeme.",
+    "proof.intro":
+      "Mehr als ein Jahrzehnt Produktarbeit in KI-Dokumentenverarbeitung, Robotik, Logistik und Essenslieferung—belegt durch Ergebnisse und die operativen Systeme dahinter.",
+    "proof.featuresLabel": "Umgesetzte Systeme und Funktionen",
     "metrics.yearsShort": "Jahre",
     "metrics.years": "Entwicklung und Betrieb kundenorientierter Produkte",
     "metrics.loadValue": "66 % weniger",
@@ -293,6 +348,43 @@ window.portfolioTranslations = {
     "metrics.deliveryValue": "Produktionsverantwortung",
     "metrics.deliveryLabel":
       "Architektur, Implementierung, Deployment, Monitoring und Weiterentwicklung",
+    "features.ai.kicker": "KI-Dokumentenprozesse",
+    "features.ai.title": "Multi-Annotator-Prüfsysteme",
+    "features.ai.description":
+      "Dokumentenverifizierung und Human-Review-Workflows mit Aufgabenwarteschlangen, Prüferzuweisung, Schwellenwerten für automatische Freigaben, Annotation und OCR umgesetzt.",
+    "features.ai.tag1": "Aufgabenwarteschlangen",
+    "features.ai.tag2": "Annotation",
+    "features.robotics.kicker": "Robotersteuerung",
+    "features.robotics.title": "Workflows für individuelle Roboterbewegungen",
+    "features.robotics.description":
+      "Ein React- und TypeScript-Steuerungsfrontend mit Redux Toolkit verantwortet und Workflow-, Anwendungs- und UI-Zustände klar getrennt.",
+    "features.robotics.tag1": "Bewegungseditor",
+    "features.robotics.tag2": "State-Architektur",
+    "features.logistics.kicker": "Logistikprozesse",
+    "features.logistics.title": "Prüfung, Nachnahme und Sendungsverfolgung",
+    "features.logistics.description":
+      "Ein Legacy-Produkt zu einer React-, Redux- und TypeScript-Anwendung mit typisierten Domänenmodellen, API-Abstraktionen und wiederverwendbarer datenintensiver UI modernisiert.",
+    "features.logistics.tag1": "Prüfabläufe",
+    "features.logistics.tag2": "Nachnahme",
+    "features.logistics.tag3": "Sendungsverfolgung",
+    "features.orders.kicker": "Restaurantprozesse",
+    "features.orders.title": "Bestellorchestrierung und Benachrichtigungen",
+    "features.orders.description":
+      "Vendor-Bestellworkflows mit Node.js-Integration, GraphQL-Datenzugriff, Redis-Caching, Worker-Polling, Selbstdiagnose und Push-Benachrichtigungen umgesetzt.",
+    "features.orders.tag1": "Bestellverwaltung",
+    "features.orders.tag2": "Worker-Polling",
+    "features.orders.tag3": "Push-Benachrichtigungen",
+    "features.platforms.kicker": "Frontend-Plattformen",
+    "features.platforms.title": "Wiederverwendbare Architektur für Teams",
+    "features.platforms.description":
+      "Nx-Feature-Libraries, Storybook-Komponenten, gemeinsame UI-Muster, konfigurierbare Wrapper und an Microfrontends ausgerichtete Grenzen entwickelt.",
+    "features.platforms.tag1": "Nx-Libraries",
+    "features.platforms.tag3": "Microfrontends",
+    "features.quality.kicker": "Auslieferungssicherheit",
+    "features.quality.title": "Kritische Workflows End-to-End abgesichert",
+    "features.quality.description":
+      "Playwright- und Cypress-Abdeckung etabliert und Verantwortung von Implementierung über Deployment und Monitoring bis zur Weiterentwicklung übernommen.",
+    "features.quality.tag3": "Monitoring",
     "work.eyebrow": "Ausgewählte Projekte",
     "work.title": "Produkte für echte operative Komplexität.",
     "work.intro":
