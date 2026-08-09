@@ -1,7 +1,7 @@
 # Sujeith Gopinath — Portfolio
 
-One-page portfolio for Sujeith Gopinath, a Senior Frontend / Full-stack
-TypeScript Engineer growing toward hands-on Software Architecture.
+One-page portfolio for Sujeith Gopinath, a Senior Frontend Engineer with strong
+full-stack TypeScript capability, growing toward hands-on Software Architecture.
 
 **[View the live portfolio](https://sujithgnth.github.io/sujeithgopinath/)**
 

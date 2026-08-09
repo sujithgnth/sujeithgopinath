@@ -30,9 +30,9 @@ test("every translation key referenced by the page exists", () => {
   }
 });
 
-test("all four workflow scenes include user-controlled, reduced-motion-aware animation", () => {
-  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 4);
-  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 4);
+test("all five motion scenes include user controls and reduced-motion support", () => {
+  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 5);
+  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 5);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);
   assert.match(styles, /\.motion-scene\[data-motion-state="paused"\]/);
 });
