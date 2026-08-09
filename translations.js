@@ -16,10 +16,13 @@ window.portfolioTranslations = {
     "accessibility.switchToLight": "Switch to light theme",
     "accessibility.availability": "Availability",
     "accessibility.profileSummary": "Profile summary",
-    "accessibility.portrait": "Portrait of Sujeith Gopinath",
+    "accessibility.portrait":
+      "Illustrated portrait of Sujeith Gopinath cycling in Dresden",
     "accessibility.careerHighlights": "Career highlights",
     "accessibility.measuredOutcomes": "Measured career outcomes",
     "accessibility.deliveredCapabilities": "Delivered capabilities",
+    "accessibility.previousAchievements": "Previous achievements",
+    "accessibility.nextAchievements": "Next achievements",
     "accessibility.technologies": "Technologies",
     "accessibility.documentWorkflow":
       "Animated document annotation and review workflow",
@@ -54,7 +57,8 @@ window.portfolioTranslations = {
     "proof.title": "Outcomes measured. Systems delivered.",
     "proof.intro":
       "More than a decade of product work across AI document processing, robotics, logistics and food delivery—measured in outcomes and the operational systems behind them.",
-    "proof.featuresLabel": "Systems and features delivered",
+    "proof.carouselLabel": "Measured outcomes and senior practice",
+    "proof.featuresLabel": "Latest feature deliveries",
     "metrics.yearsShort": "years",
     "metrics.years": "building and operating customer-facing products",
     "metrics.loadValue": "66% lower",
@@ -64,6 +68,18 @@ window.portfolioTranslations = {
     "metrics.deliveryValue": "Production ownership",
     "metrics.deliveryLabel":
       "architecture, implementation, deployment, monitoring and iteration",
+    "metrics.architectureValue": "Architecture decisions",
+    "metrics.architectureLabel":
+      "state, domain and application boundaries designed for maintainability",
+    "metrics.investigationValue": "Performance investigations",
+    "metrics.investigationLabel":
+      "frontend loading, API queries, MongoDB indexing and asset delivery",
+    "metrics.systemsValue": "Reusable systems",
+    "metrics.systemsLabel":
+      "Nx libraries, Storybook components, API abstractions and shared UI patterns",
+    "metrics.collaborationValue": "Cross-functional delivery",
+    "metrics.collaborationLabel":
+      "features delivered with product, design, backend and external teams",
     "features.ai.kicker": "AI document operations",
     "features.ai.title": "Multi-annotator review systems",
     "features.ai.description":
@@ -149,6 +165,7 @@ window.portfolioTranslations = {
     "work.coboworx.visual.move": "Move to position",
     "work.coboworx.visual.rotate": "Rotate joint · 45°",
     "work.coboworx.visual.run": "Run motion",
+    "work.coboworx.visual.scroll": "Scroll to scrub workflow",
     "work.coboworx.visual.status": "Sequence running",
     "archive.eyebrow": "Earlier product work",
     "archive.title": "Interfaces used to run businesses at scale.",
@@ -294,10 +311,13 @@ window.portfolioTranslations = {
     "accessibility.switchToLight": "Zum hellen Design wechseln",
     "accessibility.availability": "Verfügbarkeit",
     "accessibility.profileSummary": "Profilübersicht",
-    "accessibility.portrait": "Porträt von Sujeith Gopinath",
+    "accessibility.portrait":
+      "Illustriertes Porträt von Sujeith Gopinath auf dem Fahrrad in Dresden",
     "accessibility.careerHighlights": "Karriere-Highlights",
     "accessibility.measuredOutcomes": "Messbare Karriereergebnisse",
     "accessibility.deliveredCapabilities": "Umgesetzte Funktionen",
+    "accessibility.previousAchievements": "Vorherige Erfolge",
+    "accessibility.nextAchievements": "Nächste Erfolge",
     "accessibility.technologies": "Technologien",
     "accessibility.documentWorkflow":
       "Animierter Workflow für Dokumentenannotation und -prüfung",
@@ -337,7 +357,8 @@ window.portfolioTranslations = {
     "proof.title": "Messbare Ergebnisse. Gelieferte Systeme.",
     "proof.intro":
       "Mehr als ein Jahrzehnt Produktarbeit in KI-Dokumentenverarbeitung, Robotik, Logistik und Essenslieferung—belegt durch Ergebnisse und die operativen Systeme dahinter.",
-    "proof.featuresLabel": "Umgesetzte Systeme und Funktionen",
+    "proof.carouselLabel": "Messbare Ergebnisse und Senior-Engineering-Praxis",
+    "proof.featuresLabel": "Neueste Feature-Umsetzungen",
     "metrics.yearsShort": "Jahre",
     "metrics.years": "Entwicklung und Betrieb kundenorientierter Produkte",
     "metrics.loadValue": "66 % weniger",
@@ -348,6 +369,18 @@ window.portfolioTranslations = {
     "metrics.deliveryValue": "Produktionsverantwortung",
     "metrics.deliveryLabel":
       "Architektur, Implementierung, Deployment, Monitoring und Weiterentwicklung",
+    "metrics.architectureValue": "Architekturentscheidungen",
+    "metrics.architectureLabel":
+      "State-, Domänen- und Anwendungsgrenzen für Wartbarkeit entworfen",
+    "metrics.investigationValue": "Performance-Analysen",
+    "metrics.investigationLabel":
+      "Frontend-Ladezeiten, API-Abfragen, MongoDB-Indizes und Asset-Auslieferung",
+    "metrics.systemsValue": "Wiederverwendbare Systeme",
+    "metrics.systemsLabel":
+      "Nx-Libraries, Storybook-Komponenten, API-Abstraktionen und gemeinsame UI-Muster",
+    "metrics.collaborationValue": "Cross-funktionale Umsetzung",
+    "metrics.collaborationLabel":
+      "Features mit Produkt, Design, Backend und externen Teams ausgeliefert",
     "features.ai.kicker": "KI-Dokumentenprozesse",
     "features.ai.title": "Multi-Annotator-Prüfsysteme",
     "features.ai.description":
@@ -433,6 +466,7 @@ window.portfolioTranslations = {
     "work.coboworx.visual.move": "Zur Position bewegen",
     "work.coboworx.visual.rotate": "Gelenk drehen · 45°",
     "work.coboworx.visual.run": "Bewegung ausführen",
+    "work.coboworx.visual.scroll": "Scrollen, um den Ablauf zu steuern",
     "work.coboworx.visual.status": "Sequenz läuft",
     "archive.eyebrow": "Frühere Produktarbeit",
     "archive.title": "Oberflächen, mit denen Unternehmen im großen Maßstab arbeiten.",

@@ -33,21 +33,53 @@ test("every translation key referenced by the page exists", () => {
   }
 });
 
-test("all five motion scenes include user controls and reduced-motion support", () => {
-  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 5);
-  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 5);
+test("all six motion scenes include user controls and reduced-motion support", () => {
+  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 6);
+  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 6);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);
   assert.match(styles, /\.motion-scene\[data-motion-state="paused"\]/);
 });
 
+test("career evidence carousel includes eight senior-level signals", () => {
+  assert.equal((indexHtml.match(/class="proof-card /g) || []).length, 8);
+  assert.match(indexHtml, /data-proof-prev/);
+  assert.match(indexHtml, /data-proof-next/);
+  assert.match(indexHtml, /Architecture decisions/);
+  assert.match(indexHtml, /Performance investigations/);
+  assert.match(indexHtml, /Reusable systems/);
+  assert.match(indexHtml, /Cross-functional delivery/);
+});
+
+test("hero uses the illustrated high-resolution portrait", () => {
+  assert.match(indexHtml, /sujeith-cartoon\.jpg/);
+  assert.match(indexHtml, /width="1200"/);
+  assert.match(indexHtml, /height="800"/);
+  assert.match(styles, /@keyframes portrait-drift/);
+});
+
 test("career evidence includes six feature-delivery systems", () => {
-  assert.equal((indexHtml.match(/class="feature-card"/g) || []).length, 6);
+  assert.equal((indexHtml.match(/class="feature-card feature-card-/g) || []).length, 6);
+  assert.match(indexHtml, /Latest feature deliveries/);
   assert.match(indexHtml, /Multi-annotator review systems/);
   assert.match(indexHtml, /Custom robot-motion workflows/);
   assert.match(indexHtml, /Audit, COD and item tracking/);
   assert.match(indexHtml, /Order orchestration and notifications/);
   assert.match(indexHtml, /Reusable architecture across teams/);
   assert.match(indexHtml, /Critical workflows protected end to end/);
+  assert.match(indexHtml, /feature-ai-animation/);
+  assert.match(indexHtml, /feature-robot-animation/);
+  assert.match(indexHtml, /feature-logistics-animation/);
+  assert.match(indexHtml, /feature-order-animation/);
+  assert.match(indexHtml, /feature-platform-animation/);
+  assert.match(indexHtml, /feature-quality-animation/);
+});
+
+test("robot workflow responds to scrolling without overriding reduced motion", () => {
+  assert.match(indexHtml, /data-robot-scroll/);
+  assert.match(indexHtml, /robot-scroll-rail/);
+  assert.match(scriptSource, /updateRobotScrollScene/);
+  assert.match(scriptSource, /if \(robotScrollVisual && !reducedMotion\)/);
+  assert.match(styles, /--robot-scroll-thumb/);
 });
 
 test("project technology pills use the local icon sprite", () => {

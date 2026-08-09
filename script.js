@@ -4,6 +4,13 @@ const themeColor = document.querySelector('meta[name="theme-color"]');
 const languageButtons = document.querySelectorAll(".language-button");
 const motionScenes = document.querySelectorAll("[data-motion-scene]");
 const motionToggles = document.querySelectorAll("[data-motion-toggle]");
+const proofCarousel = document.querySelector("[data-proof-carousel]");
+const proofPrevious = document.querySelector("[data-proof-prev]");
+const proofNext = document.querySelector("[data-proof-next]");
+const proofStatus = document.querySelector("[data-proof-status]");
+const robotScrollSection = document.querySelector("[data-robot-scroll]");
+const robotScrollVisual = robotScrollSection?.querySelector(".robot-visual");
+const robotScrollBlocks = robotScrollVisual?.querySelectorAll(".block") ?? [];
 const translations = window.portfolioTranslations;
 const storedTheme = localStorage.getItem("portfolio-theme");
 const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
@@ -16,6 +23,8 @@ const profileStructuredData = document.querySelector("#profile-structured-data")
 const portfolioUrl = "https://sujithgnth.github.io/sujeithgopinath/";
 let currentLanguage = requestedLanguage === "en" ? "en" : "de";
 let activeResumeButton = null;
+let proofScrollFrame = null;
+let robotScrollFrame = null;
 
 const techIconIds = {
   Angular: "angular",
@@ -121,6 +130,55 @@ function syncLanguageUrl() {
   );
 }
 
+function getProofPageCount() {
+  return Math.max(1, Math.round(proofCarousel.scrollWidth / proofCarousel.clientWidth));
+}
+
+function getProofPage() {
+  const pageCount = getProofPageCount();
+  return Math.min(
+    pageCount,
+    Math.max(1, Math.round(proofCarousel.scrollLeft / proofCarousel.clientWidth) + 1),
+  );
+}
+
+function syncProofCarousel() {
+  const pageCount = getProofPageCount();
+  const currentPage = getProofPage();
+
+  proofPrevious.disabled = currentPage === 1;
+  proofNext.disabled = currentPage === pageCount;
+  proofStatus.textContent = `${currentPage} / ${pageCount}`;
+}
+
+function moveProofCarousel(direction) {
+  proofCarousel.scrollBy({
+    left: direction * proofCarousel.clientWidth,
+    behavior: reducedMotion ? "auto" : "smooth",
+  });
+}
+
+proofPrevious.addEventListener("click", () => moveProofCarousel(-1));
+proofNext.addEventListener("click", () => moveProofCarousel(1));
+
+proofCarousel.addEventListener(
+  "scroll",
+  () => {
+    if (proofScrollFrame) cancelAnimationFrame(proofScrollFrame);
+    proofScrollFrame = requestAnimationFrame(syncProofCarousel);
+  },
+  { passive: true },
+);
+
+proofCarousel.addEventListener("keydown", (event) => {
+  if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+  event.preventDefault();
+  moveProofCarousel(event.key === "ArrowRight" ? 1 : -1);
+});
+
+window.addEventListener("resize", syncProofCarousel, { passive: true });
+syncProofCarousel();
+
 function applyTheme(theme) {
   root.dataset.theme = theme;
   themeToggle.setAttribute(
@@ -206,6 +264,49 @@ languageButtons.forEach((button) => {
 const header = document.querySelector(".site-header");
 const updateHeader = () => header.classList.toggle("scrolled", window.scrollY > 12);
 
+function updateRobotScrollScene() {
+  robotScrollFrame = null;
+
+  if (!robotScrollSection || !robotScrollVisual || reducedMotion) return;
+  if (robotScrollVisual.dataset.motionState === "paused") return;
+
+  const bounds = robotScrollSection.getBoundingClientRect();
+  const start = window.innerHeight * 0.84;
+  const distance = bounds.height + window.innerHeight * 0.68;
+  const progress = Math.min(1, Math.max(0, (start - bounds.top) / distance));
+  const reach = Math.sin(progress * Math.PI);
+  const targetStrength = Math.min(1, Math.max(0, (progress - 0.42) / 0.3));
+  const activeStep = Math.min(robotScrollBlocks.length - 1, Math.floor(progress * robotScrollBlocks.length));
+
+  robotScrollVisual.style.setProperty("--robot-arm-one-angle", `${-66 + reach * 8}deg`);
+  robotScrollVisual.style.setProperty("--robot-arm-two-angle", `${22 - reach * 14}deg`);
+  robotScrollVisual.style.setProperty("--robot-claw-angle", `${22 - reach * 10}deg`);
+  robotScrollVisual.style.setProperty("--robot-claw-x", `${reach * 7}px`);
+  robotScrollVisual.style.setProperty("--robot-claw-y", `${reach * 5}px`);
+  robotScrollVisual.style.setProperty("--robot-grid-shift", `${progress * 96}px`);
+  robotScrollVisual.style.setProperty("--robot-panel-shift", `${44 - progress * 88}px`);
+  robotScrollVisual.style.setProperty("--robot-scroll-thumb", `${progress * 100}%`);
+  robotScrollVisual.style.setProperty("--robot-target-opacity", `${0.35 + targetStrength * 0.65}`);
+  robotScrollVisual.style.setProperty("--robot-target-scale", `${1.35 - targetStrength * 0.35}`);
+  robotScrollVisual.dataset.scrollStep = String(activeStep + 1);
+
+  robotScrollBlocks.forEach((block, index) => {
+    block.classList.toggle("is-scroll-active", index === activeStep);
+  });
+}
+
+function requestRobotScrollUpdate() {
+  if (robotScrollFrame || reducedMotion) return;
+  robotScrollFrame = requestAnimationFrame(updateRobotScrollScene);
+}
+
+if (robotScrollVisual && !reducedMotion) {
+  robotScrollVisual.dataset.scrollLinked = "true";
+  window.addEventListener("scroll", requestRobotScrollUpdate, { passive: true });
+  window.addEventListener("resize", requestRobotScrollUpdate, { passive: true });
+  requestRobotScrollUpdate();
+}
+
 updateHeader();
 window.addEventListener("scroll", updateHeader, { passive: true });
 
@@ -241,6 +342,7 @@ motionToggles.forEach((button) => {
     scene.dataset.motionState =
       scene.dataset.motionState === "paused" ? "running" : "paused";
     syncMotionToggle(button);
+    if (scene === robotScrollVisual) requestRobotScrollUpdate();
   });
 });
 

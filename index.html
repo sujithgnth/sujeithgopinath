@@ -36,7 +36,7 @@
     <link rel="alternate" hreflang="x-default" href="https://sujithgnth.github.io/sujeithgopinath/" />
     <link rel="sitemap" type="application/xml" href="https://sujithgnth.github.io/sujeithgopinath/sitemap.xml" />
     <title>Senior Frontend Engineer in Dresden | Sujeith Gopinath</title>
-    <link rel="preload" href="./src/portfolio/assets/sujith-clr.jpg" as="image" />
+    <link rel="preload" href="./src/portfolio/assets/sujeith-cartoon.jpg" as="image" type="image/jpeg" />
     <link rel="stylesheet" href="./styles.css" />
     <script type="application/ld+json" id="profile-structured-data">
       {
@@ -135,15 +135,26 @@
           </div>
         </div>
 
-        <aside class="hero-profile reveal" aria-label="Profile summary" data-i18n-aria="accessibility.profileSummary">
+        <aside class="hero-profile reveal motion-scene" data-motion-scene data-motion-state="running" data-in-view="false" aria-label="Profile summary" data-i18n-aria="accessibility.profileSummary">
           <div class="portrait-wrap">
-            <img
-              src="./src/portfolio/assets/sujith-clr.jpg"
-              alt="Portrait of Sujeith Gopinath"
-              data-i18n-alt="accessibility.portrait"
-              width="200"
-              height="200"
-            />
+            <button class="motion-toggle portrait-motion-toggle" type="button" data-motion-toggle aria-pressed="false">
+              <span class="motion-toggle-icon" aria-hidden="true">Ⅱ</span>
+              <span class="sr-only" data-motion-toggle-label>Pause animation</span>
+            </button>
+            <div class="portrait-media">
+              <img
+                src="./src/portfolio/assets/sujeith-cartoon.jpg"
+                alt="Illustrated portrait of Sujeith Gopinath cycling in Dresden"
+                data-i18n-alt="accessibility.portrait"
+                width="1200"
+                height="800"
+                fetchpriority="high"
+              />
+              <span class="portrait-scan" aria-hidden="true"></span>
+              <div class="portrait-orbit" aria-hidden="true">
+                <i></i><i></i><i></i><i></i>
+              </div>
+            </div>
             <span class="portrait-label" data-i18n="hero.location">Based in Dresden</span>
           </div>
           <div class="profile-note">
@@ -175,7 +186,21 @@
             </button>
           </div>
 
-          <div class="proof-grid" aria-label="Measured career outcomes" data-i18n-aria="accessibility.measuredOutcomes">
+          <div class="proof-carousel-toolbar">
+            <p id="proof-carousel-title" data-i18n="proof.carouselLabel">Measured outcomes and senior practice</p>
+            <div class="proof-carousel-controls">
+              <button type="button" data-proof-prev aria-label="Previous achievements" data-i18n-aria="accessibility.previousAchievements">
+                <span aria-hidden="true">←</span>
+              </button>
+              <span class="proof-carousel-status" data-proof-status aria-live="polite">1 / 2</span>
+              <button type="button" data-proof-next aria-label="Next achievements" data-i18n-aria="accessibility.nextAchievements">
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+
+          <section class="proof-carousel" data-proof-carousel aria-labelledby="proof-carousel-title" tabindex="0">
+            <div class="proof-grid" data-proof-track>
             <article class="proof-card proof-experience">
             <div class="proof-value">
               <strong>10+</strong>
@@ -215,15 +240,44 @@
               <span>UI</span><span>API</span><span>DATA</span><span>OPS</span>
             </div>
           </article>
-          </div>
+          <article class="proof-card proof-architecture">
+            <strong data-i18n="metrics.architectureValue">Architecture decisions</strong>
+            <span class="proof-label" data-i18n="metrics.architectureLabel">state, domain and application boundaries designed for maintainability</span>
+            <div class="architecture-signal" aria-hidden="true">
+              <span>DOMAIN</span><span>STATE</span><span>DATA</span>
+            </div>
+          </article>
+          <article class="proof-card proof-investigation">
+            <strong data-i18n="metrics.investigationValue">Performance investigations</strong>
+            <span class="proof-label" data-i18n="metrics.investigationLabel">frontend loading, API queries, MongoDB indexing and asset delivery</span>
+            <div class="investigation-signal" aria-hidden="true">
+              <span>UI</span><i>→</i><span>API</span><i>→</i><span>DB</span>
+            </div>
+          </article>
+          <article class="proof-card proof-reuse">
+            <strong data-i18n="metrics.systemsValue">Reusable systems</strong>
+            <span class="proof-label" data-i18n="metrics.systemsLabel">Nx libraries, Storybook components, API abstractions and shared UI patterns</span>
+            <div class="reuse-signal" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
+            </div>
+          </article>
+          <article class="proof-card proof-collaboration">
+            <strong data-i18n="metrics.collaborationValue">Cross-functional delivery</strong>
+            <span class="proof-label" data-i18n="metrics.collaborationLabel">features delivered with product, design, backend and external teams</span>
+            <div class="collaboration-signal" aria-hidden="true">
+              <span>PD</span><span>FE</span><span>BE</span><span>QA</span>
+            </div>
+          </article>
+            </div>
+          </section>
 
           <div class="feature-heading">
-            <p data-i18n="proof.featuresLabel">Systems and features delivered</p>
+            <p data-i18n="proof.featuresLabel">Latest feature deliveries</p>
             <span aria-hidden="true"></span>
           </div>
 
           <div class="feature-grid">
-            <article class="feature-card">
+            <article class="feature-card feature-card-ai">
               <div class="feature-card-top">
                 <span class="feature-index">01</span>
                 <p data-i18n="features.ai.kicker">AI document operations</p>
@@ -234,15 +288,22 @@
                 task queues, reviewer assignment, auto-approval thresholds, annotation
                 and OCR.
               </p>
-              <div class="feature-tags" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
+              <div class="feature-tags" role="group" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
                 <span data-i18n="features.ai.tag1">Task queues</span>
                 <span data-i18n="features.ai.tag2">Annotation</span>
                 <span>OCR</span>
               </div>
-              <div class="feature-activity" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+              <div class="feature-animation feature-ai-animation" aria-hidden="true">
+                <span class="mini-document">
+                  <i></i><i></i><i></i>
+                  <b class="mini-annotation"></b>
+                  <em class="mini-document-scan"></em>
+                </span>
+                <span class="mini-review-result"><i>✓</i><b>98%</b></span>
+              </div>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card feature-card-robotics">
               <div class="feature-card-top">
                 <span class="feature-index">02</span>
                 <p data-i18n="features.robotics.kicker">Robot control</p>
@@ -252,15 +313,22 @@
                 Owned a React and TypeScript control frontend with Redux Toolkit state
                 separated across workflow, application and UI concerns.
               </p>
-              <div class="feature-tags" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
+              <div class="feature-tags" role="group" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
                 <span data-i18n="features.robotics.tag1">Motion builder</span>
                 <span data-i18n="features.robotics.tag2">State architecture</span>
                 <span>Cypress</span>
               </div>
-              <div class="feature-activity" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+              <div class="feature-animation feature-robot-animation" aria-hidden="true">
+                <span class="mini-robot-base"></span>
+                <span class="mini-robot-arm mini-robot-arm-one"></span>
+                <span class="mini-robot-arm mini-robot-arm-two"></span>
+                <i class="mini-robot-joint mini-robot-joint-one"></i>
+                <i class="mini-robot-joint mini-robot-joint-two"></i>
+                <b class="mini-robot-target"></b>
+              </div>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card feature-card-logistics">
               <div class="feature-card-top">
                 <span class="feature-index">03</span>
                 <p data-i18n="features.logistics.kicker">Logistics operations</p>
@@ -271,15 +339,22 @@
                 application with typed domain models, API abstractions and reusable
                 data-heavy UI.
               </p>
-              <div class="feature-tags" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
+              <div class="feature-tags" role="group" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
                 <span data-i18n="features.logistics.tag1">Audit flows</span>
                 <span data-i18n="features.logistics.tag2">Cash on delivery</span>
                 <span data-i18n="features.logistics.tag3">Item tracking</span>
               </div>
-              <div class="feature-activity" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+              <div class="feature-animation feature-logistics-animation" aria-hidden="true">
+                <span class="mini-route"></span>
+                <i class="mini-route-node node-origin"></i>
+                <i class="mini-route-node node-hub"></i>
+                <i class="mini-route-node node-destination"></i>
+                <b class="mini-shipment">◆</b>
+                <em class="mini-shipment-status">COD</em>
+              </div>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card feature-card-orders">
               <div class="feature-card-top">
                 <span class="feature-index">04</span>
                 <p data-i18n="features.orders.kicker">Restaurant operations</p>
@@ -290,15 +365,21 @@
                 access, Redis caching, worker polling, self-diagnostics and push
                 notifications.
               </p>
-              <div class="feature-tags" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
+              <div class="feature-tags" role="group" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
                 <span data-i18n="features.orders.tag1">Order management</span>
                 <span data-i18n="features.orders.tag2">Worker polling</span>
                 <span data-i18n="features.orders.tag3">Push notifications</span>
               </div>
-              <div class="feature-activity" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+              <div class="feature-animation feature-order-animation" aria-hidden="true">
+                <span class="mini-order-ticket ticket-one"><i></i><i></i></span>
+                <span class="mini-order-ticket ticket-two"><i></i><i></i></span>
+                <span class="mini-order-ticket ticket-three"><i></i><i></i></span>
+                <b class="mini-notification">1</b>
+                <em class="mini-order-progress"></em>
+              </div>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card feature-card-platforms">
               <div class="feature-card-top">
                 <span class="feature-index">05</span>
                 <p data-i18n="features.platforms.kicker">Frontend platforms</p>
@@ -308,15 +389,23 @@
                 Built Nx feature libraries, Storybook components, shared UI patterns,
                 configurable wrappers and microfrontend-aligned boundaries.
               </p>
-              <div class="feature-tags" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
+              <div class="feature-tags" role="group" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
                 <span data-i18n="features.platforms.tag1">Nx libraries</span>
                 <span>Storybook</span>
                 <span data-i18n="features.platforms.tag3">Microfrontends</span>
               </div>
-              <div class="feature-activity" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+              <div class="feature-animation feature-platform-animation" aria-hidden="true">
+                <span class="mini-platform-core">UI</span>
+                <span class="mini-platform-module module-one">NX</span>
+                <span class="mini-platform-module module-two">SB</span>
+                <span class="mini-platform-module module-three">API</span>
+                <i class="mini-platform-link link-one"></i>
+                <i class="mini-platform-link link-two"></i>
+                <i class="mini-platform-link link-three"></i>
+              </div>
             </article>
 
-            <article class="feature-card">
+            <article class="feature-card feature-card-quality">
               <div class="feature-card-top">
                 <span class="feature-index">06</span>
                 <p data-i18n="features.quality.kicker">Delivery confidence</p>
@@ -326,12 +415,18 @@
                 Established Playwright and Cypress coverage, with ownership extending
                 through implementation, deployment, monitoring and iteration.
               </p>
-              <div class="feature-tags" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
+              <div class="feature-tags" role="group" aria-label="Delivered capabilities" data-i18n-aria="accessibility.deliveredCapabilities">
                 <span>Playwright</span>
                 <span>Cypress</span>
                 <span data-i18n="features.quality.tag3">Monitoring</span>
               </div>
-              <div class="feature-activity" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+              <div class="feature-animation feature-quality-animation" aria-hidden="true">
+                <span class="mini-pipeline-stage"><i></i><b>BUILD</b></span>
+                <span class="mini-pipeline-stage"><i></i><b>TEST</b></span>
+                <span class="mini-pipeline-stage"><i></i><b>DEPLOY</b></span>
+                <span class="mini-pipeline-stage"><i></i><b>MONITOR</b></span>
+                <em class="mini-pipeline-flow"></em>
+              </div>
             </article>
           </div>
         </div>
@@ -417,7 +512,7 @@
             </div>
           </article>
 
-          <article class="case-study case-study-robot reveal">
+          <article class="case-study case-study-robot reveal" data-robot-scroll>
             <div class="case-copy">
               <div class="case-meta">
                 <span>02</span>
@@ -450,7 +545,7 @@
                 <span>Cypress</span>
               </div>
             </div>
-            <div class="case-visual robot-visual motion-scene" data-motion-scene data-motion-state="running" data-in-view="false" role="group" aria-label="Animated robot motion workflow" data-i18n-aria="accessibility.robotWorkflow">
+            <div class="case-visual robot-visual motion-scene" data-motion-scene data-motion-state="running" data-in-view="false" data-scroll-linked="false" role="group" aria-label="Animated robot motion workflow" data-i18n-aria="accessibility.robotWorkflow">
               <button class="motion-toggle motion-toggle-dark" type="button" data-motion-toggle aria-pressed="false">
                 <span class="motion-toggle-icon" aria-hidden="true">Ⅱ</span>
                 <span class="sr-only" data-motion-toggle-label>Pause animation</span>
@@ -470,6 +565,10 @@
                 <span class="block block-blue" data-i18n="work.coboworx.visual.move">Move to position</span>
                 <span class="block block-blue indent" data-i18n="work.coboworx.visual.rotate">Rotate joint · 45°</span>
                 <span class="block block-green" data-i18n="work.coboworx.visual.run">Run motion</span>
+              </div>
+              <div class="robot-scroll-rail" aria-hidden="true">
+                <span class="robot-scroll-track"><i></i></span>
+                <b data-i18n="work.coboworx.visual.scroll">Scroll to scrub workflow</b>
               </div>
             </div>
           </article>
