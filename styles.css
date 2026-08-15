@@ -2815,6 +2815,410 @@ h3 {
   }
 }
 
+.scaleforge-visual {
+  padding: clamp(28px, 4.6vw, 58px);
+  background:
+    radial-gradient(circle at 14% 18%, rgba(70, 211, 255, 0.16), transparent 34%),
+    radial-gradient(circle at 86% 84%, rgba(255, 159, 67, 0.14), transparent 32%),
+    #08121f;
+}
+
+.scaleforge-visual::before {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(103, 220, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(103, 220, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  content: "";
+  mask-image: radial-gradient(circle at center, black 15%, transparent 78%);
+}
+
+.scaleforge-console {
+  position: relative;
+  z-index: 2;
+  width: min(100%, 740px);
+  overflow: hidden;
+  border: 1px solid rgba(123, 222, 255, 0.18);
+  border-radius: 20px;
+  background: rgba(5, 13, 24, 0.92);
+  color: #e8f7ff;
+  box-shadow: 0 36px 90px rgba(0, 4, 12, 0.52);
+  backdrop-filter: blur(14px);
+}
+
+.scaleforge-toolbar,
+.scaleforge-trace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.scaleforge-toolbar {
+  min-height: 58px;
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(123, 222, 255, 0.11);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.scaleforge-brand,
+.scaleforge-health {
+  display: inline-flex;
+  align-items: center;
+}
+
+.scaleforge-brand {
+  gap: 10px;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+}
+
+.scaleforge-brand i {
+  display: grid;
+  width: 28px;
+  height: 28px;
+  border: 1px solid rgba(94, 220, 255, 0.5);
+  border-radius: 8px;
+  background: linear-gradient(145deg, rgba(66, 206, 255, 0.18), rgba(255, 159, 67, 0.12));
+  color: #83e4ff;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 840;
+  letter-spacing: 0.06em;
+  place-items: center;
+}
+
+.scaleforge-health {
+  gap: 7px;
+  color: #81e8bd;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.scaleforge-health i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #56e3a4;
+  box-shadow: 0 0 0 4px rgba(86, 227, 164, 0.1);
+  animation: scaleforge-health-pulse 2.4s ease-in-out infinite;
+}
+
+.scaleforge-trace {
+  min-height: 34px;
+  gap: 8px;
+  padding: 0 22px;
+  border-bottom: 1px solid rgba(123, 222, 255, 0.08);
+  color: #688397;
+  font-size: 8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.scaleforge-trace code {
+  margin-right: auto;
+  color: #91b3c7;
+  font: inherit;
+}
+
+.scaleforge-trace b {
+  color: #76dfb3;
+  font-size: 8px;
+}
+
+.scaleforge-flow {
+  display: grid;
+  grid-template-columns:
+    minmax(92px, 1fr) minmax(18px, 0.28fr)
+    minmax(92px, 1fr) minmax(18px, 0.28fr)
+    minmax(92px, 1fr) minmax(18px, 0.28fr)
+    minmax(92px, 1fr);
+  gap: 8px;
+  align-items: center;
+  padding: 28px 22px 22px;
+}
+
+.scaleforge-node {
+  position: relative;
+  display: grid;
+  min-height: 118px;
+  align-content: center;
+  gap: 7px;
+  padding: 14px 10px;
+  border: 1px solid rgba(123, 222, 255, 0.13);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  text-align: center;
+  animation: scaleforge-node-cycle 4.8s ease-in-out infinite;
+}
+
+.scaleforge-node::after {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  top: 9px;
+  right: 9px;
+  border-radius: 50%;
+  background: #56e3a4;
+  box-shadow: 0 0 9px rgba(86, 227, 164, 0.54);
+  content: "";
+}
+
+.scaleforge-node small {
+  color: #52cdec;
+  font-size: 7px;
+  font-weight: 820;
+  letter-spacing: 0.13em;
+}
+
+.scaleforge-node strong {
+  color: #e9f7ff;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.scaleforge-node span {
+  color: #6f899b;
+  font-size: 6px;
+  font-weight: 760;
+  letter-spacing: 0.06em;
+}
+
+.scaleforge-data-node {
+  animation-delay: 0.8s;
+}
+
+.scaleforge-bus-node {
+  animation-delay: 1.6s;
+}
+
+.scaleforge-worker-node {
+  animation-delay: 2.4s;
+}
+
+.scaleforge-link {
+  position: relative;
+  height: 1px;
+  background: rgba(91, 210, 245, 0.22);
+}
+
+.scaleforge-link::before,
+.scaleforge-link::after {
+  position: absolute;
+  top: -2px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #274659;
+  content: "";
+}
+
+.scaleforge-link::before {
+  left: 0;
+}
+
+.scaleforge-link::after {
+  right: 0;
+}
+
+.scaleforge-link i {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: -4px;
+  left: 0;
+  border: 1px solid #75e5ff;
+  border-radius: 3px;
+  background: #123245;
+  box-shadow: 0 0 14px rgba(88, 222, 255, 0.72);
+  opacity: 0;
+  animation: scaleforge-event-hop 4.8s ease-in-out infinite;
+}
+
+.scaleforge-link:nth-child(4) i {
+  animation-delay: 0.8s;
+}
+
+.scaleforge-link:nth-child(6) i {
+  animation-delay: 1.6s;
+}
+
+.scaleforge-events {
+  display: grid;
+  gap: 7px;
+  padding: 0 22px 20px;
+}
+
+.scaleforge-events > span {
+  display: grid;
+  grid-template-columns: 7px minmax(112px, 0.7fr) 1fr;
+  gap: 9px;
+  align-items: center;
+  min-height: 28px;
+  padding: 5px 10px;
+  border: 1px solid rgba(123, 222, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.018);
+  color: #7f9aac;
+  animation: scaleforge-log-cycle 4.8s ease-in-out infinite;
+}
+
+.scaleforge-events > span:nth-child(2) {
+  animation-delay: 1.1s;
+}
+
+.scaleforge-events > span:nth-child(3) {
+  animation-delay: 2.2s;
+}
+
+.scaleforge-events i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4fd5f4;
+}
+
+.scaleforge-events b,
+.scaleforge-events small {
+  font-size: 7px;
+}
+
+.scaleforge-events b {
+  color: #bdd9e8;
+  letter-spacing: 0.02em;
+}
+
+.scaleforge-events small {
+  text-align: right;
+}
+
+.scaleforge-runtime {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  padding: 14px 22px 22px;
+  border-top: 1px solid rgba(123, 222, 255, 0.08);
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.scaleforge-runtime > span {
+  display: grid;
+  grid-template-columns: 7px 1fr;
+  gap: 2px 7px;
+  align-items: center;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid rgba(123, 222, 255, 0.09);
+  border-radius: 9px;
+}
+
+.scaleforge-runtime i {
+  grid-row: 1 / 3;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #56e3a4;
+  box-shadow: 0 0 0 3px rgba(86, 227, 164, 0.08);
+  animation: scaleforge-signal 2.6s ease-in-out infinite;
+}
+
+.scaleforge-runtime > span:nth-child(2) i {
+  animation-delay: 0.7s;
+}
+
+.scaleforge-runtime > span:nth-child(3) i {
+  animation-delay: 1.4s;
+}
+
+.scaleforge-runtime b {
+  color: #a9c5d5;
+  font-size: 7px;
+}
+
+.scaleforge-runtime small {
+  color: #587286;
+  font-size: 6px;
+  letter-spacing: 0.06em;
+}
+
+@keyframes scaleforge-event-hop {
+  0%,
+  8% {
+    opacity: 0;
+    transform: translateX(0) rotate(0deg);
+  }
+  16%,
+  34% {
+    opacity: 1;
+  }
+  44% {
+    opacity: 0;
+    transform: translateX(calc(100% + 12px)) rotate(90deg);
+  }
+  45%,
+  100% {
+    opacity: 0;
+    transform: translateX(calc(100% + 12px)) rotate(90deg);
+  }
+}
+
+@keyframes scaleforge-node-cycle {
+  0%,
+  12%,
+  60%,
+  100% {
+    border-color: rgba(123, 222, 255, 0.13);
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  22%,
+  38% {
+    border-color: rgba(100, 221, 255, 0.42);
+    box-shadow: 0 12px 30px rgba(27, 181, 224, 0.09);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes scaleforge-log-cycle {
+  0%,
+  12%,
+  58%,
+  100% {
+    border-color: rgba(123, 222, 255, 0.08);
+    background: rgba(255, 255, 255, 0.018);
+    opacity: 0.58;
+  }
+  22%,
+  42% {
+    border-color: rgba(86, 227, 164, 0.22);
+    background: rgba(86, 227, 164, 0.05);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleforge-health-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.86);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleforge-signal {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
 .case-visual {
   position: relative;
   display: grid;
@@ -5543,6 +5947,96 @@ h3 {
 
   .keynest-lock {
     transform: scale(0.82);
+  }
+
+  .scaleforge-visual {
+    padding: 26px 12px;
+  }
+
+  .scaleforge-toolbar {
+    min-height: 50px;
+    padding-inline: 14px 48px;
+  }
+
+  .scaleforge-health span {
+    display: none;
+  }
+
+  .scaleforge-trace {
+    padding-inline: 14px;
+  }
+
+  .scaleforge-flow {
+    grid-template-columns: minmax(0, 1fr) 32px minmax(0, 1fr);
+    grid-template-rows: 100px 28px 100px;
+    gap: 8px;
+    padding: 20px 14px 16px;
+  }
+
+  .scaleforge-node {
+    min-height: 100px;
+    padding: 10px 7px;
+  }
+
+  .scaleforge-flow > :nth-child(1) {
+    grid-area: 1 / 1;
+  }
+
+  .scaleforge-flow > :nth-child(2) {
+    grid-area: 1 / 2;
+  }
+
+  .scaleforge-flow > :nth-child(3) {
+    grid-area: 1 / 3;
+  }
+
+  .scaleforge-flow > :nth-child(4) {
+    grid-area: 2 / 3;
+    transform: rotate(90deg);
+  }
+
+  .scaleforge-flow > :nth-child(5) {
+    grid-area: 3 / 3;
+  }
+
+  .scaleforge-flow > :nth-child(6) {
+    grid-area: 3 / 2;
+    transform: rotate(180deg);
+  }
+
+  .scaleforge-flow > :nth-child(7) {
+    grid-area: 3 / 1;
+  }
+
+  .scaleforge-events {
+    padding: 0 14px 16px;
+  }
+
+  .scaleforge-events > span {
+    grid-template-columns: 7px 1fr;
+  }
+
+  .scaleforge-events small {
+    display: none;
+  }
+
+  .scaleforge-runtime {
+    gap: 5px;
+    padding: 12px 14px 16px;
+  }
+
+  .scaleforge-runtime > span {
+    grid-template-columns: 6px 1fr;
+    gap: 2px 5px;
+    padding: 6px;
+  }
+
+  .scaleforge-runtime b {
+    font-size: 6px;
+  }
+
+  .scaleforge-runtime small {
+    font-size: 5px;
   }
 
   .workflow-body {

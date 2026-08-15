@@ -41,9 +41,9 @@ test("every translation key referenced by the page exists", () => {
   }
 });
 
-test("all eight motion scenes include user controls and reduced-motion support", () => {
-  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 8);
-  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 8);
+test("all nine motion scenes include user controls and reduced-motion support", () => {
+  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 9);
+  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 9);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);
   assert.match(styles, /\.motion-scene\[data-motion-state="paused"\]/);
 });
@@ -101,6 +101,18 @@ test("KeyNest is presented as a verifiable work-in-progress project", () => {
   assert.match(styles, /@keyframes keynest-packet/);
 });
 
+test("ScaleForge presents a verifiable resilient backend architecture", () => {
+  assert.match(indexHtml, /case-study-scaleforge/);
+  assert.match(indexHtml, /Backend architecture project · 2026/);
+  assert.match(indexHtml, /github\.com\/sujithgnth\/scaleforge/);
+  assert.match(indexHtml, /transactional outbox/);
+  assert.match(indexHtml, /RabbitMQ retries and dead-letter queues/);
+  assert.match(indexHtml, /Testcontainers/);
+  assert.match(indexHtml, /class="scaleforge-flow"/);
+  assert.match(styles, /@keyframes scaleforge-event-hop/);
+  assert.match(styles, /@keyframes scaleforge-log-cycle/);
+});
+
 test("archive workflows use distinct operational animations and stronger positioning", () => {
   assert.match(indexHtml, /Product ownership at scale/);
   assert.match(indexHtml, /Critical workflows scaled, modernised and operated/);
@@ -146,6 +158,18 @@ test("German-market SEO exposes localized crawl signals", () => {
   assert.match(indexHtml, /hreflang="en"/);
   assert.match(indexHtml, /type="application\/ld\+json"/);
   assert.match(indexHtml, /"@type": "ProfilePage"/);
+  const structuredData = JSON.parse(
+    indexHtml.match(
+      /<script type="application\/ld\+json" id="profile-structured-data">([\s\S]*?)<\/script>/,
+    )[1],
+  );
+  assert.ok(
+    structuredData.hasPart.some(
+      (project) =>
+        project.name === "ScaleForge" &&
+        project.codeRepository === "https://github.com/sujithgnth/scaleforge",
+    ),
+  );
   assert.match(indexHtml, /rel="sitemap"/);
   assert.match(sitemap, /xmlns:xhtml="http:\/\/www\.w3\.org\/1999\/xhtml"/);
   assert.match(sitemap, /\?lang=en/);

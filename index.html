@@ -37,7 +37,7 @@
     <link rel="sitemap" type="application/xml" href="https://sujithgnth.github.io/sujeithgopinath/sitemap.xml" />
     <title>Senior Frontend Engineer in Dresden | Sujeith Gopinath</title>
     <link rel="preload" href="./src/portfolio/assets/sujeith-cartoon.jpg" as="image" type="image/jpeg" />
-    <link rel="stylesheet" href="./styles.css?v=20260816.3" />
+    <link rel="stylesheet" href="./styles.css?v=20260816.4" />
     <script type="application/ld+json" id="profile-structured-data">
       {
         "@context": "https://schema.org",
@@ -74,18 +74,28 @@
             "Software Architecture"
           ]
         },
-        "hasPart": {
-          "@type": "SoftwareSourceCode",
-          "name": "Engineering Observatory",
-          "description": "A local-first developer platform for deterministic repository analysis, measured performance testing and evidence-backed engineering review.",
-          "codeRepository": "https://github.com/sujithgnth/engineering-observatory",
-          "programmingLanguage": ["TypeScript", "JavaScript", "HTML", "CSS", "SQL"],
-          "runtimePlatform": ["Electron", "Node.js"]
-        }
+        "hasPart": [
+          {
+            "@type": "SoftwareSourceCode",
+            "name": "Engineering Observatory",
+            "description": "A local-first developer platform for deterministic repository analysis, measured performance testing and evidence-backed engineering review.",
+            "codeRepository": "https://github.com/sujithgnth/engineering-observatory",
+            "programmingLanguage": ["TypeScript", "JavaScript", "HTML", "CSS", "SQL"],
+            "runtimePlatform": ["Electron", "Node.js"]
+          },
+          {
+            "@type": "SoftwareSourceCode",
+            "name": "ScaleForge",
+            "description": "A production-style NestJS modular monolith demonstrating transactional workflows, asynchronous messaging, observability and deployment readiness.",
+            "codeRepository": "https://github.com/sujithgnth/scaleforge",
+            "programmingLanguage": ["TypeScript", "SQL"],
+            "runtimePlatform": ["Node.js", "Docker", "Kubernetes"]
+          }
+        ]
       }
     </script>
-    <script src="./translations.js?v=20260816.3" defer></script>
-    <script src="./script.js?v=20260816.3" defer></script>
+    <script src="./translations.js?v=20260816.4" defer></script>
+    <script src="./script.js?v=20260816.4" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content" data-i18n="accessibility.skipToContent">Skip to content</a>
@@ -555,7 +565,8 @@
           </div>
           <p data-i18n="work.intro">
             A selection of production workflows and hands-on architecture projects—from
-            AI-assisted review systems and physical robots to secure web platforms.
+            AI-assisted review systems and physical robots to secure web platforms and
+            resilient backend foundations.
           </p>
         </div>
 
@@ -763,6 +774,98 @@
                   <span><i aria-hidden="true"></i>RabbitMQ</span>
                   <span><i aria-hidden="true"></i>Prometheus</span>
                   <span><i aria-hidden="true"></i>Grafana + Loki</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-study case-study-scaleforge reveal" id="scaleforge">
+            <div class="case-copy">
+              <div class="case-meta">
+                <span>04</span>
+                <span data-i18n="work.scaleforge.period">Backend architecture project · 2026</span>
+              </div>
+              <p class="case-kicker" data-i18n="work.scaleforge.kicker">Resilience engineering</p>
+              <h3 data-i18n="work.scaleforge.title">Building a backend where failure paths are part of the design.</h3>
+              <p data-i18n="work.scaleforge.description">
+                ScaleForge is a production-style NestJS modular monolith built to make
+                scalability and resilience decisions inspectable—without pretending a
+                local stack proves internet scale.
+              </p>
+              <ul class="case-points">
+                <li data-i18n="work.scaleforge.point1">Modelled server-priced order and payment flows with Prisma, PostgreSQL transactions, optimistic locking and a transactional outbox</li>
+                <li data-i18n="work.scaleforge.point2">Combined Redis cache-aside reads, RabbitMQ retries and dead-letter queues, idempotent consumers and bounded BullMQ delivery jobs</li>
+                <li data-i18n="work.scaleforge.point3">Added OpenTelemetry, Prometheus, Grafana, Loki, Sentry, Testcontainers, Docker Compose, Kubernetes and Helm verification</li>
+              </ul>
+              <div class="case-actions">
+                <a
+                  class="button button-secondary"
+                  href="https://github.com/sujithgnth/scaleforge"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span data-i18n="work.scaleforge.repository">Explore the architecture</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+              <div class="tag-list" role="group" aria-label="Technologies" data-i18n-aria="accessibility.technologies">
+                <span>NestJS</span>
+                <span>TypeScript</span>
+                <span>Prisma</span>
+                <span>PostgreSQL</span>
+                <span>Redis</span>
+                <span>RabbitMQ</span>
+                <span>BullMQ</span>
+                <span>Kubernetes</span>
+              </div>
+            </div>
+            <div class="case-visual scaleforge-visual motion-scene" data-motion-scene data-motion-state="running" data-in-view="false" role="group" aria-label="Animated ScaleForge resilient order pipeline" data-i18n-aria="accessibility.scaleforgeWorkflow">
+              <button class="motion-toggle motion-toggle-dark" type="button" data-motion-toggle aria-pressed="false">
+                <span class="motion-toggle-icon" aria-hidden="true">Ⅱ</span>
+                <span class="sr-only" data-motion-toggle-label>Pause animation</span>
+              </button>
+              <div class="scaleforge-console">
+                <header class="scaleforge-toolbar">
+                  <span class="scaleforge-brand"><i aria-hidden="true">SF</i><b>ScaleForge</b></span>
+                  <span class="scaleforge-health"><i aria-hidden="true"></i><span data-i18n="work.scaleforge.visual.status">SYSTEM HEALTHY</span></span>
+                </header>
+                <div class="scaleforge-trace">
+                  <span>trace</span><code>8f2a…91c4</code><b>201 CREATED</b>
+                </div>
+                <div class="scaleforge-flow" aria-hidden="true">
+                  <section class="scaleforge-node scaleforge-api-node">
+                    <small>HTTP</small>
+                    <strong data-i18n="work.scaleforge.visual.api">NestJS API</strong>
+                    <span>JWT · RBAC</span>
+                  </section>
+                  <span class="scaleforge-link"><i></i></span>
+                  <section class="scaleforge-node scaleforge-data-node">
+                    <small>TX</small>
+                    <strong data-i18n="work.scaleforge.visual.data">PostgreSQL</strong>
+                    <span>ORDER + OUTBOX</span>
+                  </section>
+                  <span class="scaleforge-link"><i></i></span>
+                  <section class="scaleforge-node scaleforge-bus-node">
+                    <small>EVENT</small>
+                    <strong data-i18n="work.scaleforge.visual.bus">RabbitMQ</strong>
+                    <span>RETRY · DLQ</span>
+                  </section>
+                  <span class="scaleforge-link"><i></i></span>
+                  <section class="scaleforge-node scaleforge-worker-node">
+                    <small>JOB</small>
+                    <strong data-i18n="work.scaleforge.visual.worker">BullMQ worker</strong>
+                    <span>IDEMPOTENT</span>
+                  </section>
+                </div>
+                <div class="scaleforge-events">
+                  <span><i aria-hidden="true"></i><b>OrderCreated</b><small data-i18n="work.scaleforge.visual.committed">transaction committed</small></span>
+                  <span><i aria-hidden="true"></i><b>Publisher confirm</b><small data-i18n="work.scaleforge.visual.confirmed">event acknowledged</small></span>
+                  <span><i aria-hidden="true"></i><b>PaymentCompleted</b><small data-i18n="work.scaleforge.visual.deduped">consumer deduplicated</small></span>
+                </div>
+                <div class="scaleforge-runtime" aria-label="Operational signals" data-i18n-aria="work.scaleforge.visual.signals">
+                  <span><i aria-hidden="true"></i><b>Redis</b><small>CACHE HIT</small></span>
+                  <span><i aria-hidden="true"></i><b>Prometheus</b><small>p95 42ms</small></span>
+                  <span><i aria-hidden="true"></i><b>OpenTelemetry</b><small>TRACE OK</small></span>
                 </div>
               </div>
             </div>
