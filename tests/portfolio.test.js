@@ -41,9 +41,9 @@ test("every translation key referenced by the page exists", () => {
   }
 });
 
-test("all seven motion scenes include user controls and reduced-motion support", () => {
-  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 7);
-  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 7);
+test("all eight motion scenes include user controls and reduced-motion support", () => {
+  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 8);
+  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 8);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);
   assert.match(styles, /\.motion-scene\[data-motion-state="paused"\]/);
 });
@@ -111,6 +111,25 @@ test("archive workflows use distinct operational animations and stronger positio
   assert.match(styles, /@keyframes network-route-flow/);
   assert.match(styles, /@keyframes kitchen-timer/);
   assert.match(styles, /@keyframes push-toast-arrive/);
+});
+
+test("Engineering Observatory is presented as an evidence-first work in progress", () => {
+  assert.match(indexHtml, /id="project"/);
+  assert.match(indexHtml, /Engineering Observatory/);
+  assert.match(indexHtml, /Portfolio project · Work in progress/);
+  assert.match(indexHtml, /Deterministic analysis before AI/);
+  assert.match(indexHtml, /k6 or Autocannon/);
+  assert.match(
+    indexHtml,
+    /https:\/\/github\.com\/sujithgnth\/engineering-observatory/,
+  );
+  assert.match(indexHtml, /engineering-observatory-cover\.jpg/);
+  assert.match(styles, /\.project-spotlight/);
+  assert.match(styles, /\.project-preview/);
+  assert.match(indexHtml, /class="project-analysis-animation"/);
+  assert.match(indexHtml, /REPO[\s\S]*AST[\s\S]*RULES[\s\S]*EVIDENCE/);
+  assert.match(styles, /@keyframes project-repository-scan/);
+  assert.match(styles, /@keyframes project-evidence-flow/);
 });
 
 test("project technology pills use the local icon sprite", () => {

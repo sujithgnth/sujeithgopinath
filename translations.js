@@ -34,8 +34,11 @@ window.portfolioTranslations = {
     "accessibility.loadshareWorkflow": "Animated LoadShare shipment workflow",
     "accessibility.swiggyWorkflow":
       "Animated Swiggy restaurant order and delivery workflow",
+    "accessibility.projectPreview":
+      "Engineering Observatory repository analysis preview",
     "accessibility.pauseMotion": "Pause animation",
     "accessibility.playMotion": "Play animation",
+    "nav.project": "Project",
     "nav.work": "Work",
     "nav.experience": "Experience",
     "nav.approach": "Approach",
@@ -52,9 +55,29 @@ window.portfolioTranslations = {
     "hero.workAuthorisation":
       "Permanent German work authorisation · no sponsorship required",
     "hero.location": "Based in Dresden",
-    "hero.currentlyBuilding": "Career direction",
+    "hero.currentlyBuilding": "Currently building",
     "hero.currentProject":
-      "Hands-on Software Architecture, grounded in delivery",
+      "Engineering Observatory — evidence-first developer tooling",
+    "project.eyebrow": "Portfolio project · Work in progress",
+    "project.title": "Engineering Observatory",
+    "project.intro":
+      "A local-first developer platform that turns repository structure into defensible engineering evidence.",
+    "project.status": "Work in progress",
+    "project.meta": "2026 · Open source",
+    "project.kicker": "Deterministic analysis before AI",
+    "project.headline": "Understand a codebase before changing it.",
+    "project.description":
+      "An Electron application in an Nx monorepo that profiles React, Angular, Node.js and NestJS repositories, surfaces architecture, performance and security risks, and keeps AI limited to explaining measured findings.",
+    "project.point1":
+      "Repository acquisition through local folders, archives, or public and private GitHub repositories",
+    "project.point2":
+      "Versioned deterministic analyzers and scorecards backed by source locations",
+    "project.point3":
+      "Measured performance runs through k6 or Autocannon, without theoretical scaling claims",
+    "project.source": "View source",
+    "project.docs": "Architecture & setup",
+    "project.visual.kicker": "Repository intelligence",
+    "project.visual.title": "Evidence first. Explanation second.",
     "proof.eyebrow": "Evidence in production",
     "proof.title": "Outcomes measured. Systems delivered.",
     "proof.intro":
@@ -357,8 +380,11 @@ window.portfolioTranslations = {
       "Animierter LoadShare-Workflow für Sendungen",
     "accessibility.swiggyWorkflow":
       "Animierter Swiggy-Workflow für Bestellung und Lieferung",
+    "accessibility.projectPreview":
+      "Vorschau der Repository-Analyse in Engineering Observatory",
     "accessibility.pauseMotion": "Animation pausieren",
     "accessibility.playMotion": "Animation abspielen",
+    "nav.project": "Projekt",
     "nav.work": "Projekte",
     "nav.experience": "Erfahrung",
     "nav.approach": "Arbeitsweise",
@@ -376,9 +402,29 @@ window.portfolioTranslations = {
     "hero.workAuthorisation":
       "Unbefristete Arbeitserlaubnis · kein Visumssponsoring erforderlich",
     "hero.location": "In Dresden zuhause",
-    "hero.currentlyBuilding": "Berufliche Richtung",
+    "hero.currentlyBuilding": "Aktuelles Projekt",
     "hero.currentProject":
-      "Praxisnahe Softwarearchitektur, fest verankert in der Umsetzung",
+      "Engineering Observatory — evidenzbasierte Entwicklerwerkzeuge",
+    "project.eyebrow": "Portfolio-Projekt · In Arbeit",
+    "project.title": "Engineering Observatory",
+    "project.intro":
+      "Eine lokal betriebene Entwicklerplattform, die Repository-Strukturen in nachvollziehbare Engineering-Nachweise übersetzt.",
+    "project.status": "In Arbeit",
+    "project.meta": "2026 · Open Source",
+    "project.kicker": "Deterministische Analyse vor KI",
+    "project.headline": "Eine Codebasis verstehen, bevor sie verändert wird.",
+    "project.description":
+      "Eine Electron-Anwendung in einem Nx-Monorepo, die React-, Angular-, Node.js- und NestJS-Repositories profiliert, Architektur-, Performance- und Sicherheitsrisiken sichtbar macht und KI auf die Erklärung gemessener Befunde begrenzt.",
+    "project.point1":
+      "Repository-Erfassung über lokale Ordner, Archive sowie öffentliche oder private GitHub-Repositories",
+    "project.point2":
+      "Versionierte deterministische Analysatoren und Scorecards mit konkreten Quellcodefundstellen",
+    "project.point3":
+      "Gemessene Performance-Tests mit k6 oder Autocannon – ohne theoretische Skalierungsversprechen",
+    "project.source": "Quellcode ansehen",
+    "project.docs": "Architektur und Einrichtung",
+    "project.visual.kicker": "Repository-Intelligence",
+    "project.visual.title": "Nachweise zuerst. Erklärung danach.",
     "proof.eyebrow": "Nachweise aus der Produktion",
     "proof.title": "Messbare Ergebnisse. Gelieferte Systeme.",
     "proof.intro":
