@@ -37,7 +37,7 @@
     <link rel="sitemap" type="application/xml" href="https://sujithgnth.github.io/sujeithgopinath/sitemap.xml" />
     <title>Senior Frontend Engineer in Dresden | Sujeith Gopinath</title>
     <link rel="preload" href="./src/portfolio/assets/sujeith-cartoon.jpg" as="image" type="image/jpeg" />
-    <link rel="stylesheet" href="./styles.css?v=20260816.2" />
+    <link rel="stylesheet" href="./styles.css?v=20260816.3" />
     <script type="application/ld+json" id="profile-structured-data">
       {
         "@context": "https://schema.org",
@@ -84,8 +84,8 @@
         }
       }
     </script>
-    <script src="./translations.js?v=20260816.2" defer></script>
-    <script src="./script.js?v=20260816.2" defer></script>
+    <script src="./translations.js?v=20260816.3" defer></script>
+    <script src="./script.js?v=20260816.3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content" data-i18n="accessibility.skipToContent">Skip to content</a>
@@ -554,8 +554,8 @@
             <h2 data-i18n="work.title">Products built for real operational complexity.</h2>
           </div>
           <p data-i18n="work.intro">
-            A selection of workflows I have owned—from AI-assisted review systems and
-            physical robots to order and shipment operations.
+            A selection of production workflows and hands-on architecture projects—from
+            AI-assisted review systems and physical robots to secure web platforms.
           </p>
         </div>
 
@@ -684,6 +684,86 @@
               <div class="robot-scroll-rail" aria-hidden="true">
                 <span class="robot-scroll-track"><i></i></span>
                 <b data-i18n="work.coboworx.visual.scroll">Scroll to scrub workflow</b>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-study case-study-keynest reveal" id="keynest">
+            <div class="case-copy">
+              <div class="case-meta">
+                <span>03</span>
+                <span data-i18n="work.keynest.period">Independent project · Work in progress</span>
+              </div>
+              <p class="case-kicker" data-i18n="work.keynest.kicker">Security architecture</p>
+              <h3 data-i18n="work.keynest.title">Designing a password vault around explicit trust boundaries.</h3>
+              <p data-i18n="work.keynest.description">
+                KeyNest is a working educational MVP I am building to demonstrate
+                browser cryptography, durable backend workflows and production-style
+                observability without claiming production security certification.
+              </p>
+              <ul class="case-points">
+                <li data-i18n="work.keynest.point1">Implemented AES-256-GCM vault encryption in the browser; the API persists encrypted envelopes rather than plaintext credentials</li>
+                <li data-i18n="work.keynest.point2">Designed PostgreSQL and Redis persistence with revocable sessions, audit records, CSRF protection and rate limiting</li>
+                <li data-i18n="work.keynest.point3">Added a transactional outbox, RabbitMQ worker flow, redacted logs, Prometheus metrics and a Grafana dashboard</li>
+              </ul>
+              <div class="case-actions">
+                <a
+                  class="button button-secondary"
+                  href="https://github.com/sujithgnth/password-manager"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span data-i18n="work.keynest.repository">View WIP repository</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+              <div class="tag-list" role="group" aria-label="Technologies" data-i18n-aria="accessibility.technologies">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>NestJS</span>
+                <span>PostgreSQL</span>
+                <span>Redis</span>
+                <span>RabbitMQ</span>
+                <span>Grafana</span>
+              </div>
+            </div>
+            <div class="case-visual keynest-visual motion-scene" data-motion-scene data-motion-state="running" data-in-view="false" role="group" aria-label="Encrypted password vault architecture" data-i18n-aria="accessibility.keynestWorkflow">
+              <button class="motion-toggle motion-toggle-dark" type="button" data-motion-toggle aria-pressed="false">
+                <span class="motion-toggle-icon" aria-hidden="true">Ⅱ</span>
+                <span class="sr-only" data-motion-toggle-label>Pause animation</span>
+              </button>
+              <div class="keynest-console">
+                <header class="keynest-toolbar">
+                  <span class="keynest-brand"><i aria-hidden="true"></i><b>KeyNest</b></span>
+                  <span class="keynest-wip">WIP</span>
+                </header>
+                <div class="keynest-boundary">
+                  <section class="keynest-stage keynest-browser-stage">
+                    <span class="keynest-stage-label" data-i18n="work.keynest.visual.browser">Browser vault</span>
+                    <div class="keynest-lock" aria-hidden="true">
+                      <span class="keynest-lock-shackle"></span>
+                      <span class="keynest-lock-body"><i></i></span>
+                    </div>
+                    <strong>AES-256-GCM</strong>
+                  </section>
+                  <div class="keynest-transfer" aria-hidden="true">
+                    <span>ENCRYPTED</span>
+                    <i></i><i></i><i></i>
+                  </div>
+                  <section class="keynest-stage keynest-api-stage">
+                    <span class="keynest-stage-label" data-i18n="work.keynest.visual.api">API boundary</span>
+                    <div class="keynest-envelope">
+                      <i aria-hidden="true"></i>
+                      <strong data-i18n="work.keynest.visual.encrypted">Encrypted envelopes only</strong>
+                    </div>
+                    <div class="keynest-data-row"><span>PostgreSQL</span><span>Redis</span></div>
+                  </section>
+                </div>
+                <div class="keynest-runtime" aria-label="Operational services" data-i18n-aria="work.keynest.visual.services">
+                  <span><i aria-hidden="true"></i>RabbitMQ</span>
+                  <span><i aria-hidden="true"></i>Prometheus</span>
+                  <span><i aria-hidden="true"></i>Grafana + Loki</span>
+                </div>
               </div>
             </div>
           </article>

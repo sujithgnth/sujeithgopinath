@@ -41,9 +41,9 @@ test("every translation key referenced by the page exists", () => {
   }
 });
 
-test("all seven motion scenes include user controls and reduced-motion support", () => {
-  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 7);
-  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 7);
+test("all eight motion scenes include user controls and reduced-motion support", () => {
+  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 8);
+  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 8);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);
   assert.match(styles, /\.motion-scene\[data-motion-state="paused"\]/);
 });
@@ -88,6 +88,17 @@ test("robot workflow responds to scrolling without overriding reduced motion", (
   assert.match(scriptSource, /updateRobotScrollScene/);
   assert.match(scriptSource, /if \(robotScrollVisual && !reducedMotion\)/);
   assert.match(styles, /--robot-scroll-thumb/);
+});
+
+test("KeyNest is presented as a verifiable work-in-progress project", () => {
+  assert.match(indexHtml, /case-study-keynest/);
+  assert.match(indexHtml, /Independent project · Work in progress/);
+  assert.match(indexHtml, /github\.com\/sujithgnth\/password-manager/);
+  assert.match(indexHtml, /AES-256-GCM/);
+  assert.match(indexHtml, /RabbitMQ/);
+  assert.match(indexHtml, /Prometheus/);
+  assert.match(indexHtml, /Grafana/);
+  assert.match(styles, /@keyframes keynest-packet/);
 });
 
 test("archive workflows use distinct operational animations and stronger positioning", () => {

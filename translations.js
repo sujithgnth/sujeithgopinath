@@ -27,6 +27,8 @@ window.portfolioTranslations = {
     "accessibility.documentWorkflow":
       "Animated document annotation and review workflow",
     "accessibility.robotWorkflow": "Animated robot motion workflow",
+    "accessibility.keynestWorkflow":
+      "Encrypted password vault architecture",
     "accessibility.loadshareImage": "LoadShare logistics operations interface",
     "accessibility.swiggyImage": "Swiggy restaurant order management interface",
     "accessibility.loadshareWorkflow": "Animated LoadShare shipment workflow",
@@ -143,7 +145,7 @@ window.portfolioTranslations = {
     "work.eyebrow": "Selected work",
     "work.title": "Products built for real operational complexity.",
     "work.intro":
-      "A selection of workflows I have owned—from AI-assisted review systems and physical robots to order and shipment operations.",
+      "A selection of production workflows and hands-on architecture projects—from AI-assisted review systems and physical robots to secure web platforms.",
     "work.elevait.period": "Elevait · 2023–Present",
     "work.elevait.kicker": "AI document operations",
     "work.elevait.title":
@@ -190,6 +192,23 @@ window.portfolioTranslations = {
     "work.coboworx.visual.run": "Run motion",
     "work.coboworx.visual.scroll": "Scroll to scrub workflow",
     "work.coboworx.visual.status": "Sequence running",
+    "work.keynest.period": "Independent project · Work in progress",
+    "work.keynest.kicker": "Security architecture",
+    "work.keynest.title":
+      "Designing a password vault around explicit trust boundaries.",
+    "work.keynest.description":
+      "KeyNest is a working educational MVP I am building to demonstrate browser cryptography, durable backend workflows and production-style observability without claiming production security certification.",
+    "work.keynest.point1":
+      "Implemented AES-256-GCM vault encryption in the browser; the API persists encrypted envelopes rather than plaintext credentials",
+    "work.keynest.point2":
+      "Designed PostgreSQL and Redis persistence with revocable sessions, audit records, CSRF protection and rate limiting",
+    "work.keynest.point3":
+      "Added a transactional outbox, RabbitMQ worker flow, redacted logs, Prometheus metrics and a Grafana dashboard",
+    "work.keynest.repository": "View WIP repository",
+    "work.keynest.visual.browser": "Browser vault",
+    "work.keynest.visual.api": "API boundary",
+    "work.keynest.visual.encrypted": "Encrypted envelopes only",
+    "work.keynest.visual.services": "Operational services",
     "archive.eyebrow": "Product ownership at scale",
     "archive.title": "Critical workflows scaled, modernised and operated.",
     "archive.loadshare.title": "From legacy UI to a shipment operations platform",
@@ -351,6 +370,8 @@ window.portfolioTranslations = {
       "Animierter Workflow für Dokumentenannotation und -prüfung",
     "accessibility.robotWorkflow":
       "Animierter Workflow zur Robotersteuerung",
+    "accessibility.keynestWorkflow":
+      "Architektur eines verschlüsselten Passwort-Tresors",
     "accessibility.loadshareImage":
       "Benutzeroberfläche für Logistikprozesse bei LoadShare",
     "accessibility.swiggyImage":
@@ -472,7 +493,7 @@ window.portfolioTranslations = {
     "work.eyebrow": "Ausgewählte Projekte",
     "work.title": "Produkte für echte operative Komplexität.",
     "work.intro":
-      "Eine Auswahl von Workflows, die ich verantwortet habe – von KI-gestützten Prüfsystemen und physischen Robotern bis zu Bestell- und Sendungsprozessen.",
+      "Eine Auswahl aus Produktionsworkflows und praxisnahen Architekturprojekten – von KI-gestützten Prüfsystemen und physischen Robotern bis zu sicheren Webplattformen.",
     "work.elevait.period": "Elevait · 2023–Heute",
     "work.elevait.kicker": "KI-gestützte Dokumentenprozesse",
     "work.elevait.title":
@@ -519,6 +540,23 @@ window.portfolioTranslations = {
     "work.coboworx.visual.run": "Bewegung ausführen",
     "work.coboworx.visual.scroll": "Scrollen, um den Ablauf zu steuern",
     "work.coboworx.visual.status": "Sequenz läuft",
+    "work.keynest.period": "Eigenständiges Projekt · In Arbeit",
+    "work.keynest.kicker": "Security-Architektur",
+    "work.keynest.title":
+      "Einen Passwort-Tresor mit klaren Vertrauensgrenzen entwickeln.",
+    "work.keynest.description":
+      "KeyNest ist ein funktionsfähiger Lern-MVP, den ich entwickle, um Kryptografie im Browser, robuste Backend-Abläufe und produktionsnahe Observability zu demonstrieren – ohne den Anspruch einer zertifizierten Produktionssicherheit.",
+    "work.keynest.point1":
+      "AES-256-GCM-Verschlüsselung im Browser umgesetzt; die API speichert verschlüsselte Envelopes statt Klartext-Zugangsdaten",
+    "work.keynest.point2":
+      "PostgreSQL- und Redis-Persistenz mit widerrufbaren Sessions, Audit-Einträgen, CSRF-Schutz und Rate-Limits entworfen",
+    "work.keynest.point3":
+      "Transactional Outbox, RabbitMQ-Worker, redigierte Logs, Prometheus-Metriken und ein Grafana-Dashboard ergänzt",
+    "work.keynest.repository": "WIP-Repository ansehen",
+    "work.keynest.visual.browser": "Browser-Tresor",
+    "work.keynest.visual.api": "API-Grenze",
+    "work.keynest.visual.encrypted": "Nur verschlüsselte Envelopes",
+    "work.keynest.visual.services": "Betriebsdienste",
     "archive.eyebrow": "Produktverantwortung bei Wachstum",
     "archive.title": "Kritische Workflows skaliert, modernisiert und zuverlässig betrieben.",
     "archive.loadshare.title": "Von der Legacy-UI zur Plattform für Sendungsprozesse",
