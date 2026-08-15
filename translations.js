@@ -29,6 +29,8 @@ window.portfolioTranslations = {
     "accessibility.robotWorkflow": "Animated robot motion workflow",
     "accessibility.keynestWorkflow":
       "Encrypted password vault architecture",
+    "accessibility.scaleforgeWorkflow":
+      "Animated ScaleForge resilient order pipeline",
     "accessibility.loadshareImage": "LoadShare logistics operations interface",
     "accessibility.swiggyImage": "Swiggy restaurant order management interface",
     "accessibility.loadshareWorkflow": "Animated LoadShare shipment workflow",
@@ -57,7 +59,7 @@ window.portfolioTranslations = {
     "hero.location": "Based in Dresden",
     "hero.currentlyBuilding": "Currently building",
     "hero.currentProject":
-      "Engineering Observatory — evidence-first developer tooling",
+      "Engineering Observatory + ScaleForge — evidence-first tools and resilient backends",
     "project.eyebrow": "Portfolio project · Work in progress",
     "project.title": "Engineering Observatory",
     "project.intro":
@@ -145,7 +147,7 @@ window.portfolioTranslations = {
     "work.eyebrow": "Selected work",
     "work.title": "Products built for real operational complexity.",
     "work.intro":
-      "A selection of production workflows and hands-on architecture projects—from AI-assisted review systems and physical robots to secure web platforms.",
+      "A selection of production workflows and hands-on architecture projects—from AI-assisted review systems and physical robots to secure web platforms and resilient backend foundations.",
     "work.elevait.period": "Elevait · 2023–Present",
     "work.elevait.kicker": "AI document operations",
     "work.elevait.title":
@@ -209,6 +211,28 @@ window.portfolioTranslations = {
     "work.keynest.visual.api": "API boundary",
     "work.keynest.visual.encrypted": "Encrypted envelopes only",
     "work.keynest.visual.services": "Operational services",
+    "work.scaleforge.period": "Backend architecture project · 2026",
+    "work.scaleforge.kicker": "Resilience engineering",
+    "work.scaleforge.title":
+      "Building a backend where failure paths are part of the design.",
+    "work.scaleforge.description":
+      "ScaleForge is a production-style NestJS modular monolith built to make scalability and resilience decisions inspectable—without pretending a local stack proves internet scale.",
+    "work.scaleforge.point1":
+      "Modelled server-priced order and payment flows with Prisma, PostgreSQL transactions, optimistic locking and a transactional outbox",
+    "work.scaleforge.point2":
+      "Combined Redis cache-aside reads, RabbitMQ retries and dead-letter queues, idempotent consumers and bounded BullMQ delivery jobs",
+    "work.scaleforge.point3":
+      "Added OpenTelemetry, Prometheus, Grafana, Loki, Sentry, Testcontainers, Docker Compose, Kubernetes and Helm verification",
+    "work.scaleforge.repository": "Explore the architecture",
+    "work.scaleforge.visual.status": "SYSTEM HEALTHY",
+    "work.scaleforge.visual.api": "NestJS API",
+    "work.scaleforge.visual.data": "PostgreSQL",
+    "work.scaleforge.visual.bus": "RabbitMQ",
+    "work.scaleforge.visual.worker": "BullMQ worker",
+    "work.scaleforge.visual.committed": "transaction committed",
+    "work.scaleforge.visual.confirmed": "event acknowledged",
+    "work.scaleforge.visual.deduped": "consumer deduplicated",
+    "work.scaleforge.visual.signals": "Operational signals",
     "archive.eyebrow": "Product ownership at scale",
     "archive.title": "Critical workflows scaled, modernised and operated.",
     "archive.loadshare.title": "From legacy UI to a shipment operations platform",
@@ -372,6 +396,8 @@ window.portfolioTranslations = {
       "Animierter Workflow zur Robotersteuerung",
     "accessibility.keynestWorkflow":
       "Architektur eines verschlüsselten Passwort-Tresors",
+    "accessibility.scaleforgeWorkflow":
+      "Animierte resiliente Bestellpipeline von ScaleForge",
     "accessibility.loadshareImage":
       "Benutzeroberfläche für Logistikprozesse bei LoadShare",
     "accessibility.swiggyImage":
@@ -404,7 +430,7 @@ window.portfolioTranslations = {
     "hero.location": "In Dresden zuhause",
     "hero.currentlyBuilding": "Aktuelles Projekt",
     "hero.currentProject":
-      "Engineering Observatory — evidenzbasierte Entwicklerwerkzeuge",
+      "Engineering Observatory + ScaleForge — evidenzbasierte Werkzeuge und resiliente Backends",
     "project.eyebrow": "Portfolio-Projekt · In Arbeit",
     "project.title": "Engineering Observatory",
     "project.intro":
@@ -493,7 +519,7 @@ window.portfolioTranslations = {
     "work.eyebrow": "Ausgewählte Projekte",
     "work.title": "Produkte für echte operative Komplexität.",
     "work.intro":
-      "Eine Auswahl aus Produktionsworkflows und praxisnahen Architekturprojekten – von KI-gestützten Prüfsystemen und physischen Robotern bis zu sicheren Webplattformen.",
+      "Eine Auswahl aus Produktionsworkflows und praxisnahen Architekturprojekten – von KI-gestützten Prüfsystemen und physischen Robotern bis zu sicheren Webplattformen und resilienten Backend-Grundlagen.",
     "work.elevait.period": "Elevait · 2023–Heute",
     "work.elevait.kicker": "KI-gestützte Dokumentenprozesse",
     "work.elevait.title":
@@ -557,6 +583,28 @@ window.portfolioTranslations = {
     "work.keynest.visual.api": "API-Grenze",
     "work.keynest.visual.encrypted": "Nur verschlüsselte Envelopes",
     "work.keynest.visual.services": "Betriebsdienste",
+    "work.scaleforge.period": "Backend-Architekturprojekt · 2026",
+    "work.scaleforge.kicker": "Resilience Engineering",
+    "work.scaleforge.title":
+      "Ein Backend entwickeln, bei dem Fehlerszenarien Teil des Designs sind.",
+    "work.scaleforge.description":
+      "ScaleForge ist ein produktionsnaher modularer NestJS-Monolith, der Skalierungs- und Resilienzentscheidungen nachvollziehbar macht – ohne zu behaupten, ein lokaler Stack beweise Internet-Skalierung.",
+    "work.scaleforge.point1":
+      "Serverseitig bepreiste Bestell- und Zahlungsabläufe mit Prisma, PostgreSQL-Transaktionen, Optimistic Locking und Transactional Outbox modelliert",
+    "work.scaleforge.point2":
+      "Redis Cache-Aside, RabbitMQ-Retries und Dead-Letter-Queues, idempotente Consumer und begrenzte BullMQ-Delivery-Jobs kombiniert",
+    "work.scaleforge.point3":
+      "OpenTelemetry, Prometheus, Grafana, Loki, Sentry, Testcontainers, Docker Compose, Kubernetes und Helm-Verifikation ergänzt",
+    "work.scaleforge.repository": "Architektur ansehen",
+    "work.scaleforge.visual.status": "SYSTEM BEREIT",
+    "work.scaleforge.visual.api": "NestJS API",
+    "work.scaleforge.visual.data": "PostgreSQL",
+    "work.scaleforge.visual.bus": "RabbitMQ",
+    "work.scaleforge.visual.worker": "BullMQ-Worker",
+    "work.scaleforge.visual.committed": "Transaktion bestätigt",
+    "work.scaleforge.visual.confirmed": "Event bestätigt",
+    "work.scaleforge.visual.deduped": "Consumer dedupliziert",
+    "work.scaleforge.visual.signals": "Betriebssignale",
     "archive.eyebrow": "Produktverantwortung bei Wachstum",
     "archive.title": "Kritische Workflows skaliert, modernisiert und zuverlässig betrieben.",
     "archive.loadshare.title": "Von der Legacy-UI zur Plattform für Sendungsprozesse",
