@@ -102,6 +102,21 @@ test("archive workflows use distinct operational animations and stronger positio
   assert.match(styles, /@keyframes push-toast-arrive/);
 });
 
+test("Engineering Observatory is presented as an evidence-first work in progress", () => {
+  assert.match(indexHtml, /id="project"/);
+  assert.match(indexHtml, /Engineering Observatory/);
+  assert.match(indexHtml, /Portfolio project · Work in progress/);
+  assert.match(indexHtml, /Deterministic analysis before AI/);
+  assert.match(indexHtml, /k6 or Autocannon/);
+  assert.match(
+    indexHtml,
+    /https:\/\/github\.com\/sujithgnth\/engineering-observatory/,
+  );
+  assert.match(indexHtml, /engineering-observatory-cover\.jpg/);
+  assert.match(styles, /\.project-spotlight/);
+  assert.match(styles, /\.project-preview/);
+});
+
 test("project technology pills use the local icon sprite", () => {
   assert.match(scriptSource, /assets\/tech-icons\.svg/);
   assert.match(styles, /\.tech-icon/);

@@ -37,7 +37,7 @@
     <link rel="sitemap" type="application/xml" href="https://sujithgnth.github.io/sujeithgopinath/sitemap.xml" />
     <title>Senior Frontend Engineer in Dresden | Sujeith Gopinath</title>
     <link rel="preload" href="./src/portfolio/assets/sujeith-cartoon.jpg" as="image" type="image/jpeg" />
-    <link rel="stylesheet" href="./styles.css?v=20260810.2" />
+    <link rel="stylesheet" href="./styles.css?v=20260816.1" />
     <script type="application/ld+json" id="profile-structured-data">
       {
         "@context": "https://schema.org",
@@ -73,11 +73,19 @@
             "Frontend Architecture",
             "Software Architecture"
           ]
+        },
+        "hasPart": {
+          "@type": "SoftwareSourceCode",
+          "name": "Engineering Observatory",
+          "description": "A local-first developer platform for deterministic repository analysis, measured performance testing and evidence-backed engineering review.",
+          "codeRepository": "https://github.com/sujithgnth/engineering-observatory",
+          "programmingLanguage": ["TypeScript", "JavaScript", "HTML", "CSS", "SQL"],
+          "runtimePlatform": ["Electron", "Node.js"]
         }
       }
     </script>
-    <script src="./translations.js?v=20260810.2" defer></script>
-    <script src="./script.js?v=20260810.2" defer></script>
+    <script src="./translations.js?v=20260816.1" defer></script>
+    <script src="./script.js?v=20260816.1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content" data-i18n="accessibility.skipToContent">Skip to content</a>
@@ -90,6 +98,7 @@
         </a>
 
         <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria="accessibility.mainNavigation">
+          <a href="#project" data-i18n="nav.project">Project</a>
           <a href="#work" data-i18n="nav.work">Work</a>
           <a href="#experience" data-i18n="nav.experience">Experience</a>
           <a href="#approach" data-i18n="nav.approach">Approach</a>
@@ -158,8 +167,8 @@
             <span class="portrait-label" data-i18n="hero.location">Based in Dresden</span>
           </div>
           <div class="profile-note">
-            <p data-i18n="hero.currentlyBuilding">Career direction</p>
-            <strong data-i18n="hero.currentProject">Hands-on Software Architecture, grounded in delivery</strong>
+            <p data-i18n="hero.currentlyBuilding">Currently building</p>
+            <strong data-i18n="hero.currentProject">Engineering Observatory — evidence-first developer tooling</strong>
           </div>
           <div class="profile-links">
             <a href="https://www.linkedin.com/in/sujithnath/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
@@ -429,6 +438,84 @@
               </div>
             </article>
           </div>
+        </div>
+      </section>
+
+      <section class="section project-section" id="project">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <p class="eyebrow" data-i18n="project.eyebrow">Portfolio project · Work in progress</p>
+              <h2 data-i18n="project.title">Engineering Observatory</h2>
+            </div>
+            <p data-i18n="project.intro">
+              A local-first developer platform that turns repository structure into
+              defensible engineering evidence.
+            </p>
+          </div>
+
+          <article class="project-spotlight reveal">
+            <div class="project-spotlight-copy">
+              <div class="project-status-row">
+                <span class="project-status" data-i18n="project.status">Work in progress</span>
+                <span data-i18n="project.meta">2026 · Open source</span>
+              </div>
+              <p class="project-kicker" data-i18n="project.kicker">Deterministic analysis before AI</p>
+              <h3 data-i18n="project.headline">Understand a codebase before changing it.</h3>
+              <p data-i18n="project.description">
+                An Electron application in an Nx monorepo that profiles React, Angular,
+                Node.js and NestJS repositories, surfaces architecture, performance and
+                security risks, and keeps AI limited to explaining measured findings.
+              </p>
+              <ul class="project-points">
+                <li data-i18n="project.point1">Repository acquisition through local folders, archives, or public and private GitHub repositories</li>
+                <li data-i18n="project.point2">Versioned deterministic analyzers and scorecards backed by source locations</li>
+                <li data-i18n="project.point3">Measured performance runs through k6 or Autocannon, without theoretical scaling claims</li>
+              </ul>
+              <div class="tag-list" role="group" aria-label="Technologies" data-i18n-aria="accessibility.technologies">
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>Electron</span>
+                <span>NestJS</span>
+                <span>Nx</span>
+                <span>PostgreSQL</span>
+                <span>k6</span>
+              </div>
+              <div class="project-actions">
+                <a class="button button-primary" href="https://github.com/sujithgnth/engineering-observatory" target="_blank" rel="noreferrer">
+                  <span data-i18n="project.source">View source</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+                <a class="project-docs-link" href="https://github.com/sujithgnth/engineering-observatory#readme" target="_blank" rel="noreferrer">
+                  <span data-i18n="project.docs">Architecture &amp; setup</span>
+                  <span aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+
+            <a
+              class="project-preview"
+              href="https://github.com/sujithgnth/engineering-observatory"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Engineering Observatory repository analysis preview"
+              data-i18n-aria="accessibility.projectPreview"
+            >
+              <img
+                src="./assets/engineering-observatory-cover.jpg"
+                alt="Engineering Observatory repository analysis illustration"
+                data-i18n-alt="accessibility.projectPreview"
+                width="1536"
+                height="720"
+                loading="lazy"
+                decoding="async"
+              />
+              <span class="project-preview-caption">
+                <small data-i18n="project.visual.kicker">Repository intelligence</small>
+                <strong data-i18n="project.visual.title">Evidence first. Explanation second.</strong>
+              </span>
+            </a>
+          </article>
         </div>
       </section>
 
