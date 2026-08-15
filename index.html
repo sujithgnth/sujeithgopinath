@@ -37,7 +37,7 @@
     <link rel="sitemap" type="application/xml" href="https://sujithgnth.github.io/sujeithgopinath/sitemap.xml" />
     <title>Senior Frontend Engineer in Dresden | Sujeith Gopinath</title>
     <link rel="preload" href="./src/portfolio/assets/sujeith-cartoon.jpg" as="image" type="image/jpeg" />
-    <link rel="stylesheet" href="./styles.css?v=20260816.1" />
+    <link rel="stylesheet" href="./styles.css?v=20260816.2" />
     <script type="application/ld+json" id="profile-structured-data">
       {
         "@context": "https://schema.org",
@@ -84,8 +84,8 @@
         }
       }
     </script>
-    <script src="./translations.js?v=20260816.1" defer></script>
-    <script src="./script.js?v=20260816.1" defer></script>
+    <script src="./translations.js?v=20260816.2" defer></script>
+    <script src="./script.js?v=20260816.2" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content" data-i18n="accessibility.skipToContent">Skip to content</a>
@@ -454,7 +454,11 @@
             </p>
           </div>
 
-          <article class="project-spotlight reveal">
+          <article
+            class="project-spotlight motion-scene reveal"
+            data-motion-scene
+            data-motion-state="running"
+          >
             <div class="project-spotlight-copy">
               <div class="project-status-row">
                 <span class="project-status" data-i18n="project.status">Work in progress</span>
@@ -493,28 +497,52 @@
               </div>
             </div>
 
-            <a
-              class="project-preview"
-              href="https://github.com/sujithgnth/engineering-observatory"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Engineering Observatory repository analysis preview"
-              data-i18n-aria="accessibility.projectPreview"
-            >
-              <img
-                src="./assets/engineering-observatory-cover.jpg"
-                alt="Engineering Observatory repository analysis illustration"
-                data-i18n-alt="accessibility.projectPreview"
-                width="1536"
-                height="720"
-                loading="lazy"
-                decoding="async"
-              />
-              <span class="project-preview-caption">
-                <small data-i18n="project.visual.kicker">Repository intelligence</small>
-                <strong data-i18n="project.visual.title">Evidence first. Explanation second.</strong>
-              </span>
-            </a>
+            <div class="project-preview-shell">
+              <a
+                class="project-preview"
+                href="https://github.com/sujithgnth/engineering-observatory"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Engineering Observatory repository analysis preview"
+                data-i18n-aria="accessibility.projectPreview"
+              >
+                <img
+                  src="./assets/engineering-observatory-cover.jpg"
+                  alt="Engineering Observatory repository analysis illustration"
+                  data-i18n-alt="accessibility.projectPreview"
+                  width="1536"
+                  height="720"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span class="project-analysis-animation" aria-hidden="true">
+                  <span class="project-scan-beam"></span>
+                  <span class="project-analysis-rail">
+                    <span class="project-analysis-stage"><i></i><b>REPO</b></span>
+                    <span class="project-analysis-link"><i></i></span>
+                    <span class="project-analysis-stage"><i></i><b>AST</b></span>
+                    <span class="project-analysis-link"><i></i></span>
+                    <span class="project-analysis-stage"><i></i><b>RULES</b></span>
+                    <span class="project-analysis-link"><i></i></span>
+                    <span class="project-analysis-stage"><i></i><b>EVIDENCE</b></span>
+                  </span>
+                </span>
+                <span class="project-preview-caption">
+                  <small data-i18n="project.visual.kicker">Repository intelligence</small>
+                  <strong data-i18n="project.visual.title">Evidence first. Explanation second.</strong>
+                </span>
+              </a>
+              <button
+                class="motion-toggle motion-toggle-dark project-motion-toggle"
+                type="button"
+                data-motion-toggle
+                aria-label="Pause animation"
+                aria-pressed="false"
+              >
+                <span class="motion-toggle-icon" aria-hidden="true">Ⅱ</span>
+                <span class="sr-only" data-motion-toggle-label data-i18n="accessibility.pauseMotion">Pause animation</span>
+              </button>
+            </div>
           </article>
         </div>
       </section>

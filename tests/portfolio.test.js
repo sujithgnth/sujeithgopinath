@@ -41,9 +41,9 @@ test("every translation key referenced by the page exists", () => {
   }
 });
 
-test("all six motion scenes include user controls and reduced-motion support", () => {
-  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 6);
-  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 6);
+test("all seven motion scenes include user controls and reduced-motion support", () => {
+  assert.equal((indexHtml.match(/data-motion-scene/g) || []).length, 7);
+  assert.equal((indexHtml.match(/data-motion-toggle(?=[\s>])/g) || []).length, 7);
   assert.match(styles, /@media \(prefers-reduced-motion: reduce\)/);
   assert.match(styles, /\.motion-scene\[data-motion-state="paused"\]/);
 });
@@ -115,6 +115,10 @@ test("Engineering Observatory is presented as an evidence-first work in progress
   assert.match(indexHtml, /engineering-observatory-cover\.jpg/);
   assert.match(styles, /\.project-spotlight/);
   assert.match(styles, /\.project-preview/);
+  assert.match(indexHtml, /class="project-analysis-animation"/);
+  assert.match(indexHtml, /REPO[\s\S]*AST[\s\S]*RULES[\s\S]*EVIDENCE/);
+  assert.match(styles, /@keyframes project-repository-scan/);
+  assert.match(styles, /@keyframes project-evidence-flow/);
 });
 
 test("project technology pills use the local icon sprite", () => {
