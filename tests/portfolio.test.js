@@ -58,6 +58,48 @@ test("career evidence carousel includes eight senior-level signals", () => {
   assert.match(indexHtml, /Cross-functional delivery/);
 });
 
+test("senior positioning follows the revised CV hierarchy", () => {
+  assert.match(
+    indexHtml,
+    /Senior Frontend Engineer · TypeScript · React · Angular/,
+  );
+  assert.match(
+    indexHtml,
+    /Scalable frontend architecture[\s\S]*Delivered to production/,
+  );
+  assert.match(indexHtml, /Frontend ownership backed by systems thinking/);
+  assert.match(
+    indexHtml,
+    /From hands-on delivery to senior frontend ownership/,
+  );
+  assert.match(indexHtml, /Technical ownership from architecture to production/);
+  assert.match(indexHtml, />Next\.js</);
+  assert.match(indexHtml, /Application security fundamentals/);
+  assert.match(indexHtml, /Production debugging &amp; monitoring/);
+});
+
+test("professional work appears before independent portfolio projects", () => {
+  const workIndex = indexHtml.indexOf('id="work"');
+  const productionArchiveIndex = indexHtml.indexOf('class="archive-grid"');
+  const independentIndex = indexHtml.indexOf('data-i18n="independent.eyebrow"');
+  const keyNestIndex = indexHtml.indexOf('id="keynest"');
+  const scaleForgeIndex = indexHtml.indexOf('id="scaleforge"');
+  const observatoryIndex = indexHtml.indexOf('id="project"');
+
+  assert.ok(
+    indexHtml.indexOf('href="#work"') < indexHtml.indexOf('href="#project"'),
+    "Main navigation should lead with professional work",
+  );
+  assert.ok(
+    workIndex < productionArchiveIndex &&
+      productionArchiveIndex < independentIndex &&
+      independentIndex < keyNestIndex &&
+      keyNestIndex < scaleForgeIndex &&
+      scaleForgeIndex < observatoryIndex,
+    "All professional work should appear before the independent project group",
+  );
+});
+
 test("hero uses the illustrated high-resolution portrait", () => {
   assert.match(indexHtml, /sujeith-cartoon\.jpg/);
   assert.match(indexHtml, /width="1200"/);
@@ -128,7 +170,7 @@ test("archive workflows use distinct operational animations and stronger positio
 test("Engineering Observatory is presented as an evidence-first work in progress", () => {
   assert.match(indexHtml, /id="project"/);
   assert.match(indexHtml, /Engineering Observatory/);
-  assert.match(indexHtml, /Portfolio project · Work in progress/);
+  assert.match(indexHtml, /Architecture portfolio project · Work in progress/);
   assert.match(indexHtml, /Deterministic analysis before AI/);
   assert.match(indexHtml, /k6 or Autocannon/);
   assert.match(

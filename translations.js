@@ -3,9 +3,9 @@ window.portfolioTranslations = {
     "meta.title":
       "Senior Frontend Engineer in Dresden | Sujeith Gopinath",
     "meta.description":
-      "Sujeith Gopinath is a Senior Frontend Engineer in Dresden with 10+ years of experience in React, Angular, TypeScript, Node.js and frontend architecture.",
+      "Sujeith Gopinath is a Senior Frontend Engineer in Dresden with 10+ years of experience designing scalable TypeScript applications with React, Angular and frontend architecture.",
     "meta.socialDescription":
-      "Senior Frontend Engineer in Dresden building React, Angular, TypeScript and full-stack JavaScript products across AI, robotics, logistics and delivery.",
+      "Senior Frontend Engineer in Dresden specialising in TypeScript, React, Angular and scalable frontend architecture for complex products.",
     "meta.imageAlt":
       "Portfolio of Sujeith Gopinath, Senior Frontend Engineer in Dresden",
     "accessibility.skipToContent": "Skip to content",
@@ -46,11 +46,12 @@ window.portfolioTranslations = {
     "nav.approach": "Approach",
     "nav.resume": "Résumé",
     "nav.contact": "Let’s talk",
-    "hero.eyebrow": "Senior Frontend Engineer · Full-stack TypeScript",
+    "hero.eyebrow":
+      "Senior Frontend Engineer · TypeScript · React · Angular",
     "hero.title":
-      "I turn complex workflows into <span>fast, dependable products.</span>",
+      "Scalable frontend architecture. <span>Delivered to production.</span>",
     "hero.intro":
-      "For more than a decade, I’ve built and operated customer-facing products across logistics, robotics, food delivery and AI-powered document processing. I combine deep React, Angular and frontend architecture experience with Node.js delivery across implementation, deployment, monitoring and iteration.",
+      "Senior Frontend Engineer with 10+ years of experience designing and delivering scalable TypeScript applications across AI, robotics, logistics and food delivery. I own technical decisions from frontend architecture and state/API boundaries through implementation, automated testing, deployment and production improvement, working closely with product and backend teams.",
     "hero.explore": "Explore selected work",
     "hero.email": "Email me",
     "hero.available": "Available immediately",
@@ -60,7 +61,7 @@ window.portfolioTranslations = {
     "hero.currentlyBuilding": "Currently building",
     "hero.currentProject":
       "Engineering Observatory + ScaleForge — evidence-first tools and resilient backends",
-    "project.eyebrow": "Portfolio project · Work in progress",
+    "project.eyebrow": "Architecture portfolio project · Work in progress",
     "project.title": "Engineering Observatory",
     "project.intro":
       "A local-first developer platform that turns repository structure into defensible engineering evidence.",
@@ -144,16 +145,16 @@ window.portfolioTranslations = {
     "features.quality.description":
       "Established Playwright and Cypress coverage, with ownership extending through implementation, deployment, monitoring and iteration.",
     "features.quality.tag3": "Monitoring",
-    "work.eyebrow": "Selected work",
-    "work.title": "Products built for real operational complexity.",
+    "work.eyebrow": "Selected experience & architecture projects",
+    "work.title": "Frontend ownership backed by systems thinking.",
     "work.intro":
-      "A selection of production workflows and hands-on architecture projects—from AI-assisted review systems and physical robots to secure web platforms and resilient backend foundations.",
+      "Production systems and hands-on architecture projects spanning AI review, robot control, secure browser boundaries and resilient backend workflows.",
     "work.elevait.period": "Elevait · 2023–Present",
     "work.elevait.kicker": "AI document operations",
     "work.elevait.title":
       "Making human review feel clear, fast and trustworthy.",
     "work.elevait.description":
-      "I own Angular and TypeScript workflows for AI document verification and human review, working across frontend, backend and product to deliver scalable review workflows with clear application boundaries.",
+      "I own the frontend architecture and development of Angular and TypeScript workflows for AI document verification and human review, working with backend and product teams on scalable review systems with clear application boundaries.",
     "work.elevait.point1":
       "Contributed multi-annotator review workflows with task queues, reviewer assignment and auto-approval thresholds",
     "work.elevait.point2":
@@ -178,7 +179,7 @@ window.portfolioTranslations = {
     "work.coboworx.title":
       "Turning robot motion into a visual product people can operate.",
     "work.coboworx.description":
-      "I owned the frontend of a robot-control application, translating hardware workflows into an approachable Blockly-based experience while strengthening the component architecture underneath it.",
+      "I owned the architecture and end-to-end delivery of a React and TypeScript robot-control frontend, translating hardware workflows into an approachable Blockly-based experience with maintainable state and component boundaries.",
     "work.coboworx.before": "before",
     "work.coboworx.after": "after",
     "work.coboworx.measurement": "Measured application load time",
@@ -194,6 +195,9 @@ window.portfolioTranslations = {
     "work.coboworx.visual.run": "Run motion",
     "work.coboworx.visual.scroll": "Scroll to scrub workflow",
     "work.coboworx.visual.status": "Sequence running",
+    "independent.eyebrow": "Independent architecture projects",
+    "independent.title":
+      "Hands-on systems built to explore security, resilience and evidence.",
     "work.keynest.period": "Independent project · Work in progress",
     "work.keynest.kicker": "Security architecture",
     "work.keynest.title":
@@ -233,6 +237,9 @@ window.portfolioTranslations = {
     "work.scaleforge.visual.confirmed": "event acknowledged",
     "work.scaleforge.visual.deduped": "consumer deduplicated",
     "work.scaleforge.visual.signals": "Operational signals",
+    "independent.eyebrow": "Independent architecture projects",
+    "independent.title":
+      "Hands-on systems built to explore security, resilience and evidence.",
     "archive.eyebrow": "Product ownership at scale",
     "archive.title": "Critical workflows scaled, modernised and operated.",
     "archive.loadshare.title": "From legacy UI to a shipment operations platform",
@@ -273,9 +280,9 @@ window.portfolioTranslations = {
     "archive.swiggy.visual.customer": "Customer",
     "archive.swiggy.visual.push": "Push sent",
     "experience.eyebrow": "Experience",
-    "experience.title": "A career built inside product teams.",
+    "experience.title": "From hands-on delivery to senior frontend ownership.",
     "experience.intro":
-      "I have spent more than ten years in startups and scale-ups, growing from hands-on UI development to senior frontend ownership and full-stack TypeScript delivery.",
+      "Across more than ten years in startups and scale-ups, I have owned frontend architecture, state and API boundaries, performance, testing and production delivery for customer-facing products.",
     "experience.now": "2023—Now",
     "experience.fullstackRole": "Full-Stack JavaScript Developer",
     "experience.seniorFrontendRole": "Senior Frontend Engineer",
@@ -297,9 +304,9 @@ window.portfolioTranslations = {
     "experience.languageNote":
       "Professional English, actively improving German",
     "approach.eyebrow": "How I contribute",
-    "approach.title": "Senior ownership, grounded in the details.",
+    "approach.title": "Technical ownership from architecture to production.",
     "approach.intro":
-      "I combine deep frontend experience with the full-stack context needed to own a product path from user workflow to production.",
+      "I specialise in scalable frontend architecture and bring the full-stack context needed to carry a product path from user workflow to production improvement.",
     "approach.product.title": "Product-minded delivery",
     "approach.product.description":
       "I translate real user workflows into clear interfaces and carry features from early decisions through polished release.",
@@ -328,8 +335,17 @@ window.portfolioTranslations = {
     "approach.toolkit": "Core toolkit",
     "skills.frontend": "Frontend",
     "skills.backendData": "Backend & data",
-    "skills.architectureDelivery": "Architecture & delivery",
+    "skills.architectureDelivery": "Architecture, quality & delivery",
     "skills.testing": "Testing",
+    "skills.frontendArchitecture": "Frontend architecture",
+    "skills.componentArchitecture": "Component architecture",
+    "skills.designSystems": "Design systems",
+    "skills.stateStrategy": "State management strategy",
+    "skills.performanceEngineering": "Performance engineering",
+    "skills.apiIntegration": "API integration patterns",
+    "skills.securityFundamentals": "Application security fundamentals",
+    "skills.productionDebugging": "Production debugging & monitoring",
+    "skills.automatedTestingStrategy": "Automated testing strategy",
     "skills.s3Storage": "S3-compatible storage",
     "skills.nxMonorepos": "Nx monorepos",
     "skills.microFrontends": "Micro frontends",
@@ -355,7 +371,8 @@ window.portfolioTranslations = {
     "resume.german.page1Alt": "German résumé, page 1 of 3",
     "resume.german.page2Alt": "German résumé, page 2 of 3",
     "resume.german.page3Alt": "German résumé, page 3 of 3",
-    "resume.role": "Senior Frontend Engineer · Full-stack TypeScript",
+    "resume.role":
+      "Senior Frontend Engineer · TypeScript · React · Angular · Scalable Frontend Architecture",
     "resume.view": "View résumé",
     "resume.download": "Download PDF",
     "resume.close": "Close",
@@ -363,15 +380,15 @@ window.portfolioTranslations = {
     "contact.title":
       "Looking for a senior engineer who cares about the product as much as the code?",
     "footer.role":
-      "Senior Frontend Engineer · Full-stack TypeScript · Dresden, Germany",
+      "Senior Frontend Engineer · TypeScript · React · Angular · Dresden, Germany",
   },
   de: {
     "meta.title":
       "Senior Frontend Engineer in Dresden | Sujeith Gopinath",
     "meta.description":
-      "Sujeith Gopinath ist Senior Frontend Engineer in Dresden mit über 10 Jahren Erfahrung in React, Angular, TypeScript, Node.js und Frontend-Architektur.",
+      "Sujeith Gopinath ist Senior Frontend Engineer in Dresden mit über 10 Jahren Erfahrung in skalierbaren TypeScript-Anwendungen, React, Angular und Frontend-Architektur.",
     "meta.socialDescription":
-      "Senior Frontend Engineer in Dresden: React, Angular, TypeScript und Full-Stack JavaScript für KI-, Robotik-, Logistik- und Delivery-Produkte.",
+      "Senior Frontend Engineer in Dresden mit Schwerpunkt auf TypeScript, React, Angular und skalierbarer Frontend-Architektur für komplexe Produkte.",
     "meta.imageAlt":
       "Portfolio von Sujeith Gopinath, Senior Frontend Engineer in Dresden",
     "accessibility.skipToContent": "Zum Inhalt springen",
@@ -417,11 +434,11 @@ window.portfolioTranslations = {
     "nav.resume": "Lebenslauf",
     "nav.contact": "Kontakt",
     "hero.eyebrow":
-      "Senior Frontend-Entwickler · Full-Stack TypeScript",
+      "Senior Frontend-Entwickler · TypeScript · React · Angular",
     "hero.title":
-      "Ich verwandle komplexe Abläufe in <span>schnelle, zuverlässige Produkte.</span>",
+      "Skalierbare Frontend-Architektur. <span>Bis in die Produktion umgesetzt.</span>",
     "hero.intro":
-      "Seit mehr als zehn Jahren entwickle und betreibe ich kundenorientierte Produkte in Logistik, Robotik, Essenslieferung und KI-gestützter Dokumentenverarbeitung. Ich verbinde tiefgehende Erfahrung mit React, Angular und Frontend-Architektur mit Node.js-Umsetzung von Implementierung und Deployment bis Monitoring und Weiterentwicklung.",
+      "Als Senior Frontend Engineer mit über zehn Jahren Erfahrung konzipiere und realisiere ich skalierbare TypeScript-Anwendungen für KI, Robotik, Logistik und Essenslieferung. Ich verantworte technische Entscheidungen von Frontend-Architektur sowie State- und API-Grenzen über Implementierung, automatisierte Tests und Deployment bis zur Verbesserung im laufenden Betrieb – in enger Zusammenarbeit mit Produkt- und Backend-Teams.",
     "hero.explore": "Ausgewählte Projekte",
     "hero.email": "E-Mail schreiben",
     "hero.available": "Ab sofort verfügbar",
@@ -431,7 +448,7 @@ window.portfolioTranslations = {
     "hero.currentlyBuilding": "Aktuelles Projekt",
     "hero.currentProject":
       "Engineering Observatory + ScaleForge — evidenzbasierte Werkzeuge und resiliente Backends",
-    "project.eyebrow": "Portfolio-Projekt · In Arbeit",
+    "project.eyebrow": "Architektur-Portfolio-Projekt · In Arbeit",
     "project.title": "Engineering Observatory",
     "project.intro":
       "Eine lokal betriebene Entwicklerplattform, die Repository-Strukturen in nachvollziehbare Engineering-Nachweise übersetzt.",
@@ -516,16 +533,16 @@ window.portfolioTranslations = {
     "features.quality.description":
       "Playwright- und Cypress-Abdeckung etabliert und Verantwortung von Implementierung über Deployment und Monitoring bis zur Weiterentwicklung übernommen.",
     "features.quality.tag3": "Monitoring",
-    "work.eyebrow": "Ausgewählte Projekte",
-    "work.title": "Produkte für echte operative Komplexität.",
+    "work.eyebrow": "Ausgewählte Erfahrung & Architekturprojekte",
+    "work.title": "Frontend-Verantwortung mit systemischem Denken.",
     "work.intro":
-      "Eine Auswahl aus Produktionsworkflows und praxisnahen Architekturprojekten – von KI-gestützten Prüfsystemen und physischen Robotern bis zu sicheren Webplattformen und resilienten Backend-Grundlagen.",
+      "Produktionssysteme und praxisnahe Architekturprojekte rund um KI-Prüfungen, Robotersteuerung, sichere Browser-Grenzen und resiliente Backend-Workflows.",
     "work.elevait.period": "Elevait · 2023–Heute",
     "work.elevait.kicker": "KI-gestützte Dokumentenprozesse",
     "work.elevait.title":
       "Menschliche Prüfung klar, schnell und verlässlich gestalten.",
     "work.elevait.description":
-      "Ich verantworte Angular- und TypeScript-Workflows für KI-gestützte Dokumentenverifizierung und manuelle Prüfung und arbeite mit Frontend, Backend und Produkt an skalierbaren Review-Abläufen mit klaren Anwendungsgrenzen.",
+      "Ich verantworte Frontend-Architektur und Entwicklung von Angular- und TypeScript-Workflows für KI-gestützte Dokumentenverifizierung und manuelle Prüfung und arbeite mit Backend und Produkt an skalierbaren Review-Systemen mit klaren Anwendungsgrenzen.",
     "work.elevait.point1":
       "Multi-Annotator-Workflows mit Aufgabenwarteschlangen, Prüferzuweisung und Schwellenwerten für automatische Freigaben mitentwickelt",
     "work.elevait.point2":
@@ -550,7 +567,7 @@ window.portfolioTranslations = {
     "work.coboworx.title":
       "Roboterbewegungen in ein visuelles, bedienbares Produkt übersetzen.",
     "work.coboworx.description":
-      "Ich verantwortete das Frontend einer Robotersteuerungsanwendung und übersetzte Hardware-Abläufe in eine zugängliche Blockly-basierte Nutzererfahrung. Gleichzeitig stärkte ich die zugrunde liegende Komponentenarchitektur.",
+      "Ich verantwortete Architektur und End-to-End-Umsetzung eines React- und TypeScript-Frontends zur Robotersteuerung und übersetzte Hardware-Abläufe in eine zugängliche Blockly-basierte Nutzererfahrung mit wartbaren State- und Komponentengrenzen.",
     "work.coboworx.before": "vorher",
     "work.coboworx.after": "nachher",
     "work.coboworx.measurement": "Gemessene Ladezeit der Anwendung",
@@ -566,6 +583,9 @@ window.portfolioTranslations = {
     "work.coboworx.visual.run": "Bewegung ausführen",
     "work.coboworx.visual.scroll": "Scrollen, um den Ablauf zu steuern",
     "work.coboworx.visual.status": "Sequenz läuft",
+    "independent.eyebrow": "Eigenständige Architekturprojekte",
+    "independent.title":
+      "Praxisnahe Systeme zur Erkundung von Sicherheit, Resilienz und belastbaren Nachweisen.",
     "work.keynest.period": "Eigenständiges Projekt · In Arbeit",
     "work.keynest.kicker": "Security-Architektur",
     "work.keynest.title":
@@ -605,6 +625,9 @@ window.portfolioTranslations = {
     "work.scaleforge.visual.confirmed": "Event bestätigt",
     "work.scaleforge.visual.deduped": "Consumer dedupliziert",
     "work.scaleforge.visual.signals": "Betriebssignale",
+    "independent.eyebrow": "Eigenständige Architekturprojekte",
+    "independent.title":
+      "Praxisnahe Systeme für Sicherheit, Resilienz und nachvollziehbare Nachweise.",
     "archive.eyebrow": "Produktverantwortung bei Wachstum",
     "archive.title": "Kritische Workflows skaliert, modernisiert und zuverlässig betrieben.",
     "archive.loadshare.title": "Von der Legacy-UI zur Plattform für Sendungsprozesse",
@@ -645,9 +668,9 @@ window.portfolioTranslations = {
     "archive.swiggy.visual.customer": "Kunde",
     "archive.swiggy.visual.push": "Push gesendet",
     "experience.eyebrow": "Erfahrung",
-    "experience.title": "Eine Laufbahn in Produktteams.",
+    "experience.title": "Von praxisnaher Umsetzung zu Senior-Frontend-Verantwortung.",
     "experience.intro":
-      "Seit mehr als zehn Jahren arbeite ich in Start-ups und Scale-ups – von der UI-Entwicklung über Senior-Frontend-Verantwortung bis zur Full-Stack-TypeScript-Umsetzung.",
+      "In mehr als zehn Jahren bei Start-ups und Scale-ups habe ich Frontend-Architektur, State- und API-Grenzen, Performance, Testing und Produktionsauslieferung kundenorientierter Produkte verantwortet.",
     "experience.now": "2023—Heute",
     "experience.fullstackRole": "Full-Stack-JavaScript-Entwickler",
     "experience.seniorFrontendRole": "Senior Frontend-Entwickler",
@@ -669,9 +692,9 @@ window.portfolioTranslations = {
     "experience.languageNote":
       "Professionelles Englisch, Deutschkenntnisse im aktiven Aufbau",
     "approach.eyebrow": "Mein Beitrag",
-    "approach.title": "Senior-Verantwortung mit Blick fürs Detail.",
+    "approach.title": "Technische Verantwortung von der Architektur bis zur Produktion.",
     "approach.intro":
-      "Ich verbinde tiefe Frontend-Erfahrung mit dem Full-Stack-Kontext, der nötig ist, um den Weg vom Nutzerablauf bis zur Produktion zu verantworten.",
+      "Mein Schwerpunkt ist skalierbare Frontend-Architektur. Zugleich bringe ich den Full-Stack-Kontext mit, um den Weg vom Nutzerablauf bis zur Verbesserung im laufenden Betrieb zu begleiten.",
     "approach.product.title": "Produktorientierte Umsetzung",
     "approach.product.description":
       "Ich übersetze reale Nutzerabläufe in klare Oberflächen und begleite Funktionen von der ersten Entscheidung bis zum ausgereiften Release.",
@@ -701,8 +724,17 @@ window.portfolioTranslations = {
     "approach.toolkit": "Zentrale Technologien",
     "skills.frontend": "Frontend",
     "skills.backendData": "Backend & Daten",
-    "skills.architectureDelivery": "Architektur & Delivery",
+    "skills.architectureDelivery": "Architektur, Qualität & Delivery",
     "skills.testing": "Testing",
+    "skills.frontendArchitecture": "Frontend-Architektur",
+    "skills.componentArchitecture": "Komponentenarchitektur",
+    "skills.designSystems": "Designsysteme",
+    "skills.stateStrategy": "State-Management-Strategie",
+    "skills.performanceEngineering": "Performance Engineering",
+    "skills.apiIntegration": "API-Integrationsmuster",
+    "skills.securityFundamentals": "Grundlagen der Anwendungssicherheit",
+    "skills.productionDebugging": "Produktions-Debugging & Monitoring",
+    "skills.automatedTestingStrategy": "Strategie für automatisierte Tests",
     "skills.s3Storage": "S3-kompatibler Speicher",
     "skills.nxMonorepos": "Nx-Monorepos",
     "skills.microFrontends": "Micro Frontends",
@@ -729,7 +761,7 @@ window.portfolioTranslations = {
     "resume.german.page2Alt": "Deutscher Lebenslauf, Seite 2 von 3",
     "resume.german.page3Alt": "Deutscher Lebenslauf, Seite 3 von 3",
     "resume.role":
-      "Senior Frontend-Entwickler · Full-Stack TypeScript",
+      "Senior Frontend-Entwickler · TypeScript · React · Angular · Skalierbare Frontend-Architektur",
     "resume.view": "Lebenslauf ansehen",
     "resume.download": "PDF herunterladen",
     "resume.close": "Schließen",
@@ -737,6 +769,6 @@ window.portfolioTranslations = {
     "contact.title":
       "Sie suchen einen Senior Engineer, dem das Produkt genauso wichtig ist wie der Code?",
     "footer.role":
-      "Senior Frontend-Entwickler · Full-Stack TypeScript · Dresden, Deutschland",
+      "Senior Frontend-Entwickler · TypeScript · React · Angular · Dresden, Deutschland",
   },
 };
