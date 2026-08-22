@@ -37,7 +37,7 @@
     <link rel="sitemap" type="application/xml" href="https://sujithgnth.github.io/sujeithgopinath/sitemap.xml" />
     <title>Senior Frontend Engineer in Dresden | Sujeith Gopinath</title>
     <link rel="preload" href="./src/portfolio/assets/sujeith-cartoon.jpg" as="image" type="image/jpeg" />
-    <link rel="stylesheet" href="./styles.css?v=20260816.4" />
+    <link rel="stylesheet" href="./styles.css?v=20260822.1" />
     <script type="application/ld+json" id="profile-structured-data">
       {
         "@context": "https://schema.org",
@@ -87,6 +87,14 @@
           },
           {
             "@type": "SoftwareSourceCode",
+            "name": "KeyNest",
+            "description": "An educational password-vault MVP demonstrating browser-side encryption, explicit trust boundaries and observable backend workflows.",
+            "codeRepository": "https://github.com/sujithgnth/password-manager",
+            "programmingLanguage": ["TypeScript", "SQL"],
+            "runtimePlatform": ["Next.js", "NestJS", "Node.js"]
+          },
+          {
+            "@type": "SoftwareSourceCode",
             "name": "ScaleForge",
             "description": "A production-style NestJS modular monolith demonstrating transactional workflows, asynchronous messaging, observability and deployment readiness.",
             "codeRepository": "https://github.com/sujithgnth/scaleforge",
@@ -96,8 +104,8 @@
         ]
       }
     </script>
-    <script src="./translations.js?v=20260821.1" defer></script>
-    <script src="./script.js?v=20260816.4" defer></script>
+    <script src="./translations.js?v=20260822.1" defer></script>
+    <script src="./script.js?v=20260822.1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content" data-i18n="accessibility.skipToContent">Skip to content</a>
@@ -111,7 +119,7 @@
 
         <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria="accessibility.mainNavigation">
           <a href="#work" data-i18n="nav.work">Work</a>
-          <a href="#project" data-i18n="nav.project">Project</a>
+          <a href="#project" data-i18n="nav.project">Projects</a>
           <a href="#experience" data-i18n="nav.experience">Experience</a>
           <a href="#approach" data-i18n="nav.approach">Approach</a>
           <a href="#resume" data-i18n="nav.resume">Résumé</a>
@@ -457,12 +465,12 @@
       <section class="section shell" id="work">
         <div class="section-heading reveal">
           <div>
-            <p class="eyebrow" data-i18n="work.eyebrow">Selected experience &amp; architecture projects</p>
+            <p class="eyebrow" data-i18n="work.eyebrow">Selected professional experience</p>
             <h2 data-i18n="work.title">Frontend ownership backed by systems thinking.</h2>
           </div>
           <p data-i18n="work.intro">
-            Production systems and hands-on architecture projects spanning AI review,
-            robot control, secure browser boundaries and resilient backend workflows.
+            Production systems spanning AI review, robot control, logistics operations
+            and restaurant ordering—each backed by hands-on frontend ownership.
           </p>
         </div>
 
@@ -708,17 +716,109 @@
           </article>
         </div>
 
-        <div class="archive-heading reveal">
-          <p class="eyebrow" data-i18n="independent.eyebrow">Independent architecture projects</p>
-          <h3 data-i18n="independent.title">Hands-on systems built to explore security, resilience and evidence.</h3>
-        </div>
+      </section>
+
+      <section class="section project-section" id="project">
+        <div class="shell">
+          <div class="section-heading independent-heading reveal">
+            <div>
+              <p class="eyebrow" data-i18n="independent.eyebrow">Independent architecture projects</p>
+              <h2 data-i18n="independent.title">Three systems. One architecture portfolio.</h2>
+            </div>
+            <p data-i18n="independent.intro">
+              Security, resilience and engineering evidence explored through working software, inspectable contracts and explicit trust boundaries.
+            </p>
+          </div>
+
+          <div class="project-gallery reveal" role="region" aria-label="Independent project screenshots and references" data-i18n-aria="accessibility.projectGallery">
+            <div class="project-gallery-toolbar">
+              <div>
+                <p data-i18n="independent.galleryLabel">Screenshots &amp; reference views</p>
+                <span data-i18n="independent.galleryHint">Use the controls or arrow keys to compare all three projects.</span>
+              </div>
+              <div class="project-gallery-controls">
+                <button type="button" data-project-prev aria-label="Previous project reference" data-i18n-aria="accessibility.previousProject">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <span class="project-gallery-status" data-project-status aria-live="polite">1 / 3</span>
+                <button type="button" data-project-next aria-label="Next project reference" data-i18n-aria="accessibility.nextProject">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="project-gallery-track" data-project-carousel tabindex="0">
+              <figure class="project-gallery-slide">
+                <a class="project-gallery-image" href="#keynest" aria-label="Go to the KeyNest project" data-i18n-aria="accessibility.openKeynest">
+                  <img
+                    src="./assets/projects/keynest-auth-ui.png"
+                    alt="KeyNest sign-in interface separating account authentication from browser vault encryption"
+                    data-i18n-alt="accessibility.keynestScreenshot"
+                    width="1280"
+                    height="640"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+                <figcaption>
+                  <div>
+                    <span data-i18n="independent.keynest.referenceType">Product UI · Local development build</span>
+                    <strong>KeyNest</strong>
+                  </div>
+                  <p data-i18n="independent.keynest.referenceDescription">The sign-in boundary makes account authentication and browser-side vault encryption visibly separate concerns.</p>
+                </figcaption>
+              </figure>
+
+              <figure class="project-gallery-slide">
+                <a class="project-gallery-image" href="#scaleforge" aria-label="Go to the ScaleForge project" data-i18n-aria="accessibility.openScaleforge">
+                  <img
+                    src="./assets/projects/scaleforge-openapi.png"
+                    alt="ScaleForge OpenAPI contract showing order, payment and optimistic-locking endpoints"
+                    data-i18n-alt="accessibility.scaleforgeScreenshot"
+                    width="1280"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+                <figcaption>
+                  <div>
+                    <span data-i18n="independent.scaleforge.referenceType">OpenAPI contract · Generated from the repository</span>
+                    <strong>ScaleForge</strong>
+                  </div>
+                  <p data-i18n="independent.scaleforge.referenceDescription">Because ScaleForge is backend-only, the reference shows its real order, payment and failure-aware API contract instead of inventing a dashboard.</p>
+                </figcaption>
+              </figure>
+
+              <figure class="project-gallery-slide">
+                <a class="project-gallery-image" href="#engineering-observatory" aria-label="Go to the Engineering Observatory project" data-i18n-aria="accessibility.openObservatory">
+                  <img
+                    src="./assets/engineering-observatory-cover.jpg"
+                    alt="Engineering Observatory repository-analysis preview"
+                    data-i18n-alt="accessibility.observatoryScreenshot"
+                    width="1536"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </a>
+                <figcaption>
+                  <div>
+                    <span data-i18n="independent.observatory.referenceType">Concept preview · Repository analysis</span>
+                    <strong>Engineering Observatory</strong>
+                  </div>
+                  <p data-i18n="independent.observatory.referenceDescription">The visual follows repository acquisition through deterministic analysis to source-backed engineering evidence.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
 
         <div class="case-studies independent-case-studies">
 
           <article class="case-study case-study-keynest reveal" id="keynest">
             <div class="case-copy">
               <div class="case-meta">
-                <span>03</span>
+                <span>01</span>
                 <span data-i18n="work.keynest.period">Independent project · Work in progress</span>
               </div>
               <p class="case-kicker" data-i18n="work.keynest.kicker">Security architecture</p>
@@ -798,7 +898,7 @@
           <article class="case-study case-study-scaleforge reveal" id="scaleforge">
             <div class="case-copy">
               <div class="case-meta">
-                <span>04</span>
+                <span>02</span>
                 <span data-i18n="work.scaleforge.period">Backend architecture project · 2026</span>
               </div>
               <p class="case-kicker" data-i18n="work.scaleforge.kicker">Resilience engineering</p>
@@ -888,26 +988,23 @@
           </article>
         </div>
 
-      </section>
-
-      <section class="section project-section" id="project">
-        <div class="shell">
-          <div class="section-heading reveal">
-            <div>
-              <p class="eyebrow" data-i18n="project.eyebrow">Architecture portfolio project · Work in progress</p>
-              <h2 data-i18n="project.title">Engineering Observatory</h2>
-            </div>
-            <p data-i18n="project.intro">
-              A local-first developer platform that turns repository structure into
-              defensible engineering evidence.
-            </p>
+        <div class="independent-project-heading reveal" id="engineering-observatory">
+          <div class="case-meta">
+            <span>03</span>
+            <span data-i18n="project.eyebrow">Architecture portfolio project · Work in progress</span>
           </div>
+          <h3 data-i18n="project.title">Engineering Observatory</h3>
+          <p data-i18n="project.intro">
+            A local-first developer platform that turns repository structure into
+            defensible engineering evidence.
+          </p>
+        </div>
 
-          <article
-            class="project-spotlight motion-scene reveal"
-            data-motion-scene
-            data-motion-state="running"
-          >
+        <article
+          class="project-spotlight motion-scene reveal"
+          data-motion-scene
+          data-motion-state="running"
+        >
             <div class="project-spotlight-copy">
               <div class="project-status-row">
                 <span class="project-status" data-i18n="project.status">Work in progress</span>
@@ -992,7 +1089,7 @@
                 <span class="sr-only" data-motion-toggle-label data-i18n="accessibility.pauseMotion">Pause animation</span>
               </button>
             </div>
-          </article>
+        </article>
         </div>
       </section>
 
@@ -1222,14 +1319,14 @@
                   data-resume-target="resume-dialog-pages-en"
                   data-resume-title-key="resume.english.title"
                   data-resume-meta-key="resume.english.meta"
-                  data-resume-href="./assets/resume/sujeith-gopinath-resume-en.pdf"
+                  data-resume-href="./assets/resume/sujeith-gopinath-resume-en.pdf?v=20260822.1"
                   data-download-filename="Sujeith-Gopinath-Resume-EN.pdf"
                 >
                   <span data-i18n="resume.view">View résumé</span> <span aria-hidden="true">↗</span>
                 </button>
                 <a
                   class="resume-download-button"
-                  href="./assets/resume/sujeith-gopinath-resume-en.pdf"
+                  href="./assets/resume/sujeith-gopinath-resume-en.pdf?v=20260822.1"
                   download="Sujeith-Gopinath-Resume-EN.pdf"
                 >
                   <span data-i18n="resume.download">Download PDF</span> <span aria-hidden="true">↓</span>
@@ -1287,7 +1384,7 @@
           <div class="resume-dialog-body">
             <div class="resume-dialog-pages" id="resume-dialog-pages-en">
               <img
-                src="./assets/resume/previews/resume-en-page-1.jpg"
+                src="./assets/resume/previews/resume-en-page-1.jpg?v=20260822.1"
                 alt="English résumé, page 1 of 2"
                 data-i18n-alt="resume.english.page1Alt"
                 width="1192"
@@ -1296,7 +1393,7 @@
                 decoding="async"
               />
               <img
-                src="./assets/resume/previews/resume-en-page-2.jpg"
+                src="./assets/resume/previews/resume-en-page-2.jpg?v=20260822.1"
                 alt="English résumé, page 2 of 2"
                 data-i18n-alt="resume.english.page2Alt"
                 width="1192"
@@ -1340,7 +1437,7 @@
           <footer class="resume-dialog-footer">
             <a
               id="resume-dialog-download"
-              href="./assets/resume/sujeith-gopinath-resume-en.pdf"
+              href="./assets/resume/sujeith-gopinath-resume-en.pdf?v=20260822.1"
               download="Sujeith-Gopinath-Resume.pdf"
             >
               <span data-i18n="resume.download">Download PDF</span> <span aria-hidden="true">↓</span>

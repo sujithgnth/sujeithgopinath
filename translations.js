@@ -38,9 +38,23 @@ window.portfolioTranslations = {
       "Animated Swiggy restaurant order and delivery workflow",
     "accessibility.projectPreview":
       "Engineering Observatory repository analysis preview",
+    "accessibility.projectGallery":
+      "Independent project screenshots and references",
+    "accessibility.previousProject": "Previous project reference",
+    "accessibility.nextProject": "Next project reference",
+    "accessibility.openKeynest": "Go to the KeyNest project",
+    "accessibility.openScaleforge": "Go to the ScaleForge project",
+    "accessibility.openObservatory":
+      "Go to the Engineering Observatory project",
+    "accessibility.keynestScreenshot":
+      "KeyNest sign-in interface separating account authentication from browser vault encryption",
+    "accessibility.scaleforgeScreenshot":
+      "ScaleForge OpenAPI contract showing order, payment and optimistic-locking endpoints",
+    "accessibility.observatoryScreenshot":
+      "Engineering Observatory repository-analysis preview",
     "accessibility.pauseMotion": "Pause animation",
     "accessibility.playMotion": "Play animation",
-    "nav.project": "Project",
+    "nav.project": "Projects",
     "nav.work": "Work",
     "nav.experience": "Experience",
     "nav.approach": "Approach",
@@ -145,10 +159,10 @@ window.portfolioTranslations = {
     "features.quality.description":
       "Established Playwright and Cypress coverage, with ownership extending through implementation, deployment, monitoring and iteration.",
     "features.quality.tag3": "Monitoring",
-    "work.eyebrow": "Selected experience & architecture projects",
+    "work.eyebrow": "Selected professional experience",
     "work.title": "Frontend ownership backed by systems thinking.",
     "work.intro":
-      "Production systems and hands-on architecture projects spanning AI review, robot control, secure browser boundaries and resilient backend workflows.",
+      "Production systems spanning AI review, robot control, logistics operations and restaurant ordering—each backed by hands-on frontend ownership.",
     "work.elevait.period": "Elevait · 2023–Present",
     "work.elevait.kicker": "AI document operations",
     "work.elevait.title":
@@ -196,8 +210,24 @@ window.portfolioTranslations = {
     "work.coboworx.visual.scroll": "Scroll to scrub workflow",
     "work.coboworx.visual.status": "Sequence running",
     "independent.eyebrow": "Independent architecture projects",
-    "independent.title":
-      "Hands-on systems built to explore security, resilience and evidence.",
+    "independent.title": "Three systems. One architecture portfolio.",
+    "independent.intro":
+      "Security, resilience and engineering evidence explored through working software, inspectable contracts and explicit trust boundaries.",
+    "independent.galleryLabel": "Screenshots & reference views",
+    "independent.galleryHint":
+      "Use the controls or arrow keys to compare all three projects.",
+    "independent.keynest.referenceType":
+      "Product UI · Local development build",
+    "independent.keynest.referenceDescription":
+      "The sign-in boundary makes account authentication and browser-side vault encryption visibly separate concerns.",
+    "independent.scaleforge.referenceType":
+      "OpenAPI contract · Generated from the repository",
+    "independent.scaleforge.referenceDescription":
+      "Because ScaleForge is backend-only, the reference shows its real order, payment and failure-aware API contract instead of inventing a dashboard.",
+    "independent.observatory.referenceType":
+      "Concept preview · Repository analysis",
+    "independent.observatory.referenceDescription":
+      "The visual follows repository acquisition through deterministic analysis to source-backed engineering evidence.",
     "work.keynest.period": "Independent project · Work in progress",
     "work.keynest.kicker": "Security architecture",
     "work.keynest.title":
@@ -237,9 +267,6 @@ window.portfolioTranslations = {
     "work.scaleforge.visual.confirmed": "event acknowledged",
     "work.scaleforge.visual.deduped": "consumer deduplicated",
     "work.scaleforge.visual.signals": "Operational signals",
-    "independent.eyebrow": "Independent architecture projects",
-    "independent.title":
-      "Hands-on systems built to explore security, resilience and evidence.",
     "archive.eyebrow": "Product ownership at scale",
     "archive.title": "Critical workflows scaled, modernised and operated.",
     "archive.loadshare.title": "From legacy UI to a shipment operations platform",
@@ -425,9 +452,23 @@ window.portfolioTranslations = {
       "Animierter Swiggy-Workflow für Bestellung und Lieferung",
     "accessibility.projectPreview":
       "Vorschau der Repository-Analyse in Engineering Observatory",
+    "accessibility.projectGallery":
+      "Screenshots und Referenzansichten eigenständiger Projekte",
+    "accessibility.previousProject": "Vorherige Projektreferenz",
+    "accessibility.nextProject": "Nächste Projektreferenz",
+    "accessibility.openKeynest": "Zum KeyNest-Projekt springen",
+    "accessibility.openScaleforge": "Zum ScaleForge-Projekt springen",
+    "accessibility.openObservatory":
+      "Zum Projekt Engineering Observatory springen",
+    "accessibility.keynestScreenshot":
+      "KeyNest-Anmeldeoberfläche mit getrennter Kontoauthentifizierung und Browser-Verschlüsselung des Tresors",
+    "accessibility.scaleforgeScreenshot":
+      "ScaleForge-OpenAPI-Vertrag mit Endpunkten für Bestellungen, Zahlungen und Optimistic Locking",
+    "accessibility.observatoryScreenshot":
+      "Vorschau der Repository-Analyse in Engineering Observatory",
     "accessibility.pauseMotion": "Animation pausieren",
     "accessibility.playMotion": "Animation abspielen",
-    "nav.project": "Projekt",
+    "nav.project": "Projekte",
     "nav.work": "Projekte",
     "nav.experience": "Erfahrung",
     "nav.approach": "Arbeitsweise",
@@ -533,10 +574,10 @@ window.portfolioTranslations = {
     "features.quality.description":
       "Playwright- und Cypress-Abdeckung etabliert und Verantwortung von Implementierung über Deployment und Monitoring bis zur Weiterentwicklung übernommen.",
     "features.quality.tag3": "Monitoring",
-    "work.eyebrow": "Ausgewählte Erfahrung & Architekturprojekte",
+    "work.eyebrow": "Ausgewählte Berufserfahrung",
     "work.title": "Frontend-Verantwortung mit systemischem Denken.",
     "work.intro":
-      "Produktionssysteme und praxisnahe Architekturprojekte rund um KI-Prüfungen, Robotersteuerung, sichere Browser-Grenzen und resiliente Backend-Workflows.",
+      "Produktionssysteme für KI-Prüfungen, Robotersteuerung, Logistikprozesse und Restaurantbestellungen – jeweils mit praxisnaher Frontend-Verantwortung.",
     "work.elevait.period": "Elevait · 2023–Heute",
     "work.elevait.kicker": "KI-gestützte Dokumentenprozesse",
     "work.elevait.title":
@@ -584,8 +625,24 @@ window.portfolioTranslations = {
     "work.coboworx.visual.scroll": "Scrollen, um den Ablauf zu steuern",
     "work.coboworx.visual.status": "Sequenz läuft",
     "independent.eyebrow": "Eigenständige Architekturprojekte",
-    "independent.title":
-      "Praxisnahe Systeme zur Erkundung von Sicherheit, Resilienz und belastbaren Nachweisen.",
+    "independent.title": "Drei Systeme. Ein Architekturportfolio.",
+    "independent.intro":
+      "Sicherheit, Resilienz und Engineering-Nachweise – untersucht mit funktionsfähiger Software, nachvollziehbaren Verträgen und klaren Vertrauensgrenzen.",
+    "independent.galleryLabel": "Screenshots und Referenzansichten",
+    "independent.galleryHint":
+      "Mit den Steuerelementen oder Pfeiltasten lassen sich alle drei Projekte vergleichen.",
+    "independent.keynest.referenceType":
+      "Produktoberfläche · Lokaler Entwicklungsstand",
+    "independent.keynest.referenceDescription":
+      "Die Anmeldung macht die Trennung zwischen Kontoauthentifizierung und Browser-seitiger Tresorverschlüsselung sichtbar.",
+    "independent.scaleforge.referenceType":
+      "OpenAPI-Vertrag · Aus dem Repository generiert",
+    "independent.scaleforge.referenceDescription":
+      "Da ScaleForge ein reines Backend-Projekt ist, zeigt die Referenz den echten Vertrag für Bestellungen, Zahlungen und Fehlerpfade statt eines erfundenen Dashboards.",
+    "independent.observatory.referenceType":
+      "Konzeptvorschau · Repository-Analyse",
+    "independent.observatory.referenceDescription":
+      "Die Visualisierung folgt dem Repository von der Erfassung über deterministische Analyse bis zu quellengestützten Engineering-Nachweisen.",
     "work.keynest.period": "Eigenständiges Projekt · In Arbeit",
     "work.keynest.kicker": "Security-Architektur",
     "work.keynest.title":
@@ -625,9 +682,6 @@ window.portfolioTranslations = {
     "work.scaleforge.visual.confirmed": "Event bestätigt",
     "work.scaleforge.visual.deduped": "Consumer dedupliziert",
     "work.scaleforge.visual.signals": "Betriebssignale",
-    "independent.eyebrow": "Eigenständige Architekturprojekte",
-    "independent.title":
-      "Praxisnahe Systeme für Sicherheit, Resilienz und nachvollziehbare Nachweise.",
     "archive.eyebrow": "Produktverantwortung bei Wachstum",
     "archive.title": "Kritische Workflows skaliert, modernisiert und zuverlässig betrieben.",
     "archive.loadshare.title": "Von der Legacy-UI zur Plattform für Sendungsprozesse",

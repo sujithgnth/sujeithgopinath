@@ -84,7 +84,7 @@ test("professional work appears before independent portfolio projects", () => {
   const independentIndex = indexHtml.indexOf('data-i18n="independent.eyebrow"');
   const keyNestIndex = indexHtml.indexOf('id="keynest"');
   const scaleForgeIndex = indexHtml.indexOf('id="scaleforge"');
-  const observatoryIndex = indexHtml.indexOf('id="project"');
+  const observatoryIndex = indexHtml.indexOf('id="engineering-observatory"');
 
   assert.ok(
     indexHtml.indexOf('href="#work"') < indexHtml.indexOf('href="#project"'),
@@ -98,6 +98,21 @@ test("professional work appears before independent portfolio projects", () => {
       scaleForgeIndex < observatoryIndex,
     "All professional work should appear before the independent project group",
   );
+});
+
+test("independent projects share one accessible visual reference gallery", () => {
+  assert.match(indexHtml, /Three systems\. One architecture portfolio\./);
+  assert.equal((indexHtml.match(/class="project-gallery-slide"/g) || []).length, 3);
+  assert.match(indexHtml, /data-project-carousel/);
+  assert.match(indexHtml, /data-project-prev/);
+  assert.match(indexHtml, /data-project-next/);
+  assert.match(scriptSource, /moveProjectCarousel/);
+  assert.match(styles, /\.project-gallery-track/);
+  assert.ok(fs.existsSync("assets/projects/keynest-auth-ui.png"));
+  assert.ok(fs.existsSync("assets/projects/scaleforge-openapi.png"));
+  assert.match(indexHtml, /Product UI · Local development build/);
+  assert.match(indexHtml, /OpenAPI contract · Generated from the repository/);
+  assert.match(indexHtml, /Concept preview · Repository analysis/);
 });
 
 test("hero uses the illustrated high-resolution portrait", () => {
@@ -210,6 +225,13 @@ test("German-market SEO exposes localized crawl signals", () => {
       (project) =>
         project.name === "ScaleForge" &&
         project.codeRepository === "https://github.com/sujithgnth/scaleforge",
+    ),
+  );
+  assert.ok(
+    structuredData.hasPart.some(
+      (project) =>
+        project.name === "KeyNest" &&
+        project.codeRepository === "https://github.com/sujithgnth/password-manager",
     ),
   );
   assert.match(indexHtml, /rel="sitemap"/);

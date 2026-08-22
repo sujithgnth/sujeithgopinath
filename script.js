@@ -8,6 +8,10 @@ const proofCarousel = document.querySelector("[data-proof-carousel]");
 const proofPrevious = document.querySelector("[data-proof-prev]");
 const proofNext = document.querySelector("[data-proof-next]");
 const proofStatus = document.querySelector("[data-proof-status]");
+const projectCarousel = document.querySelector("[data-project-carousel]");
+const projectPrevious = document.querySelector("[data-project-prev]");
+const projectNext = document.querySelector("[data-project-next]");
+const projectStatus = document.querySelector("[data-project-status]");
 const robotScrollSection = document.querySelector("[data-robot-scroll]");
 const robotScrollVisual = robotScrollSection?.querySelector(".robot-visual");
 const robotScrollBlocks = robotScrollVisual?.querySelectorAll(".block") ?? [];
@@ -24,6 +28,7 @@ const portfolioUrl = "https://sujithgnth.github.io/sujeithgopinath/";
 let currentLanguage = requestedLanguage === "en" ? "en" : "de";
 let activeResumeButton = null;
 let proofScrollFrame = null;
+let projectScrollFrame = null;
 let robotScrollFrame = null;
 
 const techIconIds = {
@@ -178,6 +183,62 @@ proofCarousel.addEventListener("keydown", (event) => {
 
 window.addEventListener("resize", syncProofCarousel, { passive: true });
 syncProofCarousel();
+
+function getProjectPageCount() {
+  if (!projectCarousel) return 1;
+  return Math.max(1, Math.round(projectCarousel.scrollWidth / projectCarousel.clientWidth));
+}
+
+function getProjectPage() {
+  const pageCount = getProjectPageCount();
+  return Math.min(
+    pageCount,
+    Math.max(1, Math.round(projectCarousel.scrollLeft / projectCarousel.clientWidth) + 1),
+  );
+}
+
+function syncProjectCarousel() {
+  if (!projectCarousel || !projectPrevious || !projectNext || !projectStatus) return;
+
+  const pageCount = getProjectPageCount();
+  const currentPage = getProjectPage();
+
+  projectPrevious.disabled = currentPage === 1;
+  projectNext.disabled = currentPage === pageCount;
+  projectStatus.textContent = `${currentPage} / ${pageCount}`;
+}
+
+function moveProjectCarousel(direction) {
+  if (!projectCarousel) return;
+
+  projectCarousel.scrollBy({
+    left: direction * projectCarousel.clientWidth,
+    behavior: reducedMotion ? "auto" : "smooth",
+  });
+}
+
+if (projectCarousel && projectPrevious && projectNext) {
+  projectPrevious.addEventListener("click", () => moveProjectCarousel(-1));
+  projectNext.addEventListener("click", () => moveProjectCarousel(1));
+
+  projectCarousel.addEventListener(
+    "scroll",
+    () => {
+      if (projectScrollFrame) cancelAnimationFrame(projectScrollFrame);
+      projectScrollFrame = requestAnimationFrame(syncProjectCarousel);
+    },
+    { passive: true },
+  );
+
+  projectCarousel.addEventListener("keydown", (event) => {
+    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+    event.preventDefault();
+    moveProjectCarousel(event.key === "ArrowRight" ? 1 : -1);
+  });
+
+  window.addEventListener("resize", syncProjectCarousel, { passive: true });
+  syncProjectCarousel();
+}
 
 function applyTheme(theme) {
   root.dataset.theme = theme;
