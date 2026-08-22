@@ -38,20 +38,24 @@ window.portfolioTranslations = {
       "Animated Swiggy restaurant order and delivery workflow",
     "accessibility.projectPreview":
       "Engineering Observatory repository analysis preview",
-    "accessibility.projectGallery":
-      "Independent project screenshots and references",
-    "accessibility.previousProject": "Previous project reference",
-    "accessibility.nextProject": "Next project reference",
-    "accessibility.openKeynest": "Go to the KeyNest project",
-    "accessibility.openScaleforge": "Go to the ScaleForge project",
-    "accessibility.openObservatory":
-      "Go to the Engineering Observatory project",
-    "accessibility.keynestScreenshot":
+    "accessibility.keynestGallery": "KeyNest product screenshots",
+    "accessibility.scaleforgeGallery": "ScaleForge engineering screenshots",
+    "accessibility.observatoryGallery":
+      "Engineering Observatory dashboard screenshots",
+    "accessibility.previousScreenshot": "Previous screenshot",
+    "accessibility.nextScreenshot": "Next screenshot",
+    "accessibility.keynestAuthScreenshot":
       "KeyNest sign-in interface separating account authentication from browser vault encryption",
-    "accessibility.scaleforgeScreenshot":
+    "accessibility.keynestVaultScreenshot":
+      "Unlocked KeyNest vault dashboard showing a synthetic encrypted credential",
+    "accessibility.scaleforgeApiScreenshot":
       "ScaleForge OpenAPI contract showing order, payment and optimistic-locking endpoints",
-    "accessibility.observatoryScreenshot":
-      "Engineering Observatory repository-analysis preview",
+    "accessibility.scaleforgeOperationsScreenshot":
+      "ScaleForge Grafana dashboard showing request rate and latency telemetry",
+    "accessibility.observatoryDashboardScreenshot":
+      "Engineering Observatory architecture analysis workspace for a deterministic fixture",
+    "accessibility.observatoryFindingsScreenshot":
+      "Engineering Observatory findings view with severity, dimension and source locations",
     "accessibility.pauseMotion": "Pause animation",
     "accessibility.playMotion": "Play animation",
     "nav.project": "Projects",
@@ -213,21 +217,41 @@ window.portfolioTranslations = {
     "independent.title": "Three systems. One architecture portfolio.",
     "independent.intro":
       "Security, resilience and engineering evidence explored through working software, inspectable contracts and explicit trust boundaries.",
-    "independent.galleryLabel": "Screenshots & reference views",
     "independent.galleryHint":
-      "Use the controls or arrow keys to compare all three projects.",
-    "independent.keynest.referenceType":
-      "Product UI · Local development build",
-    "independent.keynest.referenceDescription":
-      "The sign-in boundary makes account authentication and browser-side vault encryption visibly separate concerns.",
-    "independent.scaleforge.referenceType":
+      "Use the controls or arrow keys to move through the real product views.",
+    "independent.keynest.galleryLabel": "Inside KeyNest",
+    "independent.keynest.authType":
+      "Authentication boundary · Local build",
+    "independent.keynest.authTitle": "Account sign-in",
+    "independent.keynest.authDescription":
+      "Account authentication is visibly separated from the vault password that derives browser-only encryption keys.",
+    "independent.keynest.vaultType": "Vault dashboard · Synthetic demo",
+    "independent.keynest.vaultTitle": "Unlocked browser vault",
+    "independent.keynest.vaultDescription":
+      "Search and decryption remain inside the browser tab; the API receives encrypted envelopes rather than readable credentials.",
+    "independent.scaleforge.galleryLabel": "Inside ScaleForge",
+    "independent.scaleforge.apiType":
       "OpenAPI contract · Generated from the repository",
-    "independent.scaleforge.referenceDescription":
-      "Because ScaleForge is backend-only, the reference shows its real order, payment and failure-aware API contract instead of inventing a dashboard.",
-    "independent.observatory.referenceType":
-      "Concept preview · Repository analysis",
-    "independent.observatory.referenceDescription":
-      "The visual follows repository acquisition through deterministic analysis to source-backed engineering evidence.",
+    "independent.scaleforge.apiTitle": "Failure-aware API surface",
+    "independent.scaleforge.apiDescription":
+      "The real contract exposes order, payment and optimistic-locking behavior instead of pretending a backend-only system has a customer dashboard.",
+    "independent.scaleforge.operationsType":
+      "Operations dashboard · Local stack",
+    "independent.scaleforge.operationsTitle": "Measured service signals",
+    "independent.scaleforge.operationsDescription":
+      "The provisioned Grafana view separates observed request and latency telemetry from panels that have not produced data.",
+    "independent.observatory.galleryLabel":
+      "Inside Engineering Observatory",
+    "independent.observatory.dashboardType":
+      "Analysis dashboard · Deterministic fixture",
+    "independent.observatory.dashboardTitle": "Architecture workspace",
+    "independent.observatory.dashboardDescription":
+      "The dashboard maps repository structure, source locations and health dimensions from deterministic analysis before optional AI explanation.",
+    "independent.observatory.findingsType":
+      "Findings dashboard · Deterministic fixture",
+    "independent.observatory.findingsTitle": "Evidence before explanation",
+    "independent.observatory.findingsDescription":
+      "Every finding keeps its severity, rule identifier, dimension and repository-relative location visible for review.",
     "work.keynest.period": "Independent project · Work in progress",
     "work.keynest.kicker": "Security architecture",
     "work.keynest.title":
@@ -452,20 +476,24 @@ window.portfolioTranslations = {
       "Animierter Swiggy-Workflow für Bestellung und Lieferung",
     "accessibility.projectPreview":
       "Vorschau der Repository-Analyse in Engineering Observatory",
-    "accessibility.projectGallery":
-      "Screenshots und Referenzansichten eigenständiger Projekte",
-    "accessibility.previousProject": "Vorherige Projektreferenz",
-    "accessibility.nextProject": "Nächste Projektreferenz",
-    "accessibility.openKeynest": "Zum KeyNest-Projekt springen",
-    "accessibility.openScaleforge": "Zum ScaleForge-Projekt springen",
-    "accessibility.openObservatory":
-      "Zum Projekt Engineering Observatory springen",
-    "accessibility.keynestScreenshot":
+    "accessibility.keynestGallery": "KeyNest-Produktscreenshots",
+    "accessibility.scaleforgeGallery": "ScaleForge-Engineering-Screenshots",
+    "accessibility.observatoryGallery":
+      "Dashboard-Screenshots von Engineering Observatory",
+    "accessibility.previousScreenshot": "Vorheriger Screenshot",
+    "accessibility.nextScreenshot": "Nächster Screenshot",
+    "accessibility.keynestAuthScreenshot":
       "KeyNest-Anmeldeoberfläche mit getrennter Kontoauthentifizierung und Browser-Verschlüsselung des Tresors",
-    "accessibility.scaleforgeScreenshot":
+    "accessibility.keynestVaultScreenshot":
+      "Entsperrtes KeyNest-Tresor-Dashboard mit synthetischen verschlüsselten Zugangsdaten",
+    "accessibility.scaleforgeApiScreenshot":
       "ScaleForge-OpenAPI-Vertrag mit Endpunkten für Bestellungen, Zahlungen und Optimistic Locking",
-    "accessibility.observatoryScreenshot":
-      "Vorschau der Repository-Analyse in Engineering Observatory",
+    "accessibility.scaleforgeOperationsScreenshot":
+      "ScaleForge-Grafana-Dashboard mit Request-Rate und Latenztelemetrie",
+    "accessibility.observatoryDashboardScreenshot":
+      "Architektur-Analyseoberfläche von Engineering Observatory für ein deterministisches Fixture",
+    "accessibility.observatoryFindingsScreenshot":
+      "Befundansicht von Engineering Observatory mit Schweregrad, Dimension und Quellcodefundstellen",
     "accessibility.pauseMotion": "Animation pausieren",
     "accessibility.playMotion": "Animation abspielen",
     "nav.project": "Projekte",
@@ -628,21 +656,42 @@ window.portfolioTranslations = {
     "independent.title": "Drei Systeme. Ein Architekturportfolio.",
     "independent.intro":
       "Sicherheit, Resilienz und Engineering-Nachweise – untersucht mit funktionsfähiger Software, nachvollziehbaren Verträgen und klaren Vertrauensgrenzen.",
-    "independent.galleryLabel": "Screenshots und Referenzansichten",
     "independent.galleryHint":
-      "Mit den Steuerelementen oder Pfeiltasten lassen sich alle drei Projekte vergleichen.",
-    "independent.keynest.referenceType":
-      "Produktoberfläche · Lokaler Entwicklungsstand",
-    "independent.keynest.referenceDescription":
-      "Die Anmeldung macht die Trennung zwischen Kontoauthentifizierung und Browser-seitiger Tresorverschlüsselung sichtbar.",
-    "independent.scaleforge.referenceType":
+      "Mit den Steuerelementen oder Pfeiltasten durch die echten Produktansichten navigieren.",
+    "independent.keynest.galleryLabel": "Einblick in KeyNest",
+    "independent.keynest.authType":
+      "Authentifizierungsgrenze · Lokaler Build",
+    "independent.keynest.authTitle": "Kontoanmeldung",
+    "independent.keynest.authDescription":
+      "Die Kontoauthentifizierung ist sichtbar von dem Tresorpasswort getrennt, aus dem ausschließlich im Browser Verschlüsselungsschlüssel abgeleitet werden.",
+    "independent.keynest.vaultType":
+      "Tresor-Dashboard · Synthetische Demo",
+    "independent.keynest.vaultTitle": "Entsperrter Browser-Tresor",
+    "independent.keynest.vaultDescription":
+      "Suche und Entschlüsselung bleiben im Browser-Tab; die API erhält verschlüsselte Envelopes statt lesbarer Zugangsdaten.",
+    "independent.scaleforge.galleryLabel": "Einblick in ScaleForge",
+    "independent.scaleforge.apiType":
       "OpenAPI-Vertrag · Aus dem Repository generiert",
-    "independent.scaleforge.referenceDescription":
-      "Da ScaleForge ein reines Backend-Projekt ist, zeigt die Referenz den echten Vertrag für Bestellungen, Zahlungen und Fehlerpfade statt eines erfundenen Dashboards.",
-    "independent.observatory.referenceType":
-      "Konzeptvorschau · Repository-Analyse",
-    "independent.observatory.referenceDescription":
-      "Die Visualisierung folgt dem Repository von der Erfassung über deterministische Analyse bis zu quellengestützten Engineering-Nachweisen.",
+    "independent.scaleforge.apiTitle": "API mit sichtbaren Fehlerpfaden",
+    "independent.scaleforge.apiDescription":
+      "Der echte Vertrag zeigt Bestell-, Zahlungs- und Optimistic-Locking-Verhalten, statt für ein reines Backend ein Kundendashboard vorzutäuschen.",
+    "independent.scaleforge.operationsType":
+      "Betriebsdashboard · Lokaler Stack",
+    "independent.scaleforge.operationsTitle": "Gemessene Systemsignale",
+    "independent.scaleforge.operationsDescription":
+      "Die bereitgestellte Grafana-Ansicht trennt beobachtete Request- und Latenztelemetrie von Panels, die noch keine Daten geliefert haben.",
+    "independent.observatory.galleryLabel":
+      "Einblick in Engineering Observatory",
+    "independent.observatory.dashboardType":
+      "Analyse-Dashboard · Deterministisches Fixture",
+    "independent.observatory.dashboardTitle": "Architektur-Arbeitsbereich",
+    "independent.observatory.dashboardDescription":
+      "Das Dashboard ordnet Repository-Struktur, Quellcodefundstellen und Health-Dimensionen aus deterministischer Analyse vor einer optionalen KI-Erklärung zu.",
+    "independent.observatory.findingsType":
+      "Befund-Dashboard · Deterministisches Fixture",
+    "independent.observatory.findingsTitle": "Nachweise vor Erklärung",
+    "independent.observatory.findingsDescription":
+      "Jeder Befund hält Schweregrad, Regelkennung, Dimension und repository-relative Fundstelle für die Prüfung sichtbar.",
     "work.keynest.period": "Eigenständiges Projekt · In Arbeit",
     "work.keynest.kicker": "Security-Architektur",
     "work.keynest.title":

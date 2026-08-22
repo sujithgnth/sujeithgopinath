@@ -100,19 +100,30 @@ test("professional work appears before independent portfolio projects", () => {
   );
 });
 
-test("independent projects share one accessible visual reference gallery", () => {
+test("each independent project owns an accessible product screenshot gallery", () => {
   assert.match(indexHtml, /Three systems\. One architecture portfolio\./);
-  assert.equal((indexHtml.match(/class="project-gallery-slide"/g) || []).length, 3);
-  assert.match(indexHtml, /data-project-carousel/);
-  assert.match(indexHtml, /data-project-prev/);
-  assert.match(indexHtml, /data-project-next/);
-  assert.match(scriptSource, /moveProjectCarousel/);
-  assert.match(styles, /\.project-gallery-track/);
+  assert.equal((indexHtml.match(/data-evidence-gallery/g) || []).length, 3);
+  assert.equal((indexHtml.match(/class="project-evidence-slide"/g) || []).length, 6);
+  assert.equal((indexHtml.match(/data-evidence-carousel/g) || []).length, 3);
+  assert.equal((indexHtml.match(/data-evidence-prev/g) || []).length, 3);
+  assert.equal((indexHtml.match(/data-evidence-next/g) || []).length, 3);
+  assert.match(scriptSource, /initEvidenceGallery/);
+  assert.match(scriptSource, /evidenceGalleries\.forEach/);
+  assert.match(styles, /\.project-evidence-track/);
   assert.ok(fs.existsSync("assets/projects/keynest-auth-ui.png"));
+  assert.ok(fs.existsSync("assets/projects/keynest-vault-ui.jpg"));
   assert.ok(fs.existsSync("assets/projects/scaleforge-openapi.png"));
-  assert.match(indexHtml, /Product UI · Local development build/);
+  assert.ok(fs.existsSync("assets/projects/scaleforge-operations.jpg"));
+  assert.ok(fs.existsSync("assets/projects/observatory-dashboard.jpg"));
+  assert.ok(fs.existsSync("assets/projects/observatory-findings.jpg"));
+  assert.match(indexHtml, /Inside KeyNest/);
+  assert.match(indexHtml, /Inside ScaleForge/);
+  assert.match(indexHtml, /Inside Engineering Observatory/);
+  assert.match(indexHtml, /Vault dashboard · Synthetic demo/);
   assert.match(indexHtml, /OpenAPI contract · Generated from the repository/);
-  assert.match(indexHtml, /Concept preview · Repository analysis/);
+  assert.match(indexHtml, /Operations dashboard · Local stack/);
+  assert.match(indexHtml, /Analysis dashboard · Deterministic fixture/);
+  assert.match(indexHtml, /Findings dashboard · Deterministic fixture/);
 });
 
 test("hero uses the illustrated high-resolution portrait", () => {
