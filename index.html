@@ -37,7 +37,7 @@
     <link rel="sitemap" type="application/xml" href="https://sujithgnth.github.io/sujeithgopinath/sitemap.xml" />
     <title>Senior Frontend Engineer in Dresden | Sujeith Gopinath</title>
     <link rel="preload" href="./src/portfolio/assets/sujeith-cartoon.jpg" as="image" type="image/jpeg" />
-    <link rel="stylesheet" href="./styles.css?v=20260822.2" />
+    <link rel="stylesheet" href="./styles.css?v=20260829.1" />
     <script type="application/ld+json" id="profile-structured-data">
       {
         "@context": "https://schema.org",
@@ -94,6 +94,14 @@
             "runtimePlatform": ["Next.js", "NestJS", "Node.js"]
           },
           {
+            "@type": "SoftwareApplication",
+            "name": "NeonDeck",
+            "description": "A private work-in-progress, local-first Electron developer command center with multi-project context, runtime safety boundaries and local persistence.",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Apple-silicon macOS tester preview",
+            "softwareVersion": "0.2.0-wip.1"
+          },
+          {
             "@type": "SoftwareSourceCode",
             "name": "ScaleForge",
             "description": "A production-style NestJS modular monolith demonstrating transactional workflows, asynchronous messaging, observability and deployment readiness.",
@@ -104,8 +112,8 @@
         ]
       }
     </script>
-    <script src="./translations.js?v=20260822.2" defer></script>
-    <script src="./script.js?v=20260822.2" defer></script>
+    <script src="./translations.js?v=20260829.1" defer></script>
+    <script src="./script.js?v=20260829.1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content" data-i18n="accessibility.skipToContent">Skip to content</a>
@@ -723,10 +731,10 @@
           <div class="section-heading independent-heading reveal">
             <div>
               <p class="eyebrow" data-i18n="independent.eyebrow">Independent architecture projects</p>
-              <h2 data-i18n="independent.title">Three systems. One architecture portfolio.</h2>
+              <h2 data-i18n="independent.title">Four systems. One architecture portfolio.</h2>
             </div>
             <p data-i18n="independent.intro">
-              Security, resilience and engineering evidence explored through working software, inspectable contracts and explicit trust boundaries.
+              Developer experience, security, resilience and engineering evidence explored through working software, inspectable contracts and explicit trust boundaries.
             </p>
           </div>
 
@@ -872,10 +880,120 @@
             </div>
           </section>
 
-          <article class="case-study case-study-scaleforge reveal" id="scaleforge">
+          <article class="case-study case-study-neondeck reveal" id="neondeck">
             <div class="case-copy">
               <div class="case-meta">
                 <span>02</span>
+                <span data-i18n="work.neondeck.period">Private desktop project · Work in progress</span>
+              </div>
+              <p class="case-kicker" data-i18n="work.neondeck.kicker">Local developer experience</p>
+              <h3 data-i18n="work.neondeck.title">Bringing project context and runtime safety into one desktop workspace.</h3>
+              <p data-i18n="work.neondeck.description">
+                NeonDeck is a local-first Electron command center I am building to reduce
+                developer context switching without turning its renderer into a privileged
+                shell. The invite-only tester preview is unsigned and currently limited to
+                Apple-silicon macOS.
+              </p>
+              <ul class="case-points">
+                <li data-i18n="work.neondeck.point1">Built persistent multi-project discovery and switching, command search, Git context, notes, tasks and bounded developer tools</li>
+                <li data-i18n="work.neondeck.point2">Separated active-project processes from read-only machine inventory, with native confirmation and identity revalidation before process stops</li>
+                <li data-i18n="work.neondeck.point3">Kept privileged capabilities in Electron's main process behind narrow Zod-validated IPC, opaque capability IDs and local SQLite persistence</li>
+              </ul>
+              <div class="case-actions">
+                <span class="project-privacy-note">
+                  <span aria-hidden="true">●</span>
+                  <span data-i18n="work.neondeck.private">Private repository · Invite-only WIP preview</span>
+                </span>
+              </div>
+              <div class="tag-list" role="group" aria-label="Technologies" data-i18n-aria="accessibility.technologies">
+                <span>Electron</span>
+                <span>React</span>
+                <span>TypeScript</span>
+                <span>SQLite</span>
+                <span>Zod</span>
+                <span>Playwright</span>
+              </div>
+            </div>
+            <div class="case-visual neondeck-visual" role="img" aria-label="NeonDeck local developer command center home dashboard" data-i18n-aria="accessibility.neondeckHomeScreenshot">
+              <img
+                src="./assets/projects/neondeck-home.png"
+                alt=""
+                width="1440"
+                height="940"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="neondeck-visual-badges" aria-hidden="true">
+                <span>LOCAL FIRST</span>
+                <span>PRIVATE WIP</span>
+              </div>
+            </div>
+          </article>
+
+          <section class="project-evidence reveal" data-evidence-gallery role="region" aria-label="NeonDeck desktop screenshots" data-i18n-aria="accessibility.neondeckGallery">
+            <div class="project-evidence-toolbar">
+              <div>
+                <p data-i18n="independent.neondeck.galleryLabel">Inside NeonDeck</p>
+                <span data-i18n="independent.galleryHint">Use the controls or arrow keys to move through the real product views.</span>
+              </div>
+              <div class="project-evidence-controls">
+                <button type="button" data-evidence-prev aria-label="Previous screenshot" data-i18n-aria="accessibility.previousScreenshot">
+                  <span aria-hidden="true">←</span>
+                </button>
+                <span class="project-evidence-status" data-evidence-status aria-live="polite">1 / 2</span>
+                <button type="button" data-evidence-next aria-label="Next screenshot" data-i18n-aria="accessibility.nextScreenshot">
+                  <span aria-hidden="true">→</span>
+                </button>
+              </div>
+            </div>
+            <div class="project-evidence-track" data-evidence-carousel tabindex="0">
+              <figure class="project-evidence-slide">
+                <div class="project-evidence-image">
+                  <img
+                    src="./assets/projects/neondeck-home.png"
+                    alt="NeonDeck home dashboard with calendar, mail, project and ambient workspace cards"
+                    data-i18n-alt="accessibility.neondeckHomeScreenshot"
+                    width="1440"
+                    height="940"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <figcaption>
+                  <div>
+                    <span data-i18n="independent.neondeck.homeType">Home workspace · Local test profile</span>
+                    <strong data-i18n="independent.neondeck.homeTitle">One calm view before coding</strong>
+                  </div>
+                  <p data-i18n="independent.neondeck.homeDescription">Calendar, important mail, project context and an ambient focus surface stay visible without fabricated integration data.</p>
+                </figcaption>
+              </figure>
+              <figure class="project-evidence-slide">
+                <div class="project-evidence-image">
+                  <img
+                    src="./assets/projects/neondeck-runtime.png"
+                    alt="NeonDeck runtime view separating project-linked processes from read-only machine inventory"
+                    data-i18n-alt="accessibility.neondeckRuntimeScreenshot"
+                    width="1440"
+                    height="940"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <figcaption>
+                  <div>
+                    <span data-i18n="independent.neondeck.runtimeType">Runtime boundary · Local machine inventory</span>
+                    <strong data-i18n="independent.neondeck.runtimeTitle">Project-aware process safety</strong>
+                  </div>
+                  <p data-i18n="independent.neondeck.runtimeDescription">Only processes proven to belong to the active project can expose a stop action; wider machine listeners remain read-only.</p>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <article class="case-study case-study-scaleforge reveal" id="scaleforge">
+            <div class="case-copy">
+              <div class="case-meta">
+                <span>03</span>
                 <span data-i18n="work.scaleforge.period">Backend architecture project · 2026</span>
               </div>
               <p class="case-kicker" data-i18n="work.scaleforge.kicker">Resilience engineering</p>
@@ -1027,7 +1145,7 @@
 
         <div class="independent-project-heading reveal" id="engineering-observatory">
           <div class="case-meta">
-            <span>03</span>
+            <span>04</span>
             <span data-i18n="project.eyebrow">Architecture portfolio project · Work in progress</span>
           </div>
           <h3 data-i18n="project.title">Engineering Observatory</h3>

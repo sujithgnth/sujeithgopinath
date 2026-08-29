@@ -83,6 +83,7 @@ test("professional work appears before independent portfolio projects", () => {
   const productionArchiveIndex = indexHtml.indexOf('class="archive-grid"');
   const independentIndex = indexHtml.indexOf('data-i18n="independent.eyebrow"');
   const keyNestIndex = indexHtml.indexOf('id="keynest"');
+  const neonDeckIndex = indexHtml.indexOf('id="neondeck"');
   const scaleForgeIndex = indexHtml.indexOf('id="scaleforge"');
   const observatoryIndex = indexHtml.indexOf('id="engineering-observatory"');
 
@@ -94,32 +95,37 @@ test("professional work appears before independent portfolio projects", () => {
     workIndex < productionArchiveIndex &&
       productionArchiveIndex < independentIndex &&
       independentIndex < keyNestIndex &&
-      keyNestIndex < scaleForgeIndex &&
+      keyNestIndex < neonDeckIndex &&
+      neonDeckIndex < scaleForgeIndex &&
       scaleForgeIndex < observatoryIndex,
     "All professional work should appear before the independent project group",
   );
 });
 
 test("each independent project owns an accessible product screenshot gallery", () => {
-  assert.match(indexHtml, /Three systems\. One architecture portfolio\./);
-  assert.equal((indexHtml.match(/data-evidence-gallery/g) || []).length, 3);
-  assert.equal((indexHtml.match(/class="project-evidence-slide"/g) || []).length, 6);
-  assert.equal((indexHtml.match(/data-evidence-carousel/g) || []).length, 3);
-  assert.equal((indexHtml.match(/data-evidence-prev/g) || []).length, 3);
-  assert.equal((indexHtml.match(/data-evidence-next/g) || []).length, 3);
+  assert.match(indexHtml, /Four systems\. One architecture portfolio\./);
+  assert.equal((indexHtml.match(/data-evidence-gallery/g) || []).length, 4);
+  assert.equal((indexHtml.match(/class="project-evidence-slide"/g) || []).length, 8);
+  assert.equal((indexHtml.match(/data-evidence-carousel/g) || []).length, 4);
+  assert.equal((indexHtml.match(/data-evidence-prev/g) || []).length, 4);
+  assert.equal((indexHtml.match(/data-evidence-next/g) || []).length, 4);
   assert.match(scriptSource, /initEvidenceGallery/);
   assert.match(scriptSource, /evidenceGalleries\.forEach/);
   assert.match(styles, /\.project-evidence-track/);
   assert.ok(fs.existsSync("assets/projects/keynest-auth-ui.png"));
   assert.ok(fs.existsSync("assets/projects/keynest-vault-ui.jpg"));
+  assert.ok(fs.existsSync("assets/projects/neondeck-home.png"));
+  assert.ok(fs.existsSync("assets/projects/neondeck-runtime.png"));
   assert.ok(fs.existsSync("assets/projects/scaleforge-openapi.png"));
   assert.ok(fs.existsSync("assets/projects/scaleforge-operations.jpg"));
   assert.ok(fs.existsSync("assets/projects/observatory-dashboard.jpg"));
   assert.ok(fs.existsSync("assets/projects/observatory-findings.jpg"));
   assert.match(indexHtml, /Inside KeyNest/);
+  assert.match(indexHtml, /Inside NeonDeck/);
   assert.match(indexHtml, /Inside ScaleForge/);
   assert.match(indexHtml, /Inside Engineering Observatory/);
   assert.match(indexHtml, /Vault dashboard · Synthetic demo/);
+  assert.match(indexHtml, /Runtime boundary · Local machine inventory/);
   assert.match(indexHtml, /OpenAPI contract · Generated from the repository/);
   assert.match(indexHtml, /Operations dashboard · Local stack/);
   assert.match(indexHtml, /Analysis dashboard · Deterministic fixture/);
@@ -181,6 +187,17 @@ test("ScaleForge presents a verifiable resilient backend architecture", () => {
   assert.match(styles, /@keyframes scaleforge-log-cycle/);
 });
 
+test("NeonDeck is presented as a private local-first work in progress", () => {
+  assert.match(indexHtml, /case-study-neondeck/);
+  assert.match(indexHtml, /Private desktop project · Work in progress/);
+  assert.match(indexHtml, /Private repository · Invite-only WIP preview/);
+  assert.match(indexHtml, /narrow Zod-validated IPC/);
+  assert.match(indexHtml, /read-only machine inventory/);
+  assert.match(indexHtml, /Apple-silicon macOS/);
+  assert.match(styles, /\.neondeck-visual/);
+  assert.doesNotMatch(indexHtml, /href="https:\/\/github\.com\/sujithgnth\/neondeck"/);
+});
+
 test("archive workflows use distinct operational animations and stronger positioning", () => {
   assert.match(indexHtml, /Product ownership at scale/);
   assert.match(indexHtml, /Critical workflows scaled, modernised and operated/);
@@ -236,6 +253,14 @@ test("German-market SEO exposes localized crawl signals", () => {
       (project) =>
         project.name === "ScaleForge" &&
         project.codeRepository === "https://github.com/sujithgnth/scaleforge",
+    ),
+  );
+  assert.ok(
+    structuredData.hasPart.some(
+      (project) =>
+        project.name === "NeonDeck" &&
+        project.applicationCategory === "DeveloperApplication" &&
+        !("codeRepository" in project),
     ),
   );
   assert.ok(

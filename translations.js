@@ -39,6 +39,7 @@ window.portfolioTranslations = {
     "accessibility.projectPreview":
       "Engineering Observatory repository analysis preview",
     "accessibility.keynestGallery": "KeyNest product screenshots",
+    "accessibility.neondeckGallery": "NeonDeck desktop screenshots",
     "accessibility.scaleforgeGallery": "ScaleForge engineering screenshots",
     "accessibility.observatoryGallery":
       "Engineering Observatory dashboard screenshots",
@@ -48,6 +49,10 @@ window.portfolioTranslations = {
       "KeyNest sign-in interface separating account authentication from browser vault encryption",
     "accessibility.keynestVaultScreenshot":
       "Unlocked KeyNest vault dashboard showing a synthetic encrypted credential",
+    "accessibility.neondeckHomeScreenshot":
+      "NeonDeck home dashboard with calendar, mail, project and ambient workspace cards",
+    "accessibility.neondeckRuntimeScreenshot":
+      "NeonDeck runtime view separating project-linked processes from read-only machine inventory",
     "accessibility.scaleforgeApiScreenshot":
       "ScaleForge OpenAPI contract showing order, payment and optimistic-locking endpoints",
     "accessibility.scaleforgeOperationsScreenshot":
@@ -78,7 +83,7 @@ window.portfolioTranslations = {
     "hero.location": "Based in Dresden",
     "hero.currentlyBuilding": "Currently building",
     "hero.currentProject":
-      "Engineering Observatory + ScaleForge — evidence-first tools and resilient backends",
+      "NeonDeck + Engineering Observatory — local-first developer tools with explicit safety boundaries",
     "project.eyebrow": "Architecture portfolio project · Work in progress",
     "project.title": "Engineering Observatory",
     "project.intro":
@@ -214,9 +219,9 @@ window.portfolioTranslations = {
     "work.coboworx.visual.scroll": "Scroll to scrub workflow",
     "work.coboworx.visual.status": "Sequence running",
     "independent.eyebrow": "Independent architecture projects",
-    "independent.title": "Three systems. One architecture portfolio.",
+    "independent.title": "Four systems. One architecture portfolio.",
     "independent.intro":
-      "Security, resilience and engineering evidence explored through working software, inspectable contracts and explicit trust boundaries.",
+      "Developer experience, security, resilience and engineering evidence explored through working software, inspectable contracts and explicit trust boundaries.",
     "independent.galleryHint":
       "Use the controls or arrow keys to move through the real product views.",
     "independent.keynest.galleryLabel": "Inside KeyNest",
@@ -229,6 +234,17 @@ window.portfolioTranslations = {
     "independent.keynest.vaultTitle": "Unlocked browser vault",
     "independent.keynest.vaultDescription":
       "Search and decryption remain inside the browser tab; the API receives encrypted envelopes rather than readable credentials.",
+    "independent.neondeck.galleryLabel": "Inside NeonDeck",
+    "independent.neondeck.homeType":
+      "Home workspace · Local test profile",
+    "independent.neondeck.homeTitle": "One calm view before coding",
+    "independent.neondeck.homeDescription":
+      "Calendar, important mail, project context and an ambient focus surface stay visible without fabricated integration data.",
+    "independent.neondeck.runtimeType":
+      "Runtime boundary · Local machine inventory",
+    "independent.neondeck.runtimeTitle": "Project-aware process safety",
+    "independent.neondeck.runtimeDescription":
+      "Only processes proven to belong to the active project can expose a stop action; wider machine listeners remain read-only.",
     "independent.scaleforge.galleryLabel": "Inside ScaleForge",
     "independent.scaleforge.apiType":
       "OpenAPI contract · Generated from the repository",
@@ -269,6 +285,19 @@ window.portfolioTranslations = {
     "work.keynest.visual.api": "API boundary",
     "work.keynest.visual.encrypted": "Encrypted envelopes only",
     "work.keynest.visual.services": "Operational services",
+    "work.neondeck.period": "Private desktop project · Work in progress",
+    "work.neondeck.kicker": "Local developer experience",
+    "work.neondeck.title":
+      "Bringing project context and runtime safety into one desktop workspace.",
+    "work.neondeck.description":
+      "NeonDeck is a local-first Electron command center I am building to reduce developer context switching without turning its renderer into a privileged shell. The invite-only tester preview is unsigned and currently limited to Apple-silicon macOS.",
+    "work.neondeck.point1":
+      "Built persistent multi-project discovery and switching, command search, Git context, notes, tasks and bounded developer tools",
+    "work.neondeck.point2":
+      "Separated active-project processes from read-only machine inventory, with native confirmation and identity revalidation before process stops",
+    "work.neondeck.point3":
+      "Kept privileged capabilities in Electron's main process behind narrow Zod-validated IPC, opaque capability IDs and local SQLite persistence",
+    "work.neondeck.private": "Private repository · Invite-only WIP preview",
     "work.scaleforge.period": "Backend architecture project · 2026",
     "work.scaleforge.kicker": "Resilience engineering",
     "work.scaleforge.title":
@@ -477,6 +506,7 @@ window.portfolioTranslations = {
     "accessibility.projectPreview":
       "Vorschau der Repository-Analyse in Engineering Observatory",
     "accessibility.keynestGallery": "KeyNest-Produktscreenshots",
+    "accessibility.neondeckGallery": "NeonDeck-Desktop-Screenshots",
     "accessibility.scaleforgeGallery": "ScaleForge-Engineering-Screenshots",
     "accessibility.observatoryGallery":
       "Dashboard-Screenshots von Engineering Observatory",
@@ -486,6 +516,10 @@ window.portfolioTranslations = {
       "KeyNest-Anmeldeoberfläche mit getrennter Kontoauthentifizierung und Browser-Verschlüsselung des Tresors",
     "accessibility.keynestVaultScreenshot":
       "Entsperrtes KeyNest-Tresor-Dashboard mit synthetischen verschlüsselten Zugangsdaten",
+    "accessibility.neondeckHomeScreenshot":
+      "NeonDeck-Startseite mit Kalender-, E-Mail-, Projekt- und Ambient-Arbeitsbereichskarten",
+    "accessibility.neondeckRuntimeScreenshot":
+      "NeonDeck-Runtime-Ansicht mit Trennung von projektbezogenen Prozessen und schreibgeschützter Maschinenübersicht",
     "accessibility.scaleforgeApiScreenshot":
       "ScaleForge-OpenAPI-Vertrag mit Endpunkten für Bestellungen, Zahlungen und Optimistic Locking",
     "accessibility.scaleforgeOperationsScreenshot":
@@ -516,7 +550,7 @@ window.portfolioTranslations = {
     "hero.location": "In Dresden zuhause",
     "hero.currentlyBuilding": "Aktuelles Projekt",
     "hero.currentProject":
-      "Engineering Observatory + ScaleForge — evidenzbasierte Werkzeuge und resiliente Backends",
+      "NeonDeck + Engineering Observatory — lokale Entwicklerwerkzeuge mit klaren Sicherheitsgrenzen",
     "project.eyebrow": "Architektur-Portfolio-Projekt · In Arbeit",
     "project.title": "Engineering Observatory",
     "project.intro":
@@ -653,9 +687,9 @@ window.portfolioTranslations = {
     "work.coboworx.visual.scroll": "Scrollen, um den Ablauf zu steuern",
     "work.coboworx.visual.status": "Sequenz läuft",
     "independent.eyebrow": "Eigenständige Architekturprojekte",
-    "independent.title": "Drei Systeme. Ein Architekturportfolio.",
+    "independent.title": "Vier Systeme. Ein Architekturportfolio.",
     "independent.intro":
-      "Sicherheit, Resilienz und Engineering-Nachweise – untersucht mit funktionsfähiger Software, nachvollziehbaren Verträgen und klaren Vertrauensgrenzen.",
+      "Developer Experience, Sicherheit, Resilienz und Engineering-Nachweise – untersucht mit funktionsfähiger Software, nachvollziehbaren Verträgen und klaren Vertrauensgrenzen.",
     "independent.galleryHint":
       "Mit den Steuerelementen oder Pfeiltasten durch die echten Produktansichten navigieren.",
     "independent.keynest.galleryLabel": "Einblick in KeyNest",
@@ -669,6 +703,17 @@ window.portfolioTranslations = {
     "independent.keynest.vaultTitle": "Entsperrter Browser-Tresor",
     "independent.keynest.vaultDescription":
       "Suche und Entschlüsselung bleiben im Browser-Tab; die API erhält verschlüsselte Envelopes statt lesbarer Zugangsdaten.",
+    "independent.neondeck.galleryLabel": "Einblick in NeonDeck",
+    "independent.neondeck.homeType":
+      "Startseite · Lokales Testprofil",
+    "independent.neondeck.homeTitle": "Eine ruhige Übersicht vor dem Coden",
+    "independent.neondeck.homeDescription":
+      "Kalender, wichtige E-Mails, Projektkontext und eine Ambient-Fokusfläche bleiben sichtbar, ohne Integrationsdaten vorzutäuschen.",
+    "independent.neondeck.runtimeType":
+      "Runtime-Grenze · Lokale Maschinenübersicht",
+    "independent.neondeck.runtimeTitle": "Projektbezogene Prozesssicherheit",
+    "independent.neondeck.runtimeDescription":
+      "Nur eindeutig dem aktiven Projekt zugeordnete Prozesse können eine Stop-Aktion anbieten; weitere Maschinen-Listener bleiben schreibgeschützt.",
     "independent.scaleforge.galleryLabel": "Einblick in ScaleForge",
     "independent.scaleforge.apiType":
       "OpenAPI-Vertrag · Aus dem Repository generiert",
@@ -709,6 +754,19 @@ window.portfolioTranslations = {
     "work.keynest.visual.api": "API-Grenze",
     "work.keynest.visual.encrypted": "Nur verschlüsselte Envelopes",
     "work.keynest.visual.services": "Betriebsdienste",
+    "work.neondeck.period": "Privates Desktop-Projekt · In Arbeit",
+    "work.neondeck.kicker": "Lokale Developer Experience",
+    "work.neondeck.title":
+      "Projektkontext und Runtime-Sicherheit in einem Desktop-Arbeitsbereich verbinden.",
+    "work.neondeck.description":
+      "NeonDeck ist ein lokal-first Electron Command Center, das ich entwickle, um Kontextwechsel zu reduzieren, ohne den Renderer zu einer privilegierten Shell zu machen. Die nur auf Einladung verfügbare Testversion ist unsigniert und derzeit auf Apple-Silicon-Macs begrenzt.",
+    "work.neondeck.point1":
+      "Persistente Multi-Projekt-Erkennung und -Wechsel, Befehlssuche, Git-Kontext, Notizen, Aufgaben und begrenzte Entwicklerwerkzeuge umgesetzt",
+    "work.neondeck.point2":
+      "Aktive Projektprozesse von der schreibgeschützten Maschinenübersicht getrennt, mit nativer Bestätigung und erneuter Identitätsprüfung vor Prozess-Stopps",
+    "work.neondeck.point3":
+      "Privilegierte Fähigkeiten im Electron-Main-Prozess hinter schmalen Zod-validierten IPC-Schnittstellen, opaken Capability-IDs und lokaler SQLite-Persistenz gehalten",
+    "work.neondeck.private": "Privates Repository · WIP-Testversion nur auf Einladung",
     "work.scaleforge.period": "Backend-Architekturprojekt · 2026",
     "work.scaleforge.kicker": "Resilience Engineering",
     "work.scaleforge.title":

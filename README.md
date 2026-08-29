@@ -17,6 +17,7 @@ frontend-heavy full-stack capability and a path toward hands-on Software Archite
 
 ## Featured projects
 
+- NeonDeck — private local-first Electron developer command center, work in progress
 - Engineering Observatory — architecture portfolio project, work in progress
 - KeyNest — security-focused educational project, work in progress
 - ScaleForge — resilient backend architecture project
