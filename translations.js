@@ -74,7 +74,7 @@ window.portfolioTranslations = {
     "hero.title":
       "Scalable frontend architecture. <span>Delivered to production.</span>",
     "hero.intro":
-      "Senior Frontend Engineer with 10+ years of experience designing and delivering scalable TypeScript applications across AI, robotics, logistics and food delivery. I own technical decisions from frontend architecture and state/API boundaries through implementation, automated testing, deployment and production improvement, working closely with product and backend teams.",
+      "Senior Frontend Engineer with 10+ years of experience building and evolving customer-facing applications across AI, robotics, logistics and food delivery. I own complex product areas from requirement clarification and technical design through implementation, testing, production debugging and iterative improvement across product, design and backend teams.",
     "hero.explore": "Explore selected work",
     "hero.email": "Email me",
     "hero.available": "Available immediately",
@@ -118,13 +118,13 @@ window.portfolioTranslations = {
     "metrics.growthLabel": "supported scale from 3k to 25k daily users",
     "metrics.deliveryValue": "Production ownership",
     "metrics.deliveryLabel":
-      "architecture, implementation, deployment, monitoring and iteration",
+      "technical design, implementation, testing, production debugging and iteration",
     "metrics.architectureValue": "Architecture decisions",
     "metrics.architectureLabel":
       "state, domain and application boundaries designed for maintainability",
-    "metrics.investigationValue": "Performance investigations",
+    "metrics.investigationValue": "50k+ documents",
     "metrics.investigationLabel":
-      "frontend loading, API queries, MongoDB indexing and asset delivery",
+      "query response reduced from roughly 10–15s to around 2s",
     "metrics.systemsValue": "Reusable systems",
     "metrics.systemsLabel":
       "Nx libraries, Storybook components, API abstractions and shared UI patterns",
@@ -134,9 +134,9 @@ window.portfolioTranslations = {
     "features.ai.kicker": "AI document operations",
     "features.ai.title": "Multi-annotator review systems",
     "features.ai.description":
-      "Delivered document verification and human-review workflows spanning task queues, reviewer assignment, auto-approval thresholds, annotation and OCR.",
-    "features.ai.tag1": "Task queues",
-    "features.ai.tag2": "Annotation",
+      "Designed multi-annotator review workflows spanning reviewer assignment, independent annotation copies, IoU comparison, configurable agreement thresholds, annotation and OCR.",
+    "features.ai.tag1": "Reviewer assignment",
+    "features.ai.tag2": "IoU comparison",
     "features.robotics.kicker": "Robot control",
     "features.robotics.title": "Custom robot-motion workflows",
     "features.robotics.description":
@@ -160,14 +160,14 @@ window.portfolioTranslations = {
     "features.platforms.kicker": "Frontend platforms",
     "features.platforms.title": "Reusable architecture across teams",
     "features.platforms.description":
-      "Built Nx feature libraries, Storybook components, shared UI patterns, configurable wrappers and microfrontend-aligned boundaries.",
+      "Designed Nx feature boundaries, data-access layers, state patterns and reusable Storybook components shared across product teams.",
     "features.platforms.tag1": "Nx libraries",
-    "features.platforms.tag3": "Microfrontends",
+    "features.platforms.tag3": "API boundaries",
     "features.quality.kicker": "Delivery confidence",
     "features.quality.title": "Critical workflows protected end to end",
     "features.quality.description":
-      "Established Playwright and Cypress coverage, with ownership extending through implementation, deployment, monitoring and iteration.",
-    "features.quality.tag3": "Monitoring",
+      "Established Playwright and Cypress coverage, with ownership extending through implementation, testing, production debugging and iteration.",
+    "features.quality.tag3": "Production debugging",
     "work.eyebrow": "Selected professional experience",
     "work.title": "Frontend ownership backed by systems thinking.",
     "work.intro":
@@ -177,19 +177,19 @@ window.portfolioTranslations = {
     "work.elevait.title":
       "Making human review feel clear, fast and trustworthy.",
     "work.elevait.description":
-      "I own the frontend architecture and development of Angular and TypeScript workflows for AI document verification and human review, working with backend and product teams on scalable review systems with clear application boundaries.",
+      "I took frontend technical ownership of Angular and TypeScript verification, annotation and task-management workflows that let users correct machine-generated annotations before validated data moves to downstream systems.",
     "work.elevait.point1":
-      "Contributed multi-annotator review workflows with task queues, reviewer assignment and auto-approval thresholds",
+      "Designed and delivered multi-annotator review workflows with reviewer assignment, independent annotation copies, IoU-based comparison and configurable agreement thresholds",
     "work.elevait.point2":
-      "Designed reusable frontend patterns, component structures and application boundaries for maintainable review workflows",
+      "Translated reviewer independence, agreement thresholds, approval states and task transitions into frontend state models, API contracts and workflow behaviour",
     "work.elevait.point3":
       "Reduced image payloads by introducing compressed document previews through S3 object storage",
     "work.elevait.point4":
-      "Improved API responsiveness through NestJS query handling, MongoDB indexing, filtering and pagination",
+      "Reduced response times across more than 50,000 documents from roughly 10–15 seconds to around 2 seconds through NestJS queries, MongoDB indexing, filtering and pagination",
     "work.elevait.point5":
-      "Worked with modular Angular/Nx feature libraries, state management and data-access layers for annotation and OCR workflows",
+      "Designed Angular/Nx feature boundaries, component structures, state patterns and data-access layers for annotation, verification and OCR workflows",
     "work.elevait.point6":
-      "Established Playwright E2E coverage for critical document-review workflows",
+      "Provided technical direction through architecture discussions, code reviews and reusable patterns while establishing Playwright E2E coverage",
     "work.elevait.visual.workspace": "Review workspace",
     "work.elevait.visual.suggestion": "AI SUGGESTION",
     "work.elevait.visual.verified": "Field verified",
@@ -202,16 +202,18 @@ window.portfolioTranslations = {
     "work.coboworx.title":
       "Turning robot motion into a visual product people can operate.",
     "work.coboworx.description":
-      "I owned the architecture and end-to-end delivery of a React and TypeScript robot-control frontend, translating hardware workflows into an approachable Blockly-based experience with maintainable state and component boundaries.",
+      "I took technical ownership of the React and TypeScript robot-control frontend, delivering workflows to configure, execute and monitor custom robot motions while coordinating internal and external engineers.",
     "work.coboworx.before": "before",
     "work.coboworx.after": "after",
     "work.coboworx.measurement": "Measured application load time",
     "work.coboworx.point1":
       "Designed Redux Toolkit state architecture separating workflow, application and UI concerns",
     "work.coboworx.point2":
-      "Built reusable React components and shared Storybook patterns supporting microfrontend principles",
+      "Improved command execution with PM2, Redis shared state, isolated processing and realtime WebSocket updates",
     "work.coboworx.point3":
-      "Implemented Cypress coverage for critical workflows and coordinated standards with an external frontend team",
+      "Standardised reusable React components and shared Storybook patterns, with Cypress coverage for critical workflows",
+    "work.coboworx.point4":
+      "Mentored engineers across two external development agencies, reviewed integrations and established implementation standards",
     "work.coboworx.visual.start": "Start sequence",
     "work.coboworx.visual.move": "Move to position",
     "work.coboworx.visual.rotate": "Rotate joint · 45°",
@@ -392,7 +394,7 @@ window.portfolioTranslations = {
       "I translate real user workflows into clear interfaces and carry features from early decisions through polished release.",
     "approach.architecture.title": "Frontend architecture",
     "approach.architecture.description":
-      "I use clear state and API boundaries, Nx monorepos, reusable component systems and micro-frontend patterns to make change safer.",
+      "I use clear state and API boundaries, Nx feature libraries, data-access layers and reusable component systems to make change safer.",
     "approach.quality.title": "Performance & quality",
     "approach.quality.description":
       "I measure bottlenecks, optimise real production paths and protect critical workflows with unit, integration and E2E tests.",
@@ -424,11 +426,11 @@ window.portfolioTranslations = {
     "skills.performanceEngineering": "Performance engineering",
     "skills.apiIntegration": "API integration patterns",
     "skills.securityFundamentals": "Application security fundamentals",
-    "skills.productionDebugging": "Production debugging & monitoring",
+    "skills.productionDebugging": "Production debugging & iteration",
     "skills.automatedTestingStrategy": "Automated testing strategy",
     "skills.s3Storage": "S3-compatible storage",
     "skills.nxMonorepos": "Nx monorepos",
-    "skills.microFrontends": "Micro frontends",
+    "skills.dataAccessLayers": "Data-access layers",
     "skills.apiAbstraction": "API abstraction",
     "skills.componentSystems": "Reusable component systems",
     "skills.stateArchitecture": "State architecture",
@@ -541,7 +543,7 @@ window.portfolioTranslations = {
     "hero.title":
       "Skalierbare Frontend-Architektur. <span>Bis in die Produktion umgesetzt.</span>",
     "hero.intro":
-      "Als Senior Frontend Engineer mit über zehn Jahren Erfahrung konzipiere und realisiere ich skalierbare TypeScript-Anwendungen für KI, Robotik, Logistik und Essenslieferung. Ich verantworte technische Entscheidungen von Frontend-Architektur sowie State- und API-Grenzen über Implementierung, automatisierte Tests und Deployment bis zur Verbesserung im laufenden Betrieb – in enger Zusammenarbeit mit Produkt- und Backend-Teams.",
+      "Als Senior Frontend Engineer mit über zehn Jahren Erfahrung entwickle und erweitere ich kundenorientierte Anwendungen für KI, Robotik, Logistik und Essenslieferung. Ich verantworte komplexe Produktbereiche von Anforderungsklärung und technischem Design über Implementierung und Tests bis zu Produktions-Debugging und iterativer Verbesserung – gemeinsam mit Produkt, Design und Backend.",
     "hero.explore": "Ausgewählte Projekte",
     "hero.email": "E-Mail schreiben",
     "hero.available": "Ab sofort verfügbar",
@@ -586,13 +588,13 @@ window.portfolioTranslations = {
       "Skalierung von 3.000 auf 25.000 tägliche Nutzer begleitet",
     "metrics.deliveryValue": "Produktionsverantwortung",
     "metrics.deliveryLabel":
-      "Architektur, Implementierung, Deployment, Monitoring und Weiterentwicklung",
+      "technisches Design, Implementierung, Tests, Produktions-Debugging und Weiterentwicklung",
     "metrics.architectureValue": "Architekturentscheidungen",
     "metrics.architectureLabel":
       "State-, Domänen- und Anwendungsgrenzen für Wartbarkeit entworfen",
-    "metrics.investigationValue": "Performance-Analysen",
+    "metrics.investigationValue": "50.000+ Dokumente",
     "metrics.investigationLabel":
-      "Frontend-Ladezeiten, API-Abfragen, MongoDB-Indizes und Asset-Auslieferung",
+      "Antwortzeit von rund 10–15 s auf etwa 2 s reduziert",
     "metrics.systemsValue": "Wiederverwendbare Systeme",
     "metrics.systemsLabel":
       "Nx-Libraries, Storybook-Komponenten, API-Abstraktionen und gemeinsame UI-Muster",
@@ -602,9 +604,9 @@ window.portfolioTranslations = {
     "features.ai.kicker": "KI-Dokumentenprozesse",
     "features.ai.title": "Multi-Annotator-Prüfsysteme",
     "features.ai.description":
-      "Dokumentenverifizierung und Human-Review-Workflows mit Aufgabenwarteschlangen, Prüferzuweisung, Schwellenwerten für automatische Freigaben, Annotation und OCR umgesetzt.",
-    "features.ai.tag1": "Aufgabenwarteschlangen",
-    "features.ai.tag2": "Annotation",
+      "Multi-Annotator-Review-Workflows mit Prüferzuweisung, unabhängigen Annotationskopien, IoU-Vergleich, konfigurierbaren Übereinstimmungsschwellen, Annotation und OCR entworfen.",
+    "features.ai.tag1": "Prüferzuweisung",
+    "features.ai.tag2": "IoU-Vergleich",
     "features.robotics.kicker": "Robotersteuerung",
     "features.robotics.title": "Workflows für individuelle Roboterbewegungen",
     "features.robotics.description":
@@ -628,14 +630,14 @@ window.portfolioTranslations = {
     "features.platforms.kicker": "Frontend-Plattformen",
     "features.platforms.title": "Wiederverwendbare Architektur für Teams",
     "features.platforms.description":
-      "Nx-Feature-Libraries, Storybook-Komponenten, gemeinsame UI-Muster, konfigurierbare Wrapper und an Microfrontends ausgerichtete Grenzen entwickelt.",
+      "Nx-Feature-Grenzen, Data-Access-Layer, State-Muster und wiederverwendbare Storybook-Komponenten für Produktteams entworfen.",
     "features.platforms.tag1": "Nx-Libraries",
-    "features.platforms.tag3": "Microfrontends",
+    "features.platforms.tag3": "API-Grenzen",
     "features.quality.kicker": "Auslieferungssicherheit",
     "features.quality.title": "Kritische Workflows End-to-End abgesichert",
     "features.quality.description":
-      "Playwright- und Cypress-Abdeckung etabliert und Verantwortung von Implementierung über Deployment und Monitoring bis zur Weiterentwicklung übernommen.",
-    "features.quality.tag3": "Monitoring",
+      "Playwright- und Cypress-Abdeckung etabliert und Verantwortung von Implementierung und Tests bis zu Produktions-Debugging und iterativer Verbesserung übernommen.",
+    "features.quality.tag3": "Produktions-Debugging",
     "work.eyebrow": "Ausgewählte Berufserfahrung",
     "work.title": "Frontend-Verantwortung mit systemischem Denken.",
     "work.intro":
@@ -645,19 +647,19 @@ window.portfolioTranslations = {
     "work.elevait.title":
       "Menschliche Prüfung klar, schnell und verlässlich gestalten.",
     "work.elevait.description":
-      "Ich verantworte Frontend-Architektur und Entwicklung von Angular- und TypeScript-Workflows für KI-gestützte Dokumentenverifizierung und manuelle Prüfung und arbeite mit Backend und Produkt an skalierbaren Review-Systemen mit klaren Anwendungsgrenzen.",
+      "Ich übernahm die technische Frontend-Verantwortung für Angular- und TypeScript-Workflows zur Verifizierung, Annotation und Aufgabensteuerung, mit denen Nutzer maschinell erzeugte Annotationen vor der Weiterverarbeitung validierter Daten korrigieren.",
     "work.elevait.point1":
-      "Multi-Annotator-Workflows mit Aufgabenwarteschlangen, Prüferzuweisung und Schwellenwerten für automatische Freigaben mitentwickelt",
+      "Multi-Annotator-Workflows mit Prüferzuweisung, unabhängigen Annotationskopien, IoU-basiertem Vergleich und konfigurierbaren Übereinstimmungsschwellen entworfen und umgesetzt",
     "work.elevait.point2":
-      "Wiederverwendbare Frontend-Muster, Komponentenstrukturen und Anwendungsgrenzen für wartbare Review-Workflows entworfen",
+      "Prüferunabhängigkeit, Übereinstimmungsschwellen, Freigabestatus und Aufgabenübergänge in Frontend-State-Modelle, API-Verträge und Workflow-Verhalten übersetzt",
     "work.elevait.point3":
       "Bilddatenmengen durch komprimierte Dokumentenvorschauen aus S3-Objektspeicher reduziert",
     "work.elevait.point4":
-      "API-Reaktionszeiten durch NestJS-Abfragen, MongoDB-Indizes, Filterung und Paginierung verbessert",
+      "Antwortzeiten bei mehr als 50.000 Dokumenten durch NestJS-Abfragen, MongoDB-Indizes, Filterung und Paginierung von rund 10–15 Sekunden auf etwa 2 Sekunden reduziert",
     "work.elevait.point5":
-      "Mit modularen Angular/Nx-Feature-Libraries, State Management und Data-Access-Layern für Annotation und OCR gearbeitet",
+      "Angular/Nx-Feature-Grenzen, Komponentenstrukturen, State-Muster und Data-Access-Layer für Annotation, Verifizierung und OCR entworfen",
     "work.elevait.point6":
-      "Playwright-E2E-Abdeckung für kritische Dokumentenprüfungs-Workflows etabliert",
+      "Technische Richtung durch Architekturgespräche, Code-Reviews und wiederverwendbare Muster gegeben sowie Playwright-E2E-Abdeckung etabliert",
     "work.elevait.visual.workspace": "Prüfbereich",
     "work.elevait.visual.suggestion": "KI-VORSCHLAG",
     "work.elevait.visual.verified": "Feld bestätigt",
@@ -670,16 +672,18 @@ window.portfolioTranslations = {
     "work.coboworx.title":
       "Roboterbewegungen in ein visuelles, bedienbares Produkt übersetzen.",
     "work.coboworx.description":
-      "Ich verantwortete Architektur und End-to-End-Umsetzung eines React- und TypeScript-Frontends zur Robotersteuerung und übersetzte Hardware-Abläufe in eine zugängliche Blockly-basierte Nutzererfahrung mit wartbaren State- und Komponentengrenzen.",
+      "Ich übernahm die technische Verantwortung für das React- und TypeScript-Frontend zur Robotersteuerung und lieferte Workflows zum Konfigurieren, Ausführen und Überwachen individueller Roboterbewegungen in Zusammenarbeit mit internen und externen Entwicklern.",
     "work.coboworx.before": "vorher",
     "work.coboworx.after": "nachher",
     "work.coboworx.measurement": "Gemessene Ladezeit der Anwendung",
     "work.coboworx.point1":
       "Redux-Toolkit-State-Architektur mit getrennten Workflow-, Anwendungs- und UI-Zuständen entworfen",
     "work.coboworx.point2":
-      "Wiederverwendbare React-Komponenten und gemeinsame Storybook-Muster für Microfrontend-Prinzipien entwickelt",
+      "Befehlsausführung mit PM2, gemeinsamem Redis-State, isolierter Verarbeitung und Echtzeit-Updates über WebSockets verbessert",
     "work.coboworx.point3":
-      "Cypress-Abdeckung für kritische Workflows umgesetzt und Standards mit einem externen Frontend-Team koordiniert",
+      "Wiederverwendbare React-Komponenten und gemeinsame Storybook-Muster standardisiert und Cypress-Abdeckung für kritische Workflows ergänzt",
+    "work.coboworx.point4":
+      "Entwickler aus zwei externen Agenturen begleitet, Integrationen geprüft und Implementierungsstandards etabliert",
     "work.coboworx.visual.start": "Sequenz starten",
     "work.coboworx.visual.move": "Zur Position bewegen",
     "work.coboworx.visual.rotate": "Gelenk drehen · 45°",
@@ -861,7 +865,7 @@ window.portfolioTranslations = {
       "Ich übersetze reale Nutzerabläufe in klare Oberflächen und begleite Funktionen von der ersten Entscheidung bis zum ausgereiften Release.",
     "approach.architecture.title": "Frontend-Architektur",
     "approach.architecture.description":
-      "Mit klaren State- und API-Grenzen, Nx-Monorepos, wiederverwendbaren Komponentensystemen und Micro-Frontend-Mustern mache ich Änderungen sicherer.",
+      "Mit klaren State- und API-Grenzen, Nx-Feature-Libraries, Data-Access-Layern und wiederverwendbaren Komponentensystemen mache ich Änderungen sicherer.",
     "approach.quality.title": "Performance & Qualität",
     "approach.quality.description":
       "Ich messe Engpässe, optimiere reale Produktionsabläufe und sichere kritische Workflows mit Unit-, Integrations- und E2E-Tests ab.",
@@ -894,11 +898,11 @@ window.portfolioTranslations = {
     "skills.performanceEngineering": "Performance Engineering",
     "skills.apiIntegration": "API-Integrationsmuster",
     "skills.securityFundamentals": "Grundlagen der Anwendungssicherheit",
-    "skills.productionDebugging": "Produktions-Debugging & Monitoring",
+    "skills.productionDebugging": "Produktions-Debugging & Weiterentwicklung",
     "skills.automatedTestingStrategy": "Strategie für automatisierte Tests",
     "skills.s3Storage": "S3-kompatibler Speicher",
     "skills.nxMonorepos": "Nx-Monorepos",
-    "skills.microFrontends": "Micro Frontends",
+    "skills.dataAccessLayers": "Data-Access-Layer",
     "skills.apiAbstraction": "API-Abstraktion",
     "skills.componentSystems": "Wiederverwendbare Komponentensysteme",
     "skills.stateArchitecture": "State-Architektur",

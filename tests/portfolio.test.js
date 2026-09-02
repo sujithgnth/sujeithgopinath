@@ -1,4 +1,5 @@
 const assert = require("node:assert/strict");
+const crypto = require("node:crypto");
 const fs = require("node:fs");
 const test = require("node:test");
 const vm = require("node:vm");
@@ -53,7 +54,7 @@ test("career evidence carousel includes eight senior-level signals", () => {
   assert.match(indexHtml, /data-proof-prev/);
   assert.match(indexHtml, /data-proof-next/);
   assert.match(indexHtml, /Architecture decisions/);
-  assert.match(indexHtml, /Performance investigations/);
+  assert.match(indexHtml, /50k\+ documents/);
   assert.match(indexHtml, /Reusable systems/);
   assert.match(indexHtml, /Cross-functional delivery/);
 });
@@ -75,7 +76,39 @@ test("senior positioning follows the revised CV hierarchy", () => {
   assert.match(indexHtml, /Technical ownership from architecture to production/);
   assert.match(indexHtml, />Next\.js</);
   assert.match(indexHtml, /Application security fundamentals/);
-  assert.match(indexHtml, /Production debugging &amp; monitoring/);
+  assert.match(indexHtml, /Production debugging &amp; iteration/);
+});
+
+test("resume asset and professional evidence follow the September 2026 CV", () => {
+  const resumePdf = fs.readFileSync(
+    "assets/resume/sujeith-gopinath-resume-en.pdf",
+  );
+  const resumeHash = crypto.createHash("sha256").update(resumePdf).digest("hex");
+
+  assert.equal(
+    resumeHash,
+    "54af47b29db495aaa1313fb04eed81d1da999783250c5d76e811c85c13e53ef9",
+  );
+  assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-1.jpg"));
+  assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-2.jpg"));
+  assert.match(indexHtml, /sujeith-gopinath-resume-en\.pdf\?v=20260902\.1/);
+  assert.match(
+    indexHtml,
+    /50,000 documents from roughly 10–15 seconds to around 2 seconds/,
+  );
+  assert.match(indexHtml, /IoU-based comparison/);
+  assert.match(indexHtml, /PM2, Redis shared state/);
+  assert.match(indexHtml, /realtime WebSocket updates/);
+  assert.match(indexHtml, /two external development agencies/);
+  assert.doesNotMatch(translationSource, /microfront|Blockly/i);
+  assert.doesNotMatch(
+    indexHtml,
+    /microfrontend-aligned|supporting microfrontend|Blockly-based/i,
+  );
+  assert.match(
+    styles,
+    /\.resume-dialog-close span:not\(\[aria-hidden\]\)\s*\{\s*display: none;/,
+  );
 });
 
 test("professional work appears before independent portfolio projects", () => {

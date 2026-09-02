@@ -6648,8 +6648,13 @@ h3 {
     font-size: 0;
   }
 
-  .resume-dialog-close span {
+  .resume-dialog-close span:not([aria-hidden]) {
+    display: none;
+  }
+
+  .resume-dialog-close span[aria-hidden="true"] {
     font-size: 24px;
+    line-height: 1;
   }
 
   .resume-dialog-body {
