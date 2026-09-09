@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="react" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.5">
+      <ellipse cx="12" cy="12" rx="9" ry="3.8" />
+      <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(60 12 12)" />
+      <ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(120 12 12)" />
+    </g>
+    <circle cx="12" cy="12" r="1.7" fill="currentColor" />
+  </symbol>
+  <symbol id="typescript" viewBox="0 0 24 24">
+    <rect x="2.5" y="2.5" width="19" height="19" rx="3" fill="currentColor" />
+    <text x="5.3" y="16.8" fill="white" font-family="Arial, sans-serif" font-size="9.5" font-weight="700">TS</text>
+  </symbol>
+  <symbol id="redux" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8">
+      <path d="M7.1 7.6c1.4-2.1 4.4-3 6.8-2.1 1.3.5 2.3 1.4 2.9 2.6" />
+      <path d="M17.4 10.4c.6 2.5-.7 5.2-3 6.4-1.3.7-2.8.8-4.1.4" />
+      <path d="M8.1 15.4c-2.4-.6-4.1-2.9-4-5.4 0-1.3.5-2.6 1.4-3.5" />
+    </g>
+    <circle cx="6.4" cy="6.3" r="2" fill="currentColor" />
+    <circle cx="17.8" cy="8.7" r="2" fill="currentColor" />
+    <circle cx="9.6" cy="17.1" r="2" fill="currentColor" />
+  </symbol>
+  <symbol id="tailwind" viewBox="0 0 24 24">
+    <path d="M3 10.3c1.2-4 3.7-6 7.4-6 5.6 0 6.3 4.2 9.1 4.9 1.9.5 3.4-.2 4.5-2-1.2 4-3.7 6-7.4 6-5.6 0-6.3-4.2-9.1-4.9-1.9-.5-3.4.2-4.5 2Zm0 6.5c1.2-4 3.7-6 7.4-6 5.6 0 6.3 4.2 9.1 4.9 1.9.5 3.4-.2 4.5-2-1.2 4-3.7 6-7.4 6-5.6 0-6.3-4.2-9.1-4.9-1.9-.5-3.4.2-4.5 2Z" fill="currentColor" />
+  </symbol>
+  <symbol id="storybook" viewBox="0 0 24 24">
+    <path d="M5.5 3.8 17.7 3a1.5 1.5 0 0 1 1.6 1.5v15a1.5 1.5 0 0 1-1.6 1.5L5.5 19.9A1.5 1.5 0 0 1 4.1 18.4V5.3a1.5 1.5 0 0 1 1.4-1.5Z" fill="none" stroke="currentColor" stroke-width="1.6" />
+    <path d="M15.8 3.4v4l1.5-1 1.6 1.1V3.2" fill="currentColor" />
+    <text x="8" y="16.2" fill="currentColor" font-family="Arial, sans-serif" font-size="9.5" font-weight="700">S</text>
+  </symbol>
+  <symbol id="cypress" viewBox="0 0 24 24">
+    <path d="M18.8 7.3A8.5 8.5 0 1 0 18 18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+    <path d="M15.7 9.1a4.2 4.2 0 1 0 0 5.8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8" />
+    <circle cx="18.4" cy="16.8" r="1.4" fill="currentColor" />
+  </symbol>
+  <symbol id="angular" viewBox="0 0 24 24">
+    <path d="m12 2 9 3.2-1.4 11.6L12 22l-7.6-5.2L3 5.2 12 2Z" fill="none" stroke="currentColor" stroke-width="1.6" />
+    <path d="m8 17 4-10 4 10M9.5 13.2h5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+  </symbol>
+  <symbol id="nx" viewBox="0 0 24 24">
+    <path d="M4 5h5l7 14h4M4 19 11 5h3l6 10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+  </symbol>
+  <symbol id="nestjs" viewBox="0 0 24 24">
+    <path d="M5 19V5l7 6.2L19 5v14l-7-6.2L5 19Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+  </symbol>
+  <symbol id="mongodb" viewBox="0 0 24 24">
+    <path d="M12.1 2.4c3.2 3.2 5.1 6.6 4.8 10.2-.3 3.5-2 6.3-4.8 8.7-2.8-2.4-4.5-5.2-4.8-8.7-.3-3.6 1.6-7 4.8-10.2Z" fill="currentColor" />
+    <path d="M12.1 6.1v15.5" fill="none" stroke="var(--surface, white)" stroke-width="1.1" />
+  </symbol>
+  <symbol id="playwright" viewBox="0 0 24 24">
+    <path d="M4 6.2c2.4 1.2 4.8 1.1 7.1 0v7.2c0 3-2.3 5.4-5.1 5.4-1.1 0-2.1-.4-3-1.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6" />
+    <path d="M10.7 4.4c3.2 1.5 6.3 1.4 9.4 0v8.2c0 3.8-3.2 6.8-7 6.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.6" />
+    <circle cx="14.2" cy="9.4" r="1" fill="currentColor" />
+    <circle cx="18" cy="8.7" r="1" fill="currentColor" />
+    <path d="M14.2 13.4c1.2 1 2.5.9 3.7-.2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.3" />
+  </symbol>
+  <symbol id="nodejs" viewBox="0 0 24 24">
+    <path d="m12 2.7 8 4.6v9.4l-8 4.6-8-4.6V7.3l8-4.6Z" fill="none" stroke="currentColor" stroke-width="1.6" />
+    <path d="M8 16V8l8 8V8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+  </symbol>
+  <symbol id="graphql" viewBox="0 0 24 24">
+    <path d="m12 3 8 4.6v8.8L12 21l-8-4.6V7.6L12 3Zm0 0v18M4 7.6l16 8.8M20 7.6 4 16.4" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.3" />
+    <g fill="currentColor"><circle cx="12" cy="3" r="1.6"/><circle cx="20" cy="7.6" r="1.6"/><circle cx="20" cy="16.4" r="1.6"/><circle cx="12" cy="21" r="1.6"/><circle cx="4" cy="16.4" r="1.6"/><circle cx="4" cy="7.6" r="1.6"/></g>
+  </symbol>
+  <symbol id="redis" viewBox="0 0 24 24">
+    <path d="m12 4 9 4-9 4-9-4 9-4Zm-8.2 8 8.2 3.7 8.2-3.7M3.8 16l8.2 3.7 8.2-3.7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" />
+  </symbol>
+  <symbol id="webpack" viewBox="0 0 24 24">
+    <path d="m12 2.8 8 4.6v9.2l-8 4.6-8-4.6V7.4l8-4.6Z" fill="none" stroke="currentColor" stroke-width="1.5" />
+    <path d="m12 8 4 2.3v4.5L12 17l-4-2.2v-4.5L12 8Z" fill="currentColor" />
+  </symbol>
+  <symbol id="express" viewBox="0 0 24 24">
+    <path d="M3 8h7l4 8h7M21 8h-4l-4 8H3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+  </symbol>
+  <symbol id="pwa" viewBox="0 0 24 24">
+    <path d="M2.5 16V8h4.2c2.2 0 3.5 1.1 3.5 3s-1.3 3-3.5 3H5.2v2H2.5Zm2.7-4.2h1.3c.7 0 1-.3 1-.8s-.3-.8-1-.8H5.2v1.6ZM10 8h2.7l1 4.4L15.2 8h2.3l1.5 4.4L20 8h2.5l-2.3 8h-2.4l-1.5-4.4-1.5 4.4h-2.4L10 8Z" fill="currentColor" />
+  </symbol>
+  <symbol id="generic" viewBox="0 0 24 24">
+    <path d="M8.5 7 4 12l4.5 5M15.5 7l4.5 5-4.5 5M14 4l-4 16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" />
+  </symbol>
+</svg>

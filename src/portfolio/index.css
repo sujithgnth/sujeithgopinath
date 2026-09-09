@@ -11,6 +11,11 @@ body.darkMode {
   background: #1d1d1d;
   color: #fff;
 }
+
+body.darkMode h3 {
+  color: #20f1d1;
+}
+
 body.darkMode li a {
   color: #fff;
 }
@@ -98,6 +103,7 @@ h3 {
 h4 {
   font-size: 0.707rem;
   margin: 15px 0 0;
+  color: ff2d95;
 }
 h5 {
   font-size: 0.4713333333333333rem;
@@ -157,16 +163,6 @@ a:focus {
   color: #00baff;
 }
 
-@media only screen and (max-width: 812px) {
-  body {
-    margin: 16px;
-  }
-
-  main {
-    width: 100%;
-  }
-}
-
 /* Top image and name holder */
 
 .image-holder {
@@ -198,11 +194,12 @@ ul.links {
 
 ul.links li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 4px;
 }
 ul.links li a {
   text-decoration: none;
   font-size: 14px;
+  margin-left: 10px;
 }
 ul.links li svg {
   width: 20px;
@@ -221,16 +218,17 @@ ul.links li svg {
   color: #0096d6;
 }
 .medium a:hover {
-  color: #000;
+  color: #41ff97;
 }
 .github a:hover {
-  color: #000;
+  color: #41ff97;
 }
 .leetcode a:hover {
   color: #f89f1b;
 }
+.email a,
 .email a:hover {
-  color: #4680c2;
+  color: gold !important;
 }
 .js a:hover {
   color: #f7df1e;
@@ -285,4 +283,70 @@ ul.links li svg {
 }
 .blockquote-data {
   margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 812px) {
+  .name {
+    display: block;
+  }
+  body {
+    margin: 16px;
+  }
+
+  main {
+    width: 100%;
+  }
+  html {
+    font-size: 100%;
+  }
+  h1 {
+    font-size: 4.242rem;
+    margin: 0;
+    text-align: center;
+  }
+  .display-pic {
+    min-width: auto;
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+    border-radius: 50%;
+  }
+
+  ul.links {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4px;
+  }
+  ul.links li {
+    margin-bottom: 20px;
+  }
+  p,
+  footer {
+    text-align: center;
+  }
+  h3,
+  h2,
+  h4 {
+    text-align: center;
+  }
+  h4 {
+    font-size: 15px;
+    margin: 10px 0 0;
+  }
+  .change-theme {
+    right: 10px;
+    font-size: 24px;
+  }
+  .name p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  ul.links {
+    grid-template-columns: 1fr 1fr;
+  }
+  ul.links li a {
+    font-size: 13px;
+    margin-left: 4px;
+  }
 }

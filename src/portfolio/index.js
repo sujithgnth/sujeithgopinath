@@ -11,7 +11,7 @@ function toggleTheme(event) {
 }
 
 const checkThemeOnLoad = () => {
-  const value = localStorage.getItem('themeMode');
+  const value = localStorage.getItem('themeMode') || 'darkMode';
   if (value) {
     changeTheme(value);
   }
