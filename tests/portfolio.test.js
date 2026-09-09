@@ -87,11 +87,11 @@ test("resume asset and professional evidence follow the September 2026 CV", () =
 
   assert.equal(
     resumeHash,
-    "54af47b29db495aaa1313fb04eed81d1da999783250c5d76e811c85c13e53ef9",
+    "a3aa101a53ba41484d7fd3a71741f6e8e94d52600c91dd547dcf54c0609a632c",
   );
   assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-1.jpg"));
   assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-2.jpg"));
-  assert.match(indexHtml, /sujeith-gopinath-resume-en\.pdf\?v=20260902\.1/);
+  assert.match(indexHtml, /sujeith-gopinath-resume-en\.pdf\?v=20260909\.1/);
   assert.match(
     indexHtml,
     /50,000 documents from roughly 10–15 seconds to around 2 seconds/,
