@@ -1,13 +1,13 @@
 window.portfolioTranslations = {
   en: {
     "meta.title":
-      "Senior Frontend Engineer in Dresden | Sujeith Gopinath",
+      "Senior Full-Stack TypeScript Engineer in Dresden | Sujeith Gopinath",
     "meta.description":
-      "Sujeith Gopinath is a Senior Frontend Engineer in Dresden with 10+ years of experience designing scalable TypeScript applications with React, Angular and frontend architecture.",
+      "Sujeith Gopinath is a Senior Full-Stack TypeScript Engineer in Dresden with 10+ years of experience designing scalable TypeScript applications with React, Angular and frontend architecture.",
     "meta.socialDescription":
-      "Senior Frontend Engineer in Dresden specialising in TypeScript, React, Angular and scalable frontend architecture for complex products.",
+      "Senior Full-Stack TypeScript Engineer in Dresden specialising in TypeScript, React, Angular and scalable frontend architecture for complex products.",
     "meta.imageAlt":
-      "Portfolio of Sujeith Gopinath, Senior Frontend Engineer in Dresden",
+      "Portfolio of Sujeith Gopinath, Senior Full-Stack TypeScript Engineer in Dresden",
     "accessibility.skipToContent": "Skip to content",
     "accessibility.home": "Sujeith Gopinath, home",
     "accessibility.mainNavigation": "Main navigation",
@@ -70,11 +70,11 @@ window.portfolioTranslations = {
     "nav.resume": "Résumé",
     "nav.contact": "Let’s talk",
     "hero.eyebrow":
-      "Senior Frontend Engineer · TypeScript · React · Angular",
+      "Senior Full-Stack TypeScript Engineer · TypeScript · React · Angular",
     "hero.title":
       "Scalable frontend architecture. <span>Delivered to production.</span>",
     "hero.intro":
-      "Senior Frontend Engineer with 10+ years of experience building and evolving customer-facing applications across AI, robotics, logistics and food delivery. I own complex product areas from requirement clarification and technical design through implementation, testing, production debugging and iterative improvement across product, design and backend teams.",
+      "Senior Full-Stack TypeScript Engineer with 10+ years of experience across AI document processing, robotics, logistics and food delivery. I own features end to end across React and Angular frontends, Node.js/NestJS APIs, MongoDB/Redis data access, testing and production debugging.",
     "hero.explore": "Explore selected work",
     "hero.email": "Email me",
     "hero.available": "Available immediately",
@@ -113,7 +113,7 @@ window.portfolioTranslations = {
     "metrics.yearsShort": "years",
     "metrics.years": "building and operating customer-facing products",
     "metrics.loadValue": "66% lower",
-    "metrics.loadLabel": "measured load time — from 5.0s to 1.7s",
+    "metrics.loadLabel": "measured load time — from 7.0s to 1.7s",
     "metrics.growthValue": "8× user growth",
     "metrics.growthLabel": "supported scale from 3k to 25k daily users",
     "metrics.deliveryValue": "Production ownership",
@@ -177,13 +177,13 @@ window.portfolioTranslations = {
     "work.elevait.title":
       "Making human review feel clear, fast and trustworthy.",
     "work.elevait.description":
-      "I took frontend technical ownership of Angular and TypeScript verification, annotation and task-management workflows that let users correct machine-generated annotations before validated data moves to downstream systems.",
+      "I architected and owned document-verification and annotation workflows across Angular, NestJS and MongoDB, used by approximately 100 annotators across 5 enterprise customers. Successful review completion increased from roughly 30% to 80%.",
     "work.elevait.point1":
-      "Designed and delivered multi-annotator review workflows with reviewer assignment, independent annotation copies, IoU-based comparison and configurable agreement thresholds",
+      "Standardised multi-annotator review with IoU-based comparison, thresholds and backend validation, achieving 100% adoption across annotation teams and contributing to 12% revenue growth",
     "work.elevait.point2":
-      "Translated reviewer independence, agreement thresholds, approval states and task transitions into frontend state models, API contracts and workflow behaviour",
+      "Owned configurable Verifier rules and approval criteria across frontend and backend boundaries, keeping backend validation as the source of truth and contributing to the acquisition of SachsenEnergie",
     "work.elevait.point3":
-      "Reduced image payloads by introducing compressed document previews through S3 object storage",
+      "Introduced a NestJS preview API backed by S3-compatible MinIO, reducing average document load time from roughly 16 seconds to 4 seconds",
     "work.elevait.point4":
       "Reduced response times across more than 50,000 documents from roughly 10–15 seconds to around 2 seconds through NestJS queries, MongoDB indexing, filtering and pagination",
     "work.elevait.point5":
@@ -202,7 +202,7 @@ window.portfolioTranslations = {
     "work.coboworx.title":
       "Turning robot motion into a visual product people can operate.",
     "work.coboworx.description":
-      "I took technical ownership of the React and TypeScript robot-control frontend, delivering workflows to configure, execute and monitor custom robot motions while coordinating internal and external engineers.",
+      "I led migration and in-house adoption of the React/TypeScript robot-control platform, establishing internal ownership of application architecture and delivery standards. I built core product areas across the React frontend and supporting APIs within 4 months.",
     "work.coboworx.before": "before",
     "work.coboworx.after": "after",
     "work.coboworx.measurement": "Measured application load time",
@@ -213,7 +213,7 @@ window.portfolioTranslations = {
     "work.coboworx.point3":
       "Standardised reusable React components and shared Storybook patterns, with Cypress coverage for critical workflows",
     "work.coboworx.point4":
-      "Mentored engineers across two external development agencies, reviewed integrations and established implementation standards",
+      "Established architecture and code-review standards across internal and external contributors, with reusable components and Cypress regression coverage",
     "work.coboworx.visual.start": "Start sequence",
     "work.coboworx.visual.move": "Move to position",
     "work.coboworx.visual.rotate": "Rotate joint · 45°",
@@ -329,7 +329,7 @@ window.portfolioTranslations = {
       "As the primary frontend engineer, I delivered audit, cash-on-delivery and item-tracking workflows, modernised a legacy product into a React and TypeScript SPA, and introduced clearer state and API boundaries.",
     "archive.swiggy.title": "Restaurant ordering built for rapid growth",
     "archive.swiggy.description":
-      "As the primary frontend engineer, I built React, Next.js and Redux restaurant order workflows while daily usage grew from approximately 3,000 to 25,000 users.",
+      "As primary frontend engineer, I owned restaurant-vendor workflows as daily usage grew from approximately 3,000 to 27,000 users. I also built and maintained a Node.js/Express backend-for-frontend layer using GraphQL/Apollo and Redis.",
     "archive.swiggy.point1":
       "Developed Node.js and Express middleware APIs using GraphQL and Redis to integrate internal microservices",
     "archive.swiggy.point2":
@@ -366,7 +366,7 @@ window.portfolioTranslations = {
     "experience.intro":
       "Across more than ten years in startups and scale-ups, I have owned frontend architecture, state and API boundaries, performance, testing and production delivery for customer-facing products.",
     "experience.now": "2023—Now",
-    "experience.fullstackRole": "Full-Stack JavaScript Developer",
+    "experience.fullstackRole": "Senior Full-Stack TypeScript Engineer",
     "experience.seniorFrontendRole": "Senior Frontend Engineer",
     "experience.frontendRole": "Frontend Engineer",
     "experience.juniorRole": "Junior UI Developer",
@@ -454,7 +454,7 @@ window.portfolioTranslations = {
     "resume.german.page2Alt": "German résumé, page 2 of 3",
     "resume.german.page3Alt": "German résumé, page 3 of 3",
     "resume.role":
-      "Senior Frontend Engineer · TypeScript · React · Angular · Scalable Frontend Architecture",
+      "Senior Full-Stack TypeScript Engineer · TypeScript · React · Angular · Scalable Frontend Architecture",
     "resume.view": "View résumé",
     "resume.download": "Download PDF",
     "resume.close": "Close",
@@ -462,17 +462,17 @@ window.portfolioTranslations = {
     "contact.title":
       "Looking for a senior engineer who cares about the product as much as the code?",
     "footer.role":
-      "Senior Frontend Engineer · TypeScript · React · Angular · Dresden, Germany",
+      "Senior Full-Stack TypeScript Engineer · TypeScript · React · Angular · Dresden, Germany",
   },
   de: {
     "meta.title":
-      "Senior Frontend Engineer in Dresden | Sujeith Gopinath",
+      "Senior Full-Stack TypeScript Engineer in Dresden | Sujeith Gopinath",
     "meta.description":
-      "Sujeith Gopinath ist Senior Frontend Engineer in Dresden mit über 10 Jahren Erfahrung in skalierbaren TypeScript-Anwendungen, React, Angular und Frontend-Architektur.",
+      "Sujeith Gopinath ist Senior Full-Stack TypeScript Engineer in Dresden mit über 10 Jahren Erfahrung in skalierbaren TypeScript-Anwendungen, React, Angular und Frontend-Architektur.",
     "meta.socialDescription":
-      "Senior Frontend Engineer in Dresden mit Schwerpunkt auf TypeScript, React, Angular und skalierbarer Frontend-Architektur für komplexe Produkte.",
+      "Senior Full-Stack TypeScript Engineer in Dresden mit Schwerpunkt auf TypeScript, React, Angular und skalierbarer Frontend-Architektur für komplexe Produkte.",
     "meta.imageAlt":
-      "Portfolio von Sujeith Gopinath, Senior Frontend Engineer in Dresden",
+      "Portfolio von Sujeith Gopinath, Senior Full-Stack TypeScript Engineer in Dresden",
     "accessibility.skipToContent": "Zum Inhalt springen",
     "accessibility.home": "Sujeith Gopinath, Startseite",
     "accessibility.mainNavigation": "Hauptnavigation",
@@ -539,11 +539,11 @@ window.portfolioTranslations = {
     "nav.resume": "Lebenslauf",
     "nav.contact": "Kontakt",
     "hero.eyebrow":
-      "Senior Frontend-Entwickler · TypeScript · React · Angular",
+      "Senior Full-Stack TypeScript Engineer · React · Angular · Node.js · NestJS",
     "hero.title":
       "Skalierbare Frontend-Architektur. <span>Bis in die Produktion umgesetzt.</span>",
     "hero.intro":
-      "Als Senior Frontend Engineer mit über zehn Jahren Erfahrung entwickle und erweitere ich kundenorientierte Anwendungen für KI, Robotik, Logistik und Essenslieferung. Ich verantworte komplexe Produktbereiche von Anforderungsklärung und technischem Design über Implementierung und Tests bis zu Produktions-Debugging und iterativer Verbesserung – gemeinsam mit Produkt, Design und Backend.",
+      "Senior Full-Stack TypeScript Engineer mit über 10 Jahren Erfahrung in KI-Dokumentenverarbeitung, Robotik, Logistik und Essenslieferung. Ich verantworte Features durchgängig: React- und Angular-Frontends, Node.js/NestJS-APIs, MongoDB/Redis-Datenzugriff, Tests und Fehleranalyse im Produktivbetrieb.",
     "hero.explore": "Ausgewählte Projekte",
     "hero.email": "E-Mail schreiben",
     "hero.available": "Ab sofort verfügbar",
@@ -582,7 +582,7 @@ window.portfolioTranslations = {
     "metrics.yearsShort": "Jahre",
     "metrics.years": "Entwicklung und Betrieb kundenorientierter Produkte",
     "metrics.loadValue": "66 % weniger",
-    "metrics.loadLabel": "gemessene Ladezeit – von 5,0 s auf 1,7 s",
+    "metrics.loadLabel": "gemessene Ladezeit – von 7,0 s auf 1,7 s",
     "metrics.growthValue": "8× Nutzerwachstum",
     "metrics.growthLabel":
       "Skalierung von 3.000 auf 25.000 tägliche Nutzer begleitet",
@@ -647,13 +647,13 @@ window.portfolioTranslations = {
     "work.elevait.title":
       "Menschliche Prüfung klar, schnell und verlässlich gestalten.",
     "work.elevait.description":
-      "Ich übernahm die technische Frontend-Verantwortung für Angular- und TypeScript-Workflows zur Verifizierung, Annotation und Aufgabensteuerung, mit denen Nutzer maschinell erzeugte Annotationen vor der Weiterverarbeitung validierter Daten korrigieren.",
+      "Ich entwarf und verantwortete Dokumentenprüfungs- und Annotationsabläufe mit Angular, NestJS und MongoDB für rund 100 Annotatoren bei 5 Unternehmenskunden. Die erfolgreiche Prüfungsabschlussquote stieg von etwa 30 % auf 80 %.",
     "work.elevait.point1":
-      "Multi-Annotator-Workflows mit Prüferzuweisung, unabhängigen Annotationskopien, IoU-basiertem Vergleich und konfigurierbaren Übereinstimmungsschwellen entworfen und umgesetzt",
+      "Standardisierte Mehrfachprüfung mit IoU-basiertem Vergleich, Schwellenwerten und Backend-Validierung; 100 % Nutzung in den Annotationsteams und Beitrag zu 12 % Umsatzwachstum",
     "work.elevait.point2":
-      "Prüferunabhängigkeit, Übereinstimmungsschwellen, Freigabestatus und Aufgabenübergänge in Frontend-State-Modelle, API-Verträge und Workflow-Verhalten übersetzt",
+      "Verantwortete konfigurierbare Verifier-Regeln und Freigabekriterien in Frontend und Backend, mit Backend-Validierung als verbindlicher Instanz und einem Beitrag zur Gewinnung von SachsenEnergie",
     "work.elevait.point3":
-      "Bilddatenmengen durch komprimierte Dokumentenvorschauen aus S3-Objektspeicher reduziert",
+      "Führte eine NestJS-Vorschau-API mit S3-kompatiblem MinIO ein und reduzierte die durchschnittliche Dokumentladezeit von rund 16 auf 4 Sekunden",
     "work.elevait.point4":
       "Antwortzeiten bei mehr als 50.000 Dokumenten durch NestJS-Abfragen, MongoDB-Indizes, Filterung und Paginierung von rund 10–15 Sekunden auf etwa 2 Sekunden reduziert",
     "work.elevait.point5":
@@ -672,7 +672,7 @@ window.portfolioTranslations = {
     "work.coboworx.title":
       "Roboterbewegungen in ein visuelles, bedienbares Produkt übersetzen.",
     "work.coboworx.description":
-      "Ich übernahm die technische Verantwortung für das React- und TypeScript-Frontend zur Robotersteuerung und lieferte Workflows zum Konfigurieren, Ausführen und Überwachen individueller Roboterbewegungen in Zusammenarbeit mit internen und externen Entwicklern.",
+      "Ich leitete die Migration und interne Übernahme der React/TypeScript-Robotersteuerung und etablierte interne Verantwortung für Architektur und Auslieferungsstandards. Zentrale Produktbereiche im React-Frontend und in unterstützenden APIs entstanden innerhalb von 4 Monaten.",
     "work.coboworx.before": "vorher",
     "work.coboworx.after": "nachher",
     "work.coboworx.measurement": "Gemessene Ladezeit der Anwendung",
@@ -683,7 +683,7 @@ window.portfolioTranslations = {
     "work.coboworx.point3":
       "Wiederverwendbare React-Komponenten und gemeinsame Storybook-Muster standardisiert und Cypress-Abdeckung für kritische Workflows ergänzt",
     "work.coboworx.point4":
-      "Entwickler aus zwei externen Agenturen begleitet, Integrationen geprüft und Implementierungsstandards etabliert",
+      "Etablierte Architektur- und Code-Review-Standards für interne und externe Entwickler, wiederverwendbare Komponenten und Cypress-Regressionstests",
     "work.coboworx.visual.start": "Sequenz starten",
     "work.coboworx.visual.move": "Zur Position bewegen",
     "work.coboworx.visual.rotate": "Gelenk drehen · 45°",
@@ -800,7 +800,7 @@ window.portfolioTranslations = {
       "Als verantwortlicher Frontend-Entwickler realisierte ich Prüf-, Nachnahme- und Sendungsverfolgungsprozesse, modernisierte ein Legacy-Produkt zu einer React- und TypeScript-SPA und führte klarere State- und API-Grenzen ein.",
     "archive.swiggy.title": "Restaurantbestellungen für schnelles Wachstum",
     "archive.swiggy.description":
-      "Als verantwortlicher Frontend-Entwickler realisierte ich Restaurant-Bestellabläufe mit React, Next.js und Redux, während die tägliche Nutzung von rund 3.000 auf 25.000 Nutzer stieg.",
+      "Als verantwortlicher Frontend-Entwickler betreute ich Restaurant-Bestellabläufe, während die tägliche Nutzung von rund 3.000 auf 25.000 Nutzer stieg. Zusätzlich entwickelte und pflegte ich eine Node.js/Express-Backend-for-Frontend-Schicht mit GraphQL/Apollo und Redis.",
     "archive.swiggy.point1":
       "Node.js- und Express-Middleware-APIs mit GraphQL und Redis zur Integration interner Microservices entwickelt",
     "archive.swiggy.point2":
@@ -837,7 +837,7 @@ window.portfolioTranslations = {
     "experience.intro":
       "In mehr als zehn Jahren bei Start-ups und Scale-ups habe ich Frontend-Architektur, State- und API-Grenzen, Performance, Testing und Produktionsauslieferung kundenorientierter Produkte verantwortet.",
     "experience.now": "2023—Heute",
-    "experience.fullstackRole": "Full-Stack-JavaScript-Entwickler",
+    "experience.fullstackRole": "Senior Full-Stack TypeScript Engineer",
     "experience.seniorFrontendRole": "Senior Frontend-Entwickler",
     "experience.frontendRole": "Frontend-Entwickler",
     "experience.juniorRole": "Junior UI-Entwickler",
@@ -926,7 +926,7 @@ window.portfolioTranslations = {
     "resume.german.page2Alt": "Deutscher Lebenslauf, Seite 2 von 3",
     "resume.german.page3Alt": "Deutscher Lebenslauf, Seite 3 von 3",
     "resume.role":
-      "Senior Frontend-Entwickler · TypeScript · React · Angular · Skalierbare Frontend-Architektur",
+      "Senior Full-Stack TypeScript Engineer · React · Angular · Node.js · NestJS · Skalierbare Frontend-Architektur",
     "resume.view": "Lebenslauf ansehen",
     "resume.download": "PDF herunterladen",
     "resume.close": "Schließen",
@@ -934,6 +934,6 @@ window.portfolioTranslations = {
     "contact.title":
       "Sie suchen einen Senior Engineer, dem das Produkt genauso wichtig ist wie der Code?",
     "footer.role":
-      "Senior Frontend-Entwickler · TypeScript · React · Angular · Dresden, Deutschland",
+      "Senior Full-Stack TypeScript Engineer · React · Angular · Node.js · NestJS · Dresden, Deutschland",
   },
 };

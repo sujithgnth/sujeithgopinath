@@ -62,7 +62,7 @@ test("career evidence carousel includes eight senior-level signals", () => {
 test("senior positioning follows the revised CV hierarchy", () => {
   assert.match(
     indexHtml,
-    /Senior Frontend Engineer · TypeScript · React · Angular/,
+    /Senior Full-Stack TypeScript Engineer · TypeScript · React · Angular/,
   );
   assert.match(
     indexHtml,
@@ -87,11 +87,11 @@ test("resume asset and professional evidence follow the September 2026 CV", () =
 
   assert.equal(
     resumeHash,
-    "42796b2f35903e310a10d65e07ff371d2200a1466ec9285a0d99ef4554404aba",
+    "65338e6950ca60885441dce1d3084382fe8d65ab2f67eb8b034b95edfb0cc8a1",
   );
   assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-1.jpg"));
   assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-2.jpg"));
-  assert.match(indexHtml, /sujeith-gopinath-resume-en\.pdf\?v=20260909\.2/);
+  assert.match(indexHtml, /sujeith-gopinath-resume-en\.pdf\?v=20260910\.1/);
   assert.match(
     indexHtml,
     /50,000 documents from roughly 10–15 seconds to around 2 seconds/,
@@ -99,7 +99,7 @@ test("resume asset and professional evidence follow the September 2026 CV", () =
   assert.match(indexHtml, /IoU-based comparison/);
   assert.match(indexHtml, /PM2, Redis shared state/);
   assert.match(indexHtml, /realtime WebSocket updates/);
-  assert.match(indexHtml, /two external development agencies/);
+  assert.match(indexHtml, /internal and external contributors/);
   assert.doesNotMatch(translationSource, /microfront|Blockly/i);
   assert.doesNotMatch(
     indexHtml,
