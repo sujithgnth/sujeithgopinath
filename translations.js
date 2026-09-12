@@ -74,7 +74,7 @@ window.portfolioTranslations = {
     "hero.title":
       "Scalable frontend architecture. <span>Delivered to production.</span>",
     "hero.intro":
-      "Senior Full-Stack TypeScript Engineer with 10+ years of experience across AI document processing, robotics, logistics and food delivery. I own features end to end across React and Angular frontends, Node.js/NestJS APIs, MongoDB/Redis data access, testing and production debugging.",
+      "Senior Full-Stack TypeScript Engineer with 10+ years building production applications across React, Angular, Node.js/NestJS and PostgreSQL/MongoDB. I own features end to end, from requirements and architecture through APIs, data, testing and production.",
     "hero.explore": "Explore selected work",
     "hero.email": "Email me",
     "hero.available": "Available immediately",
@@ -172,24 +172,24 @@ window.portfolioTranslations = {
     "work.title": "Frontend ownership backed by systems thinking.",
     "work.intro":
       "Production systems spanning AI review, robot control, logistics operations and restaurant ordering—each backed by hands-on frontend ownership.",
-    "work.elevait.period": "Elevait · 2023–Present",
+    "work.elevait.period": "Elevait · 2023–2026",
     "work.elevait.kicker": "AI document operations",
     "work.elevait.title":
       "Making human review feel clear, fast and trustworthy.",
     "work.elevait.description":
-      "I architected and owned document-verification and annotation workflows across Angular, NestJS and MongoDB, used by approximately 100 annotators across 5 enterprise customers. Successful review completion increased from roughly 30% to 80%.",
+      "I owned the end-to-end document annotation tool across Angular, NestJS and MongoDB, used by approximately 200 annotators. Successful review completion increased from roughly 30% to 80%.",
     "work.elevait.point1":
       "Standardised multi-annotator review with IoU-based comparison, thresholds and backend validation, achieving 100% adoption across annotation teams and contributing to 12% revenue growth",
     "work.elevait.point2":
       "Owned configurable Verifier rules and approval criteria across frontend and backend boundaries, keeping backend validation as the source of truth and contributing to the acquisition of SachsenEnergie",
     "work.elevait.point3":
-      "Introduced a NestJS preview API backed by S3-compatible MinIO, reducing average document load time from roughly 16 seconds to 4 seconds",
+      "Redesigned document delivery with a MinIO-backed NestJS preview API, reducing payloads to KB-scale and load time from roughly 16 seconds to 4 seconds",
     "work.elevait.point4":
-      "Reduced response times across more than 50,000 documents from roughly 10–15 seconds to around 2 seconds through NestJS queries, MongoDB indexing, filtering and pagination",
+      "Modernised a NestJS/MongoDB search API for more than 50,000 documents, reducing response time from roughly 10–15 seconds to around 2 seconds through query redesign and indexing and helping retain LBS",
     "work.elevait.point5":
       "Designed Angular/Nx feature boundaries, component structures, state patterns and data-access layers for annotation, verification and OCR workflows",
     "work.elevait.point6":
-      "Provided technical direction through architecture discussions, code reviews and reusable patterns while establishing Playwright E2E coverage",
+      "Mentored engineers through architecture and PR reviews while improving Playwright coverage, CI/CD checks and the use of Cursor through small, test-validated changes",
     "work.elevait.visual.workspace": "Review workspace",
     "work.elevait.visual.suggestion": "AI SUGGESTION",
     "work.elevait.visual.verified": "Field verified",
@@ -365,7 +365,7 @@ window.portfolioTranslations = {
     "experience.title": "From hands-on delivery to senior frontend ownership.",
     "experience.intro":
       "Across more than ten years in startups and scale-ups, I have owned frontend architecture, state and API boundaries, performance, testing and production delivery for customer-facing products.",
-    "experience.now": "2023—Now",
+    "experience.now": "2023—2026",
     "experience.fullstackRole": "Senior Full-Stack TypeScript Engineer",
     "experience.seniorFrontendRole": "Senior Frontend Engineer",
     "experience.frontendRole": "Frontend Engineer",
@@ -454,7 +454,7 @@ window.portfolioTranslations = {
     "resume.german.page2Alt": "German résumé, page 2 of 3",
     "resume.german.page3Alt": "German résumé, page 3 of 3",
     "resume.role":
-      "Senior Full-Stack TypeScript Engineer · TypeScript · React · Angular · Scalable Frontend Architecture",
+      "Senior Full-Stack TypeScript Engineer · React · Angular · TypeScript · Next.js · Node.js · NestJS",
     "resume.view": "View résumé",
     "resume.download": "Download PDF",
     "resume.close": "Close",
@@ -543,7 +543,7 @@ window.portfolioTranslations = {
     "hero.title":
       "Skalierbare Frontend-Architektur. <span>Bis in die Produktion umgesetzt.</span>",
     "hero.intro":
-      "Senior Full-Stack TypeScript Engineer mit über 10 Jahren Erfahrung in KI-Dokumentenverarbeitung, Robotik, Logistik und Essenslieferung. Ich verantworte Features durchgängig: React- und Angular-Frontends, Node.js/NestJS-APIs, MongoDB/Redis-Datenzugriff, Tests und Fehleranalyse im Produktivbetrieb.",
+      "Senior Full-Stack TypeScript Engineer mit über 10 Jahren Erfahrung in produktiven Anwendungen mit React, Angular, Node.js/NestJS sowie PostgreSQL/MongoDB. Ich verantworte Features durchgängig – von Anforderungen und Architektur über APIs und Daten bis zu Tests und Produktion.",
     "hero.explore": "Ausgewählte Projekte",
     "hero.email": "E-Mail schreiben",
     "hero.available": "Ab sofort verfügbar",
@@ -642,24 +642,24 @@ window.portfolioTranslations = {
     "work.title": "Frontend-Verantwortung mit systemischem Denken.",
     "work.intro":
       "Produktionssysteme für KI-Prüfungen, Robotersteuerung, Logistikprozesse und Restaurantbestellungen – jeweils mit praxisnaher Frontend-Verantwortung.",
-    "work.elevait.period": "Elevait · 2023–Heute",
+    "work.elevait.period": "Elevait · 2023–2026",
     "work.elevait.kicker": "KI-gestützte Dokumentenprozesse",
     "work.elevait.title":
       "Menschliche Prüfung klar, schnell und verlässlich gestalten.",
     "work.elevait.description":
-      "Ich entwarf und verantwortete Dokumentenprüfungs- und Annotationsabläufe mit Angular, NestJS und MongoDB für rund 100 Annotatoren bei 5 Unternehmenskunden. Die erfolgreiche Prüfungsabschlussquote stieg von etwa 30 % auf 80 %.",
+      "Ich verantwortete das Dokumentenannotationstool durchgängig mit Angular, NestJS und MongoDB für rund 200 Annotatoren. Die erfolgreiche Prüfungsabschlussquote stieg von etwa 30 % auf 80 %.",
     "work.elevait.point1":
       "Standardisierte Mehrfachprüfung mit IoU-basiertem Vergleich, Schwellenwerten und Backend-Validierung; 100 % Nutzung in den Annotationsteams und Beitrag zu 12 % Umsatzwachstum",
     "work.elevait.point2":
       "Verantwortete konfigurierbare Verifier-Regeln und Freigabekriterien in Frontend und Backend, mit Backend-Validierung als verbindlicher Instanz und einem Beitrag zur Gewinnung von SachsenEnergie",
     "work.elevait.point3":
-      "Führte eine NestJS-Vorschau-API mit S3-kompatiblem MinIO ein und reduzierte die durchschnittliche Dokumentladezeit von rund 16 auf 4 Sekunden",
+      "Gestaltete die Dokumentauslieferung mit einer MinIO-gestützten NestJS-Vorschau-API neu und reduzierte Datenmengen auf KB-Größe sowie die Ladezeit von rund 16 auf 4 Sekunden",
     "work.elevait.point4":
-      "Antwortzeiten bei mehr als 50.000 Dokumenten durch NestJS-Abfragen, MongoDB-Indizes, Filterung und Paginierung von rund 10–15 Sekunden auf etwa 2 Sekunden reduziert",
+      "Modernisierte eine NestJS/MongoDB-Such-API für mehr als 50.000 Dokumente und reduzierte die Antwortzeit durch überarbeitete Abfragen und Indizierung von rund 10–15 auf etwa 2 Sekunden, was zur Bindung von LBS beitrug",
     "work.elevait.point5":
       "Angular/Nx-Feature-Grenzen, Komponentenstrukturen, State-Muster und Data-Access-Layer für Annotation, Verifizierung und OCR entworfen",
     "work.elevait.point6":
-      "Technische Richtung durch Architekturgespräche, Code-Reviews und wiederverwendbare Muster gegeben sowie Playwright-E2E-Abdeckung etabliert",
+      "Entwickler durch Architektur- und PR-Reviews begleitet sowie Playwright-Abdeckung, CI/CD-Prüfungen und den Einsatz von Cursor durch kleine, testvalidierte Änderungen verbessert",
     "work.elevait.visual.workspace": "Prüfbereich",
     "work.elevait.visual.suggestion": "KI-VORSCHLAG",
     "work.elevait.visual.verified": "Feld bestätigt",
@@ -836,7 +836,7 @@ window.portfolioTranslations = {
     "experience.title": "Von praxisnaher Umsetzung zu Senior-Frontend-Verantwortung.",
     "experience.intro":
       "In mehr als zehn Jahren bei Start-ups und Scale-ups habe ich Frontend-Architektur, State- und API-Grenzen, Performance, Testing und Produktionsauslieferung kundenorientierter Produkte verantwortet.",
-    "experience.now": "2023—Heute",
+    "experience.now": "2023—2026",
     "experience.fullstackRole": "Senior Full-Stack TypeScript Engineer",
     "experience.seniorFrontendRole": "Senior Frontend-Entwickler",
     "experience.frontendRole": "Frontend-Entwickler",
@@ -926,7 +926,7 @@ window.portfolioTranslations = {
     "resume.german.page2Alt": "Deutscher Lebenslauf, Seite 2 von 3",
     "resume.german.page3Alt": "Deutscher Lebenslauf, Seite 3 von 3",
     "resume.role":
-      "Senior Full-Stack TypeScript Engineer · React · Angular · Node.js · NestJS · Skalierbare Frontend-Architektur",
+      "Senior Full-Stack TypeScript Engineer · React · Angular · TypeScript · Next.js · Node.js · NestJS",
     "resume.view": "Lebenslauf ansehen",
     "resume.download": "PDF herunterladen",
     "resume.close": "Schließen",

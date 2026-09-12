@@ -87,15 +87,19 @@ test("resume asset and professional evidence follow the September 2026 CV", () =
 
   assert.equal(
     resumeHash,
-    "65338e6950ca60885441dce1d3084382fe8d65ab2f67eb8b034b95edfb0cc8a1",
+    "dae62a4c1b1fa3b979b4798650c9196cc3488c9090e7f96f915b1f8bab822383",
   );
   assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-1.jpg"));
   assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-2.jpg"));
-  assert.match(indexHtml, /sujeith-gopinath-resume-en\.pdf\?v=20260910\.1/);
+  assert.match(indexHtml, /sujeith-gopinath-resume-en\.pdf\?v=20260912\.1/);
+  assert.match(indexHtml, /Elevait · 2023–2026/);
+  assert.match(indexHtml, /used by approximately 200 annotators/);
   assert.match(
     indexHtml,
-    /50,000 documents from roughly 10–15 seconds to around 2 seconds/,
+    /50,000 documents, reducing response time from roughly 10–15 seconds to around 2 seconds/,
   );
+  assert.match(indexHtml, /github\.com\/sujithgnth\/keynest/);
+  assert.doesNotMatch(indexHtml, /github\.com\/sujithgnth\/password-manager/);
   assert.match(indexHtml, /IoU-based comparison/);
   assert.match(indexHtml, /PM2, Redis shared state/);
   assert.match(indexHtml, /realtime WebSocket updates/);
@@ -200,7 +204,7 @@ test("robot workflow responds to scrolling without overriding reduced motion", (
 test("KeyNest is presented as a verifiable work-in-progress project", () => {
   assert.match(indexHtml, /case-study-keynest/);
   assert.match(indexHtml, /Independent project · Work in progress/);
-  assert.match(indexHtml, /github\.com\/sujithgnth\/password-manager/);
+  assert.match(indexHtml, /github\.com\/sujithgnth\/keynest/);
   assert.match(indexHtml, /AES-256-GCM/);
   assert.match(indexHtml, /RabbitMQ/);
   assert.match(indexHtml, /Prometheus/);
@@ -300,7 +304,7 @@ test("German-market SEO exposes localized crawl signals", () => {
     structuredData.hasPart.some(
       (project) =>
         project.name === "KeyNest" &&
-        project.codeRepository === "https://github.com/sujithgnth/password-manager",
+        project.codeRepository === "https://github.com/sujithgnth/keynest",
     ),
   );
   assert.match(indexHtml, /rel="sitemap"/);

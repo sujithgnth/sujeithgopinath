@@ -1,8 +1,9 @@
 # Sujeith Gopinath — Portfolio
 
-One-page portfolio for Sujeith Gopinath, a Senior Frontend Engineer specialising
-in TypeScript, React, Angular and scalable frontend architecture, with
-frontend-heavy full-stack capability and a path toward hands-on Software Architecture.
+One-page portfolio for Sujeith Gopinath, a Senior Full-Stack TypeScript
+Engineer with 10+ years building production applications across React, Angular,
+Node.js/NestJS and PostgreSQL/MongoDB, with strong frontend architecture
+ownership and a path toward hands-on Software Architecture.
 
 **[View the live portfolio](https://sujithgnth.github.io/sujeithgopinath/)**
 
@@ -11,7 +12,7 @@ frontend-heavy full-stack capability and a path toward hands-on Software Archite
 - TypeScript, React, Angular and Next.js
 - Scalable frontend architecture, state and API boundaries, and design systems
 - Performance engineering, automated testing and production debugging
-- Node.js APIs and frontend-heavy full-stack delivery
+- Node.js/NestJS APIs, PostgreSQL/MongoDB and end-to-end product delivery
 - AI, robotics and operational web applications
 - Accessible, reduced-motion-aware workflow illustrations
 
