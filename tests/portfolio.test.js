@@ -87,20 +87,22 @@ test("resume asset and professional evidence follow the September 2026 CV", () =
 
   assert.equal(
     resumeHash,
-    "dae62a4c1b1fa3b979b4798650c9196cc3488c9090e7f96f915b1f8bab822383",
+    "9eab632b19fc9eb55b81ee61b2e5f7ff5871a3a1d48edb528becfb93d5388547",
   );
   assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-1.jpg"));
   assert.ok(fs.existsSync("assets/resume/previews/resume-en-page-2.jpg"));
-  assert.match(indexHtml, /sujeith-gopinath-resume-en\.pdf\?v=20260912\.1/);
+  assert.match(indexHtml, /sujeith-gopinath-resume-en\.pdf\?v=20260915\.1/);
   assert.match(indexHtml, /Elevait · 2023–2026/);
-  assert.match(indexHtml, /used by approximately 200 annotators/);
+  assert.match(indexHtml, /Used by approximately 200 annotators/);
+  assert.match(indexHtml, /implementing document loading, annotation editing, persistence and validation/);
   assert.match(
     indexHtml,
     /50,000 documents, reducing response time from roughly 10–15 seconds to around 2 seconds/,
   );
   assert.match(indexHtml, /github\.com\/sujithgnth\/keynest/);
   assert.doesNotMatch(indexHtml, /github\.com\/sujithgnth\/password-manager/);
-  assert.match(indexHtml, /IoU-based comparison/);
+  assert.match(indexHtml, /IoU-based reviewer comparison/);
+  assert.match(indexHtml, /Raised engineering quality across frontend and APIs/);
   assert.match(indexHtml, /PM2, Redis shared state/);
   assert.match(indexHtml, /realtime WebSocket updates/);
   assert.match(indexHtml, /internal and external contributors/);

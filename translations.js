@@ -177,11 +177,11 @@ window.portfolioTranslations = {
     "work.elevait.title":
       "Making human review feel clear, fast and trustworthy.",
     "work.elevait.description":
-      "I owned the end-to-end document annotation tool across Angular, NestJS and MongoDB, used by approximately 200 annotators. Successful review completion increased from roughly 30% to 80%.",
+      "I built and owned the Angular/NestJS/MongoDB annotation workspace, implementing document loading, annotation editing, persistence and validation. Used by approximately 200 annotators, it increased successful annotation-task completion from roughly 30% to 80%.",
     "work.elevait.point1":
-      "Standardised multi-annotator review with IoU-based comparison, thresholds and backend validation, achieving 100% adoption across annotation teams and contributing to 12% revenue growth",
+      "Built the multi-annotator workflow across Angular and NestJS APIs, implementing IoU-based reviewer comparison, configurable thresholds and automated approval rules; reached 100% adoption and contributed to 12% revenue growth",
     "work.elevait.point2":
-      "Owned configurable Verifier rules and approval criteria across frontend and backend boundaries, keeping backend validation as the source of truth and contributing to the acquisition of SachsenEnergie",
+      "Owned the Verifier workflow, implementing configurable customer validation rules, approval criteria and server-side checks; contributed to the acquisition of SachsenEnergie",
     "work.elevait.point3":
       "Redesigned document delivery with a MinIO-backed NestJS preview API, reducing payloads to KB-scale and load time from roughly 16 seconds to 4 seconds",
     "work.elevait.point4":
@@ -189,7 +189,7 @@ window.portfolioTranslations = {
     "work.elevait.point5":
       "Designed Angular/Nx feature boundaries, component structures, state patterns and data-access layers for annotation, verification and OCR workflows",
     "work.elevait.point6":
-      "Mentored engineers through architecture and PR reviews while improving Playwright coverage, CI/CD checks and the use of Cursor through small, test-validated changes",
+      "Raised engineering quality across frontend and APIs through architecture discussions, PR reviews, Playwright E2E, CI/CD checks and small, test-validated Cursor-assisted changes",
     "work.elevait.visual.workspace": "Review workspace",
     "work.elevait.visual.suggestion": "AI SUGGESTION",
     "work.elevait.visual.verified": "Field verified",
@@ -647,11 +647,11 @@ window.portfolioTranslations = {
     "work.elevait.title":
       "Menschliche Prüfung klar, schnell und verlässlich gestalten.",
     "work.elevait.description":
-      "Ich verantwortete das Dokumentenannotationstool durchgängig mit Angular, NestJS und MongoDB für rund 200 Annotatoren. Die erfolgreiche Prüfungsabschlussquote stieg von etwa 30 % auf 80 %.",
+      "Ich entwickelte und verantwortete den Angular/NestJS/MongoDB-Annotationsarbeitsbereich mit Dokumentladen, Annotationsbearbeitung, Persistenz und Validierung. Er wurde von rund 200 Annotatoren genutzt und erhöhte die erfolgreiche Abschlussquote von Annotationstasks von etwa 30 % auf 80 %.",
     "work.elevait.point1":
-      "Standardisierte Mehrfachprüfung mit IoU-basiertem Vergleich, Schwellenwerten und Backend-Validierung; 100 % Nutzung in den Annotationsteams und Beitrag zu 12 % Umsatzwachstum",
+      "Entwickelte den Multi-Annotator-Workflow mit Angular- und NestJS-APIs, IoU-basiertem Prüfervergleich, konfigurierbaren Schwellenwerten und automatisierten Freigaberegeln; erreichte 100 % Nutzung und trug zu 12 % Umsatzwachstum bei",
     "work.elevait.point2":
-      "Verantwortete konfigurierbare Verifier-Regeln und Freigabekriterien in Frontend und Backend, mit Backend-Validierung als verbindlicher Instanz und einem Beitrag zur Gewinnung von SachsenEnergie",
+      "Verantwortete den Verifier-Workflow und implementierte konfigurierbare Kundenvalidierungsregeln, Freigabekriterien und serverseitige Prüfungen; trug zur Gewinnung von SachsenEnergie bei",
     "work.elevait.point3":
       "Gestaltete die Dokumentauslieferung mit einer MinIO-gestützten NestJS-Vorschau-API neu und reduzierte Datenmengen auf KB-Größe sowie die Ladezeit von rund 16 auf 4 Sekunden",
     "work.elevait.point4":
@@ -659,7 +659,7 @@ window.portfolioTranslations = {
     "work.elevait.point5":
       "Angular/Nx-Feature-Grenzen, Komponentenstrukturen, State-Muster und Data-Access-Layer für Annotation, Verifizierung und OCR entworfen",
     "work.elevait.point6":
-      "Entwickler durch Architektur- und PR-Reviews begleitet sowie Playwright-Abdeckung, CI/CD-Prüfungen und den Einsatz von Cursor durch kleine, testvalidierte Änderungen verbessert",
+      "Steigerte die Engineering-Qualität in Frontend und APIs durch Architekturgespräche, PR-Reviews, Playwright-E2E, CI/CD-Prüfungen und kleine, testvalidierte Cursor-unterstützte Änderungen",
     "work.elevait.visual.workspace": "Prüfbereich",
     "work.elevait.visual.suggestion": "KI-VORSCHLAG",
     "work.elevait.visual.verified": "Feld bestätigt",
